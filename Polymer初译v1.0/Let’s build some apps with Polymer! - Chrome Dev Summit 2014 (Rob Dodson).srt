@@ -1,0 +1,3522 @@
+1
+00:00:02,110 --> 00:00:03,200
+感谢大家
+Thank you guys so much.
+
+2
+00:00:03,200 --> 00:00:06,360
+也很荣幸今天能站在这里
+This is really awesome to be on the stage today.
+
+3
+00:00:06,360 --> 00:00:07,950
+过去的几年  我花了大量的时间
+Over the past year, I've spent a lot
+
+4
+00:00:07,950 --> 00:00:10,500
+来谈论Web component
+of time talking about web components,
+
+5
+00:00:10,500 --> 00:00:13,660
+传授开发者以基本的开发标准
+really teaching developers the basics of the standards
+
+6
+00:00:13,660 --> 00:00:15,985
+以及教人们如何去专注于构建elements
+and teaching folks how to focus on building elements.
+
+7
+00:00:15,985 --> 00:00:17,360
+此时此刻
+And we're now at this place where
+
+8
+00:00:17,360 --> 00:00:21,670
+我们有一个蓬勃发展的elements生态系统
+we have this burgeoning ecosystem of elements that are out there.
+
+9
+00:00:21,670 --> 00:00:23,420
+在开源社区也有很多的开发者
+There's a lot of developers out in the open source world
+
+10
+00:00:23,420 --> 00:00:25,177
+他(她)们在创作elements的同时
+who are creating elements but also got
+
+11
+00:00:25,177 --> 00:00:27,510
+也享受着由Polymer团队开发的element集合所带来的便利
+element sets that have been created by the Polymer team.
+
+12
+00:00:27,510 --> 00:00:29,462
+我们有core和paper elements
+We've got the core and the paper elements.
+
+13
+00:00:29,462 --> 00:00:30,920
+所以说 在这一点上
+And so we're at this point where we
+
+14
+00:00:30,920 --> 00:00:32,670
+我们正处在蓬勃发展的生态系统之中 
+have this flourishing ecosystem and I
+
+15
+00:00:32,670 --> 00:00:33,910
+我想是时候让我们开始思考
+think it's time for us to start to think
+
+16
+00:00:33,910 --> 00:00:36,520
+我们的下一个挑战 那就是
+about the next challenge, which is how do we leverage that
+
+17
+00:00:36,520 --> 00:00:40,260
+如何利用这个生态系统开发出实际的应用
+ecosystem to actually build real applications.
+
+18
+00:00:40,260 --> 00:00:42,410
+我对如何在移动应用上创造出让人流连忘返的体验
+And I'm particularly interested in figuring out
+
+19
+00:00:42,410 --> 00:00:45,490
+非常之感兴趣
+how to build compelling experiences on mobile.
+
+20
+00:00:45,490 --> 00:00:48,530
+移动互联网拥有着大量的机遇
+The mobile web has a ton of opportunity,
+
+21
+00:00:48,530 --> 00:00:50,890
+而对于Web开发者来说 
+but it's one of those areas where for web developers,
+
+22
+00:00:50,890 --> 00:00:52,570
+如何在移动端上创造出真正让人流连忘返的体验
+it's always been a challenge to create
+
+23
+00:00:52,570 --> 00:00:55,597
+一直都是一个挑战
+a real compelling experience on a mobile device.
+
+24
+00:00:55,597 --> 00:00:58,180
+所以 当我准备这个演讲的时候 我要做的
+And so when I was preparing for this talk, what I wanted to do
+
+25
+00:00:58,180 --> 00:01:01,240
+仅仅是掏出我的手（爪）机 翻看那些
+was just like pop my phone out and look at the applications
+
+26
+00:01:01,240 --> 00:01:02,740
+我也一直在使用的  那些我认为
+that I use all the time, things I
+
+27
+00:01:02,740 --> 00:01:05,860
+成功的带给人以流连忘返体验类型的应用
+consider sort of successful experiences.
+
+28
+00:01:05,860 --> 00:01:08,480
+我想在它们的身上
+And I wanted to go through them and just sort of catalog what
+
+29
+00:01:08,480 --> 00:01:12,970
+找到作为一个成功的应用程序
+I see as the kind of common UI and UX expectations
+
+30
+00:01:12,970 --> 00:01:14,890
+应有的UI和UX影子
+in a successful app.
+
+31
+00:01:14,890 --> 00:01:16,660
+在这里有Twitter
+So what I've got here is Twitter,
+
+32
+00:01:16,660 --> 00:01:19,030
+我安装Pocket Cast用来听播客
+I've got Pocket Cast for listening to podcasts,
+
+33
+00:01:19,030 --> 00:01:20,451
+并且 还有RDO
+and I've got RDO.
+
+34
+00:01:20,451 --> 00:01:22,450
+使我感到吃惊的事是
+And one thing that struck me as I was doing this
+
+35
+00:01:22,450 --> 00:01:24,230
+当我把这些应用并排开来的时候
+is if I just take these applications
+
+36
+00:01:24,230 --> 00:01:27,160
+尽管我知道把每一个应用都孤立开来看时
+and I put them side by side, even though each of them
+
+37
+00:01:27,160 --> 00:01:30,890
+会给人与众不同的感觉
+kind of feels unique when I'm looking at it in isolation,
+
+38
+00:01:30,890 --> 00:01:32,390
+但当我把它们一字排开
+when they're all lined up like that,
+
+39
+00:01:32,390 --> 00:01:34,720
+仿佛感觉他们的界面
+it feels like they're just like a ton of commonalities
+
+40
+00:01:34,720 --> 00:01:36,480
+都是如出一辙的
+in their interfaces.
+
+41
+00:01:36,480 --> 00:01:39,500
+在此拿Twitter为例 
+And so using Twitter as an example here,
+
+42
+00:01:39,500 --> 00:01:43,710
+我想要做的仅仅是把这些常用的UI编录到一起
+I want to just catalog some of those common UI patterns that I see.
+
+43
+00:01:43,710 --> 00:01:45,810
+比如在顶端 会有一个工具栏
+So up at the top, we have a toolbar.
+
+44
+00:01:45,810 --> 00:01:46,490
+非常面熟呢
+Pretty familiar.
+
+45
+00:01:46,490 --> 00:01:48,156
+而且一般的话  如果你创建了个工具栏
+And oftentimes, if you've got a toolbar,
+
+46
+00:01:48,156 --> 00:01:50,890
+你将会用一些图标按钮对其进行填充
+you're going to fill it up with some icon buttons.
+
+47
+00:01:50,890 --> 00:01:52,390
+往下一点儿  是一些选项卡
+And below that, you've got some tabs
+
+48
+00:01:52,390 --> 00:01:54,286
+目的是用来进行内容间的切换
+for switching between content.
+
+49
+00:01:54,286 --> 00:01:56,421
+这里是主要内容区域
+You've got a primary content area,
+
+50
+00:01:56,421 --> 00:01:57,920
+而且一般情况下
+and oftentimes, you're going to have
+
+51
+00:01:57,920 --> 00:02:01,144
+都会有无尽的内容列表在里面
+like an infinite list of contents inside of there,
+
+52
+00:02:01,144 --> 00:02:03,060
+或者你仅仅是想在用户向下翻页时
+or you might just be lazy loading more content
+
+53
+00:02:03,060 --> 00:02:05,390
+延迟加载更多的内容
+as the user is scrolling down the page.
+
+54
+00:02:05,390 --> 00:02:07,640
+最后在底部  会有一个次级工具栏
+And down at the bottom, you've got a secondary toolbar
+
+55
+00:02:07,640 --> 00:02:11,120
+用来做一些额外的操作
+for doing additional actions of some kind.
+
+56
+00:02:11,120 --> 00:02:14,050
+现在  如果我们坐上时空穿梭机
+Now, if we take a step back again
+
+57
+00:02:14,050 --> 00:02:17,007
+回到把它们联结起来的那个状态
+and we line these apps up again, like when
+
+58
+00:02:17,007 --> 00:02:18,590
+也就是刚才打量Twitter的时候
+I was looking at Twitter a moment ago,
+
+59
+00:02:18,590 --> 00:02:20,140
+这种体验感觉非常奇特
+it felt like a very unique experience.
+
+60
+00:02:20,140 --> 00:02:21,750
+不仅名称不同
+It felt kind of aligned with its brand
+
+61
+00:02:21,750 --> 00:02:23,620
+而且各司其职
+and it had kind of its own thing going on.
+
+62
+00:02:23,620 --> 00:02:25,390
+但当我把这些应用再次并排放在一起的时候
+But again, I line these guys up and I
+
+63
+00:02:25,390 --> 00:02:28,380
+我发现它们都有着相似的UI模式
+can see that they all kind of have those same UI patterns going on.
+
+64
+00:02:28,380 --> 00:02:30,899
+做着同样的工作
+They're all kind of doing the exact same thing.
+
+65
+00:02:30,899 --> 00:02:32,440
+而它们之所以看着相似的原因
+And the reason they all look the same
+
+66
+00:02:32,440 --> 00:02:35,560
+那就是它们都是通过一个SDK开发的
+is because they're all built using an SDK.
+
+67
+00:02:35,560 --> 00:02:37,630
+所有的这些都是来自Android平台的例子
+So these are examples coming from Android,
+
+68
+00:02:37,630 --> 00:02:40,206
+而这些例子在iOS平台上也同样适用
+but the same is true if you're working in iOS.
+
+69
+00:02:40,206 --> 00:02:42,080
+如果你在其中任意的一个平台开发应用的话
+If you're building on one of those platforms,
+
+70
+00:02:42,080 --> 00:02:44,649
+SDK都是现成的
+you already have this SDK that's available to you,
+
+71
+00:02:44,649 --> 00:02:46,190
+其中的组件一抓一大把
+grab a bunch of components out of it.
+
+72
+00:02:46,190 --> 00:02:49,224
+也许你只是稍作调整  改变一下它们的颜色
+Maybe you kind of tweak them a little bit, color them differently.
+
+73
+00:02:49,224 --> 00:02:50,640
+但是总体上说 组建你应用的原材料
+But in general, you're using stuff
+
+74
+00:02:50,640 --> 00:02:53,416
+都是预先准备好的
+that's already available to compose your application.
+
+75
+00:02:53,416 --> 00:02:57,170
+而现在  在Web开发方面  我们从未拥有过任何此类的东西
+Now, on the web, we've kind of never really had this thing.
+
+76
+00:02:57,170 --> 00:03:00,050
+更没有用于应用开发的原型
+We've never had app building primitives.
+
+77
+00:03:00,050 --> 00:03:03,790
+我们也从来没有一个移动端的SDK
+We've never had a mobile web SDK,
+
+78
+00:03:03,790 --> 00:03:05,520
+我想是时候改变一下这种状态
+and I think it's time for that to change.
+
+79
+00:03:05,520 --> 00:03:07,270
+并且我觉得真正能够胜任这种改变的
+And I really think that the way that we're
+
+80
+00:03:07,270 --> 00:03:11,100
+应该就是使用Polymer和Web组件了
+going about doing this is using Polymer and Web Components.
+
+81
+00:03:11,100 --> 00:03:14,190
+所以 我今天的目的就是要教你
+So my goal today is to teach you how to build mobile web
+
+82
+00:03:14,190 --> 00:03:17,500
+如何利用这些新技术去开发移动端的应用程序
+applications using these new technologies.
+
+83
+00:03:17,500 --> 00:03:19,730
+基本上  我把这节分为四个部分
+And I basically split this up into four parts.
+
+84
+00:03:19,730 --> 00:03:21,688
+第一部分 我将像你展示
+[? The very ?] part, I'm going to show you just
+
+85
+00:03:21,688 --> 00:03:24,092
+怎样为你的应用程序构建UI
+how you can structure the UI for your application,
+
+86
+00:03:24,092 --> 00:03:26,550
+接下来我们将要看看  如何才能
+then we're going to look at how you can transition from one
+
+87
+00:03:26,550 --> 00:03:28,466
+从应用的一个状态过渡到另外一个状态
+state of your application to the next.
+
+88
+00:03:28,466 --> 00:03:30,090
+此后  我们将专注于
+After that, we're going to look at ways
+
+89
+00:03:30,090 --> 00:03:32,270
+如何优化应用的性能
+to make sure your application is performant, because that's
+
+90
+00:03:32,270 --> 00:03:34,175
+因为对于移动应用来说  这至关重要
+really crucial for a mobile application.
+
+91
+00:03:34,175 --> 00:03:35,800
+最后的最后 让我们谈谈
+And lastly, we're going to look at ways
+
+92
+00:03:35,800 --> 00:03:38,110
+如何确保你的应用在不联网的情况下也可使用
+you can make sure your application runs offline
+
+93
+00:03:38,110 --> 00:03:40,550
+因为如果你的移动应用不能做到脱机可用的话
+because if your mobile app doesn't run offline,
+
+94
+00:03:40,550 --> 00:03:42,580
+那根本就算不上是移动应用
+then you really don't have a mobile app.
+
+95
+00:03:42,580 --> 00:03:44,600
+人们经常在无网或者是网络不好的情况下
+People are oftentimes on their mobile devices
+
+96
+00:03:44,600 --> 00:03:47,401
+使用移动设备
+when they're in low connectivity to no connectivity situations.
+
+97
+00:03:47,401 --> 00:03:48,775
+所以说能够离线可用
+So it's got to run offline for it
+
+98
+00:03:48,775 --> 00:03:52,720
+是创造一个给人以流连忘返体验应用的一个前提
+to be a real, compelling mobile app experience.
+
+99
+00:03:52,720 --> 00:03:55,380
+先从Structure讲起
+Let's start with structure and just think about ways
+
+100
+00:03:55,380 --> 00:03:58,420
+试着思考我们为自己应用撰写UI时的方式
+that we can compose the UI for our application.
+
+101
+00:03:58,420 --> 00:04:00,900
+是的  关键词就在这  compose
+And really, that's the key word here-- compose.
+
+102
+00:04:00,900 --> 00:04:03,470
+我将要做的就是从Polymer的core elements以及paper elements集合中
+What I want to do is I'm going to take as many preexisting
+
+103
+00:04:03,470 --> 00:04:06,500
+获取一些先前已经存在的element
+elements from the Polymer core sets to the paper sets
+
+104
+00:04:06,500 --> 00:04:09,882
+并把它们栓在一起 来开发我的应用
+and I want to bolt them together to build my application.
+
+105
+00:04:09,882 --> 00:04:11,340
+这是今天我们将要开发的应用
+So this is the app that we're going
+
+106
+00:04:11,340 --> 00:04:14,125
+只是一个简单的联系人通讯录应用
+to be working from today, just a really simple contacts app
+
+107
+00:04:14,125 --> 00:04:15,380
+把那些element联合在了一起
+that I threw together.
+
+108
+00:04:15,380 --> 00:04:18,207
+并且我尽量试着采用不少和先前  我所讲过的
+And I'm trying to utilize a lot of the same patterns
+
+109
+00:04:18,207 --> 00:04:21,920
+那些成功应用相同的样式
+that I was showing in the previous successful apps that I had before.
+
+110
+00:04:21,920 --> 00:04:24,670
+工具栏上有图标按钮
+So you've got the toolbar at the top with some icon buttons.
+
+111
+00:04:24,670 --> 00:04:25,570
+你开始上下滚动
+You start scrolling around, you're
+
+112
+00:04:25,570 --> 00:04:29,000
+为了查看这无尽列表里面的内容
+going to get this sort of infinite list of content inside of there.
+
+113
+00:04:29,000 --> 00:04:31,772
+这有一个抽屉面板  你可以弹出菜单
+You've got a drawer panel that you can pop out for your menu.
+
+114
+00:04:31,772 --> 00:04:33,230
+点击其中任意一个联系人
+Clicking on any one of the contacts
+
+115
+00:04:33,230 --> 00:04:35,313
+会有一个过渡动画
+is going to do kind of like an animated transition
+
+116
+00:04:35,313 --> 00:04:37,520
+向你展示详细的联系人信息
+to show you that person's contact details.
+
+117
+00:04:37,520 --> 00:04:40,370
+随着我来回滚动
+I get it's really nice, cool condensing header effect
+
+118
+00:04:40,370 --> 00:04:42,267
+会有非常棒的condensing header效果
+as I scroll around.
+
+119
+00:04:42,267 --> 00:04:44,350
+并且这还有一个浮动的动作按钮
+And also, I've got a little floating action button
+
+120
+00:04:44,350 --> 00:04:45,391
+在底部
+down there in the corner.
+
+121
+00:04:45,391 --> 00:04:47,479
+点击这个按钮  弹出并打开另一个界面
+I can click that, pop open another screen.
+
+122
+00:04:47,479 --> 00:04:51,370
+这些就是我所使用的全部过渡动画效果
+These are all animated transitions that I'm using here.
+
+123
+00:04:51,370 --> 00:04:53,710
+如果你之前听过我的演讲的话
+Now, if you've seen me talk before,
+
+124
+00:04:53,710 --> 00:04:56,390
+你可能已经见过我在开发应用的过程中
+you've probably seen me start off by using this element.
+
+125
+00:04:56,390 --> 00:04:57,320
+以使用这个element作为开始
+Anytime I'm building an application,
+
+126
+00:04:57,320 --> 00:04:58,510
+你也可能会感觉
+it seems like I'm always starting off
+
+127
+00:04:58,510 --> 00:05:00,364
+我经常会以core toolbar element作为开始
+with this core toolbar element, which
+
+128
+00:05:00,364 --> 00:05:01,780
+虽说它仅仅只是一个非常基本的容器
+is just a really simple container.
+
+129
+00:05:01,780 --> 00:05:03,145
+它规定了其子element使用Flexbox布局模式
+It lays out its children using Flexbox
+
+130
+00:05:03,145 --> 00:05:04,603
+这也是你迈出第一步的
+and it's a really good place to get
+
+131
+00:05:04,603 --> 00:05:07,130
+绝佳去处
+started with one of your screens.
+
+132
+00:05:07,130 --> 00:05:08,790
+而且因为composition才是今天真正的主角
+And because composition is really
+
+133
+00:05:08,790 --> 00:05:10,800
+所以我想要做的第一件事就是
+the name of the game, what I want to do first
+
+134
+00:05:10,800 --> 00:05:12,860
+把一些我想要的额外的element放在这里面
+is I want to just throw some additional elements
+
+135
+00:05:12,860 --> 00:05:16,880
+为我的工具栏来构造UI
+inside of here, and I just want to compose the UI for my toolbar.
+
+136
+00:05:16,880 --> 00:05:19,200
+所以我把一个paper icon button放在了那
+So I've dropped a paper icon button inside of there.
+
+137
+00:05:19,200 --> 00:05:21,200
+赋予其图标属性
+I've configured it with an icon attribute
+
+138
+00:05:21,200 --> 00:05:23,870
+用以实现hamburger菜单按钮的效果
+to give me the hamburger menu from that application,
+
+139
+00:05:23,870 --> 00:05:26,487
+以便稍后我滑动屏幕呼出菜单项
+and so I'm going to slide out my menu later.
+
+140
+00:05:26,487 --> 00:05:28,070
+这里有一个div属性
+I've also dropped a div inside of here
+
+141
+00:05:28,070 --> 00:05:31,190
+来实现应用的标题显示
+for the title of my application.
+
+142
+00:05:31,190 --> 00:05:33,400
+而现在  关于core toolbar最酷的事情之一
+Now, one of the cool things about the core toolbar
+
+143
+00:05:33,400 --> 00:05:35,780
+就是它使用Flexbox的布局模式 极大地简化了底层CSS Flexbox的部署
+is that since it uses Flexbox, I can kind of
+
+144
+00:05:35,780 --> 00:05:37,460
+我们可以借坡下驴 利用其一些优势
+take advantage of that a little bit.
+
+145
+00:05:37,460 --> 00:05:39,942
+在Polymer中称这些东西为布局属性
+There's things called layout attributes in Polymer,
+
+146
+00:05:39,942 --> 00:05:41,400
+而我所能做的事情就是
+and what I can do is I can actually
+
+147
+00:05:41,400 --> 00:05:43,400
+告诉我的工具栏标题
+tell the title of my toolbar that I
+
+148
+00:05:43,400 --> 00:05:46,120
+我希望它能尽可能的
+want it to flex to take up as much space is
+
+149
+00:05:46,120 --> 00:05:47,900
+填充工具栏里面的空间
+it can inside of the toolbar.
+
+150
+00:05:47,900 --> 00:05:49,400
+这是个易用的技巧
+This is a really handy trick to know
+
+151
+00:05:49,400 --> 00:05:51,810
+因为它意味着
+because it means that I can then pin controls
+
+152
+00:05:51,810 --> 00:05:53,464
+我可以pin control工具栏侧边
+to the other side of my toolbar.
+
+153
+00:05:53,464 --> 00:05:56,380
+我想要做的其实是添加一个背景菜单
+What I want to do here is actually add a little context menu so I can
+
+154
+00:05:56,380 --> 00:05:58,720
+这样我才能有类似于设置以及反馈啊之类的东西
+have things like settings and feedback.
+
+155
+00:05:58,720 --> 00:06:00,970
+为了实现那个 我将要用另外一个element
+So to do that, I'm going to use another element called
+
+156
+00:06:00,970 --> 00:06:03,550
+它叫做paper-menu-button
+paper-menu-button, and paper-menu-button's
+
+157
+00:06:03,550 --> 00:06:06,710
+它本身非常的有趣  因为它
+pretty interesting because by itself, it really
+
+158
+00:06:06,710 --> 00:06:07,945
+真的木有做任何事情
+doesn't do anything.
+
+159
+00:06:07,945 --> 00:06:08,820
+它是无用的
+It's kind of useless.
+
+160
+00:06:08,820 --> 00:06:10,445
+如果你只是把paper-menu-button标签
+If you just put a paper-menu-button tag
+
+161
+00:06:10,445 --> 00:06:13,060
+放在页面上  真的是什么作用也木有
+on the page, you get really nothing.
+
+162
+00:06:13,060 --> 00:06:15,120
+它仅仅是在你开始compose它里面的
+It only really comes into its own
+
+163
+00:06:15,120 --> 00:06:18,040
+其他elements时才发挥其作用
+when you start composing other elements inside of it.
+
+164
+00:06:18,040 --> 00:06:20,460
+这是一个待解锁的潜在技能  
+That's really how you unlock the potential of it.
+
+165
+00:06:20,460 --> 00:06:22,280
+所以我现在在那里
+So I've got another paper icon button
+
+166
+00:06:22,280 --> 00:06:24,071
+创建了另一个paper icon button
+that I've thrown inside of here, and that's
+
+167
+00:06:24,071 --> 00:06:26,860
+用来让用户点击
+going to give the user something to click on.
+
+168
+00:06:26,860 --> 00:06:28,820
+然后我把paper drop down放在
+Then I'm going to throw in a paper drop down,
+
+169
+00:06:28,820 --> 00:06:30,990
+paper icon button下面
+and that's going to give me this little animated rectangle
+
+170
+00:06:30,990 --> 00:06:31,630
+在这里实现一个小矩形动画
+thing up there.
+
+171
+00:06:31,630 --> 00:06:33,130
+所以  当菜单展开的时候
+So when the menu expands, it's going
+
+172
+00:06:33,130 --> 00:06:34,870
+它仿佛就像从角落里走出来一样
+to kind of like come out from the corner,
+
+173
+00:06:34,870 --> 00:06:36,839
+朝向页面的中心展开
+expand towards the center of the site.
+
+174
+00:06:36,839 --> 00:06:38,380
+其中的halign属性
+The halign attribute that I've thrown
+
+175
+00:06:38,380 --> 00:06:41,260
+是为了标明动画该从哪个方向开始
+on there is going to indicate which direction it should animate from.
+
+176
+00:06:41,260 --> 00:06:42,760
+所以在这里  我们定义的动画方向
+So here, we're telling it to animate
+
+177
+00:06:42,760 --> 00:06:45,921
+是从页面的右边缘延伸至屏幕中央
+from the right edge towards the center of the screen.
+
+178
+00:06:45,921 --> 00:06:48,170
+最后  我在这里面放一个core menu
+Lastly, I'm going to throw a core menu inside of here,
+
+179
+00:06:48,170 --> 00:06:50,669
+实现一些类似于Feekback接收用户反馈之类的
+and that's going to give me the actual menu items that users
+
+180
+00:06:50,669 --> 00:06:53,900
+这样的实际菜单项
+are going to select for my sending them feedback.
+
+181
+00:06:53,900 --> 00:06:56,299
+现在  让人感到欣慰的事是
+Now, the cool thing here is that each
+
+182
+00:06:56,299 --> 00:06:58,840
+每一个我放在paper menu button里面的element
+of those elements that I threw inside of my paper menu button
+
+183
+00:06:58,840 --> 00:07:00,490
+其自身都是有用的了
+is useful on its own.
+
+184
+00:07:00,490 --> 00:07:04,035
+通过使用core menu我可以在页面的其它地方创建菜单  如果我需要一个菜单的情况下
+I can use core menu elsewhere my site if I need a menu.
+
+185
+00:07:04,035 --> 00:07:05,410
+这简直棒极了
+What's awesome, though, is when I
+
+186
+00:07:05,410 --> 00:07:07,210
+当我开始把这些东西组合在一起的时候
+start to compose these things together,
+
+187
+00:07:07,210 --> 00:07:11,581
+我获得了很多不同又十分有趣的复杂效果
+I get different interesting complex behaviors.
+
+188
+00:07:11,581 --> 00:07:13,080
+而且还有重要的一点要指出
+And it's also important to point out
+
+189
+00:07:13,080 --> 00:07:15,930
+我没有写任何的CSS或JavaScript代码 来实现这一效果
+that I didn't write any CSS or JavaScript to make this happen.
+
+190
+00:07:15,930 --> 00:07:18,445
+我仅仅是把这些捏合到一起 oh yay
+I just nipped together these-- oh, yay.
+
+191
+00:07:22,809 --> 00:07:23,850
+谢谢
+Thank you, [? Demetri ?].
+
+192
+00:07:26,355 --> 00:07:28,230
+这些element知道如何一起工作
+These elements just know how to work together
+
+193
+00:07:28,230 --> 00:07:31,710
+因为它们是应用开发原型 酷极了
+because they're app building primitives, which is awesome.
+
+194
+00:07:31,710 --> 00:07:34,280
+一旦我对我自己工具栏的外观非常的满意
+And once I'm happy with the look of my toolbar,
+
+195
+00:07:34,280 --> 00:07:36,780
+那么接下来我们把所有的标记
+then you take all of this markup and I could throw it inside
+
+196
+00:07:36,780 --> 00:07:38,720
+放进另一个叫core-header-panel的element里
+of another element called core-header-panel.
+
+197
+00:07:38,720 --> 00:07:41,220
+core-header-panel仅仅是一个包含标题区和内容区的简单容器
+And the core-header-panel is just a really simple container.
+
+198
+00:07:41,220 --> 00:07:43,136
+标题区默认保持在页面的顶部
+It's got a header section up at the top, which
+
+199
+00:07:43,136 --> 00:07:46,014
+内容则在其下方
+will hold the toolbar, content area down below.
+
+200
+00:07:46,014 --> 00:07:47,930
+并且对于core-header-panel来说 很酷的事情是
+And the cool thing about the core header panel
+
+201
+00:07:47,930 --> 00:07:50,860
+它仅仅只专注于管理
+is it only really cares about managing the scroll behavior
+
+202
+00:07:50,860 --> 00:07:52,170
+应用的滚动行为
+from my application.
+
+203
+00:07:52,170 --> 00:07:54,250
+如果我把工具栏放在core-header-panel 里面
+If I put a toolbar inside of it, it's
+
+204
+00:07:54,250 --> 00:07:56,280
+它会确保工具栏
+going to make sure that that toolbar stays
+
+205
+00:07:56,280 --> 00:07:58,129
+一直都贴附在文档的顶部
+sticky up there at the top of the document
+
+206
+00:07:58,129 --> 00:08:00,670
+而且其他的内容只在它的底下移动
+and all my other content is just going to move underneath it.
+
+207
+00:08:00,670 --> 00:08:03,014
+再一次  没有写任何CSS及JavaScript的代码
+Again, no CSS or JavaScript to make this happen.
+
+208
+00:08:03,014 --> 00:08:04,430
+因为这些都是聪明的原型
+These are just smarter primitives.
+
+209
+00:08:04,430 --> 00:08:07,330
+它们知道如何像刚才那样一起工作
+They know how to work together like that.
+
+210
+00:08:07,330 --> 00:08:10,840
+现在  假设有人在点开我其中的一个联系人
+Now, when someone's actually looking at one of my contacts,
+
+211
+00:08:10,840 --> 00:08:14,650
+我想要有像这个一样酷酷的Addy Osmani的头像封面效果
+I want to have this cool, big shot of Addy Osmani's face
+
+212
+00:08:14,650 --> 00:08:19,040
+从根本上说  是我想实现这样的漂亮动画效果
+basically, and I want it to do this cool animating effect.
+
+213
+00:08:19,040 --> 00:08:20,660
+随着联系人向下滚动
+So as the person is scrolling down,
+
+214
+00:08:20,660 --> 00:08:22,118
+页面开始渐渐折叠
+it kind of collapses, and it's sort
+
+215
+00:08:22,118 --> 00:08:23,970
+与此同时  伴随着背景图片微微开始淡入淡出
+of crossfading with the background image.
+
+216
+00:08:23,970 --> 00:08:26,650
+为了实现这个  我使用了一个core-header-panel的表亲类
+And to do that, I'm using a cousin of the core-header-panel
+
+217
+00:08:26,650 --> 00:08:28,520
+叫作core-scroll-header-panel
+called the core-scroll-header-panel.
+
+218
+00:08:28,520 --> 00:08:29,950
+它们基本上是相同的组件
+It's basically the same component,
+
+219
+00:08:29,950 --> 00:08:31,700
+但是core-scroll-header-panel增添了很棒的condenses属性
+but it adds this nice condenses attribute,
+
+220
+00:08:31,700 --> 00:08:34,659
+所以才有刚刚这种酷炫的效果
+and it gives me that kind of cool effect.
+
+221
+00:08:34,659 --> 00:08:38,179
+而现在我的移动应用已经有了不同的  我所喜欢的界面
+Now, once I have the different screens for my mobile site laid
+
+222
+00:08:38,179 --> 00:08:40,669
+而接下来我要把所有的这些都放进
+out in a way that I like them, I can drop all of this
+
+223
+00:08:40,669 --> 00:08:42,799
+另一个叫core-drawer-panel的element里面
+into another element called core-drawer-panel,
+
+224
+00:08:42,799 --> 00:08:44,790
+目的是为移动端和桌面端
+and that's going to give me a responsive
+
+225
+00:08:44,790 --> 00:08:47,271
+构建响应式框架
+scaffold for desktop and mobile.
+
+226
+00:08:47,271 --> 00:08:50,404
+而且这个element生效的方式  一般是有个抽屉区
+And the way this element works, it's basically got a drawer area.
+
+227
+00:08:50,404 --> 00:08:52,070
+所有放在里面的内容
+Any content that I place inside of there
+
+228
+00:08:52,070 --> 00:08:54,090
+都以侧边栏作为结尾
+is going to end up in my sidebar.
+
+229
+00:08:54,090 --> 00:08:55,040
+这是主内容区
+It's got a main area.
+
+230
+00:08:55,040 --> 00:08:56,706
+所有放在主内容区里的内容
+Any content that I place inside of there
+
+231
+00:08:56,706 --> 00:08:58,642
+都以次级内容去作为结尾
+ends up in the primary content area.
+
+232
+00:08:58,642 --> 00:09:01,500
+值得的鼓舞的是  该element默认是响应式
+And the cool thing is, this element is responsive by default.
+
+233
+00:09:01,500 --> 00:09:04,684
+如果我在桌面平台上开始向外拖拽
+So if I'm on my desktop and I just start dragging it out,
+
+234
+00:09:04,684 --> 00:09:06,350
+你会看到这边抽屉面板已经打开
+you'll see the drawer panel opens there.
+
+235
+00:09:06,350 --> 00:09:07,350
+我可以尽情的进行开和关
+I can open and close it.
+
+236
+00:09:07,350 --> 00:09:10,130
+继续拖拽 到了一个预设的大小
+I drag this thing out, and when I hit a certain size,
+
+237
+00:09:10,130 --> 00:09:11,760
+工具栏会自动弹出
+the toolbar just pops out for me.
+
+238
+00:09:11,760 --> 00:09:12,290
+非常的棒
+This is really nice.
+
+239
+00:09:12,290 --> 00:09:14,340
+又一次 我没有写任何断点或者是CSS media queries
+Again, I'm not writing any breakpoints or media queries
+
+240
+00:09:14,340 --> 00:09:15,410
+就让此得以实现
+to make this happen.
+
+241
+00:09:15,410 --> 00:09:19,730
+element默认就是响应式的  棒棒哒
+The element's just responsive by default, which is really nice.
+
+242
+00:09:19,730 --> 00:09:22,990
+现在 我已经把应用的骨架建造好了
+Now, at this point, I've built the skeleton of an application.
+
+243
+00:09:22,990 --> 00:09:24,800
+我已经向你展示了  如何建好外壳
+I've kind of shown you how to put the shell
+
+244
+00:09:24,800 --> 00:09:27,460
+但是我们的应用程序依然缺少着
+around everything, but what we're still missing
+
+245
+00:09:27,460 --> 00:09:29,230
+一个关键命脉
+is the lifeblood of our application.
+
+246
+00:09:29,230 --> 00:09:31,930
+我们落下了内容
+We're missing the content.
+
+247
+00:09:31,930 --> 00:09:33,597
+并且  之前在我展示这些应用的时候
+And when I'm showing these apps earlier,
+
+248
+00:09:33,597 --> 00:09:35,763
+我一直在说  这些应用将要做的事情是
+I mentioned that oftentimes what they're going to do
+
+249
+00:09:35,763 --> 00:09:37,770
+像一个无尽的表一样
+is they're going to do like an infinite list,
+
+250
+00:09:37,770 --> 00:09:39,739
+亦或是延迟加载 所以用户才能让他们的推文
+or of a lazy load of content so the user can
+
+251
+00:09:39,739 --> 00:09:41,530
+也可以是相册或者其他之类的东西
+keep scrolling through all of their tweets,
+
+252
+00:09:41,530 --> 00:09:44,164
+一直从头到尾  来回滚动
+or all of their albums, and things like that,
+
+253
+00:09:44,164 --> 00:09:46,580
+我们可以通过一个叫core-list的element
+and we can achieve the same thing in our application using
+
+254
+00:09:46,580 --> 00:09:48,167
+在我们的应用上实现相同的效果
+an element called core-list.
+
+255
+00:09:48,167 --> 00:09:50,000
+core-list也是我最喜爱的element之一
+And core-list is one of my favorite elements
+
+256
+00:09:50,000 --> 00:09:52,000
+因为从某种程度上说  我觉得
+because I feel like it's sort of the thing that
+
+257
+00:09:52,000 --> 00:09:53,940
+core-list把所有的框架和内容
+knits all the scaffolding and the content
+
+258
+00:09:53,940 --> 00:09:56,340
+都用我喜爱的方式  编结到了一起
+together in this way that I really love.
+
+259
+00:09:56,340 --> 00:09:59,270
+core-list是一个虚拟化的infinite list
+The core-list is basically a virtualized infinite list.
+
+260
+00:09:59,270 --> 00:10:03,020
+当你把它和data provider连接起来  然后它会为在data provider数组里面的
+You connect it to a data provider and then it stamps out a template
+
+261
+00:10:03,020 --> 00:10:06,230
+每一个single instance压制出一个template
+for every single instance in that data provider's array.
+
+262
+00:10:06,230 --> 00:10:10,080
+所以在这里list.data等于some array
+So here, I'm saying list.data equals some array.
+
+263
+00:10:10,080 --> 00:10:12,120
+array数组里面有一些对象
+I've got objects inside of that array.
+
+264
+00:10:12,120 --> 00:10:14,000
+每一个对象对应着一个名字
+Each of those objects has a name.
+
+265
+00:10:14,000 --> 00:10:16,600
+并且在core-list里面  有一个template element
+And inside my core-list, I have a template element
+
+266
+00:10:16,600 --> 00:10:20,580
+我只是将其绑定起来
+and I'm just binding to each of those instances as they come in.
+
+267 
+00:10:20,580 --> 00:10:23,730
+创造出高效的infinite list
+It gives me this really, really performant infinite list
+
+268
+00:10:23,730 --> 00:10:26,740
+这样就能遍历所有联系人
+so I can go through all of my contacts.
+
+269
+00:10:26,740 --> 00:10:28,544
+在我开发应用的过程中
+Now, as I was building my application,
+
+270
+00:10:28,544 --> 00:10:29,960
+我遇到了这样一件事
+I kind of came across this thing--
+
+271
+00:10:29,960 --> 00:10:31,709
+在此作为一个建议和你们一起分享
+which I'm going to share with you as a tip
+
+272
+00:10:31,709 --> 00:10:35,326
+如果你开始使用core-list的话
+if you want to go out and start using core-list yourself.
+
+273
+00:10:35,326 --> 00:10:38,166
+需要注意的是core-list会回收其子元素
+One of things that core-list does is it recycles its children.
+
+274
+00:10:38,166 --> 00:10:39,790
+这也是它为何性能出众的原因
+That's actually how it's so performant.
+
+275
+00:10:39,790 --> 00:10:42,081
+在子元素移动过程中  core-list会使其固定
+It makes a fixed set of children and as they're moving,
+ 
+276
+00:10:42,081 --> 00:10:44,800
+然后再用其他的方式把它们打回原形
+it's pulling them back around the other way.
+
+277
+00:10:44,800 --> 00:10:47,184
+所以如果在core-list里有图像标签的话
+So if you have image tags inside of your core-list,
+
+278
+00:10:47,184 --> 00:10:49,350
+在与网络赛跑的过程中就会败下阵来
+you can end up in a situation where you're basically
+
+279
+00:10:49,350 --> 00:10:52,486
+过期的图像会在屏幕上下横飞
+racing the network and you're having stale images fly
+
+280
+00:10:52,486 --> 00:10:54,110
+要等一会才能及时刷新
+past the screen, and then they catch up
+
+281
+00:10:54,110 --> 00:10:56,424
+看起来怪怪的
+and change, which sort of looks weird.
+
+282
+00:10:56,424 --> 00:10:58,590
+我发现这有一个叫做core-image的element
+So I found that there's an element called core-image
+
+283
+00:10:58,590 --> 00:11:01,340
+通过它你可以防止应用加载过期的图像
+which you can use to prevent stale images in your application.
+
+284
+00:11:01,340 --> 00:11:02,210
+这非常的简单
+It's pretty easy.
+
+285
+00:11:02,210 --> 00:11:03,680
+你只需把它嵌套在这里
+You just drop it in here.
+
+286
+00:11:03,680 --> 00:11:05,725
+给它一个preload属性
+You give it a preload attribute, and what
+
+287
+00:11:05,725 --> 00:11:07,850
+这样它就会告诉应用
+that does is it says, hey, if I'm loading an image,
+
+288
+00:11:07,850 --> 00:11:10,400
+hey  如果我正在加载图像
+I'm not going to display the stale image that
+
+289
+00:11:10,400 --> 00:11:12,300
+我是不会去显示之前这的过期图像的
+perhaps was inside of here before.
+
+290
+00:11:12,300 --> 00:11:15,497
+我只会显示一些背景颜色
+I'm just going to display a little background color.
+
+291
+00:11:15,497 --> 00:11:17,330
+所以我们才能得以
+And so what we can do now is we can actually
+
+292
+00:11:17,330 --> 00:11:19,264
+有这样炫酷的联系人列表
+have this cool contacts list.
+
+293
+00:11:19,264 --> 00:11:20,680
+我们在和网络赛跑
+We can sort of race the networking
+
+294
+00:11:20,680 --> 00:11:22,380
+你可以看见这些图片一直在加载
+and you can see the images loading in,
+
+295
+00:11:22,380 --> 00:11:25,962
+但是你看不见过期的图像  这非常的棒
+but what you're not seeing is stale images, which is good.
+
+296
+00:11:25,962 --> 00:11:28,170
+在开发过程中我发现的另一件重要的事是
+The other thing that I discovered as I was doing this
+
+297
+00:11:28,170 --> 00:11:31,270
+确保将core-list的scrollTarget
+is that it's really important to make sure to set your core-list
+
+298
+00:11:31,270 --> 00:11:34,700
+设置到core-header-panel-scroller上
+scroll target to your core-header-panel-scroller.
+
+299
+00:11:34,700 --> 00:11:37,640
+我想这理解上可能会有点困难
+I know that this is a little bit of a rough edge,
+
+300
+00:11:37,640 --> 00:11:39,380
+但是我希望大家能意识到一点
+but I wanted to make you guys aware of it
+
+301
+00:11:39,380 --> 00:11:41,384
+如果你开始使用这个
+if you're going to go out and start hacking on these things today.
+
+302
+00:11:41,384 --> 00:11:42,800
+内部流程基本是这个样子
+Basically what happens when you do
+
+303
+00:11:42,800 --> 00:11:44,270
+core-list这个element
+this is you're telling the core-list
+
+304
+00:11:44,270 --> 00:11:46,770
+会监听由core-header-panel发出的scroll事件
+to listen to the scroll events that the core header panel is
+
+305
+00:11:46,770 --> 00:11:51,060
+它们俩可以彼此和睦的玩耍在一起
+firing and that way, the two can work together in harmony.
+
+306
+00:11:51,060 --> 00:11:53,890
+现在  你可以通过两种方式实现这个
+Now, there's two ways that you can go about doing this.
+
+307
+00:11:53,890 --> 00:11:56,380
+你可以在JavaScript里指定scroll target
+You can either set the scroll target in JavaScript.
+
+308
+00:11:56,380 --> 00:12:00,476
+像这样list.scrollTarget=hPanel.scroller
+You could say list.scrollTarget equals hPanel.scroller,
+
+309
+00:12:00,476 --> 00:12:03,100
+或者你也可以通过数据绑定这种神奇的方式
+or you can do this with bindings if you want to be really fancy
+
+310
+00:12:03,100 --> 00:12:04,141
+来惊艳观众
+and impress your friends.
+
+311
+00:12:04,141 --> 00:12:07,834
+即scrollTarget=hPanel.scroller
+You could just say scrollTarget equals hPanel.scroller.
+
+312
+00:12:07,834 --> 00:12:09,750
+再一次  
+Now, this is one of those things which, again,
+
+313
+00:12:09,750 --> 00:12:11,280
+现在听起来可能会有些晦涩难懂
+I think it's a little bit of a rough edge.
+
+314
+00:12:11,280 --> 00:12:13,610
+在未来  我们也许会让其变得更加简洁
+Perhaps we might be able to clean this up in the future
+
+315
+00:12:13,610 --> 00:12:15,610
+这样就不用手动去把它们链接到一起了
+so that you don't have to wire this up yourself,
+
+316
+00:12:15,610 --> 00:12:16,560
+这应该引起大家的注意
+but I wanted to make you aware of it
+
+317
+00:12:16,560 --> 00:12:18,130
+因为我们要做的第一件事
+because it was like the first thing I wanted to do
+
+318
+00:12:18,130 --> 00:12:19,796
+就是把这些list中的某个
+was put one of those lists inside of one
+
+319
+00:12:19,796 --> 00:12:21,559
+放入某个header中  我需要设置个链接
+of those fancy headers, and I needed
+
+320
+00:12:21,559 --> 00:12:23,350
+好把它们都连接起来  这样才能生效
+to set up this linkage to make it all work.
+
+321
+00:12:25,384 --> 00:12:27,800
+至此  成功运用composition的魅力
+Now, through the beauty of composition, I've taken my list
+
+322
+00:12:27,800 --> 00:12:29,650
+我们得以把list放入了scaffold里
+and I've thrown it inside of my scaffold,
+
+323
+00:12:29,650 --> 00:12:32,119
+打造出这一炫酷应用
+and I have this really, really cool application now.
+
+324
+00:12:32,119 --> 00:12:34,951
+现在  让我们简单概括一下这都有什么
+Now, I want to give you a quick recap of what we have inside of here.
+
+325
+00:12:34,951 --> 00:12:38,240
+在顶端  有个core-toolbar
+So up0 at the top, I've got a core toolbar.
+
+326
+00:12:38,240 --> 00:12:40,950
+其次有paper-icon-button和paper-menu-button
+After that, a paper-icon-button, a paper-menu-button
+
+327
+00:12:40,950 --> 00:12:42,084
+在联系人菜单里
+for my contacts menu.
+
+328
+00:12:42,084 --> 00:12:43,542
+这有一个core-header-panel
+I've got a core-header-panel, which
+
+329
+00:12:43,542 --> 00:12:45,912
+控制主页的滚动行为
+is controlling the scroll behavior for my home page.
+
+330
+00:12:45,912 --> 00:12:47,370
+还有core-drawer-panel
+I've got a core-drawer-panel, which
+
+331
+00:12:47,370 --> 00:12:49,100
+构建响应式布局
+gives me that responsive scaffolding
+
+332
+00:12:49,100 --> 00:12:51,426
+所以才能在桌面和移动端都能使用
+so it works on desktop and mobile,
+
+333
+00:12:51,426 --> 00:12:55,726
+以及和Infinite content provider彼此绑定的core-list
+and I've got a core list for my infinite content provider.
+
+334
+00:12:55,726 --> 00:12:57,100
+有意思的是
+Now, one thing that's really cool
+
+335
+00:12:57,100 --> 00:13:00,720
+一旦你开始感觉你的应用初见起色
+to do once your application has reached the state where you
+
+336
+00:13:00,720 --> 00:13:02,810
+有模有样的时候
+feel like it's kind of shaped up a little bit
+
+337
+00:13:02,810 --> 00:13:05,290
+你就会开始添砖加瓦  想着怎样好好打造它
+is to think about ways that you could change it.
+
+338
+00:13:05,290 --> 00:13:08,300
+比如说看到此情此景  我就在想
+And if I look at this and I just imagine
+
+339
+00:13:08,300 --> 00:13:10,620
+也许给工具栏再加些CSS
+perhaps applying a little CSS to that toolbar
+
+340
+00:13:10,620 --> 00:13:13,910
+或者是往list里添加些内容
+and perhaps adding a little bit more content to the list,
+
+341
+00:13:13,910 --> 00:13:15,980
+这样仿佛就和Inbox
+then I'm really not that far from something
+
+342
+00:13:15,980 --> 00:13:18,610
+差不多了耶
+that looks a lot like Inbox, right.
+
+343
+00:13:18,610 --> 00:13:21,100
+所有的部件确切的说都是相同的
+All the parts remain the exact same,
+
+344
+00:13:21,100 --> 00:13:23,730
+我们仅仅只是微微调节了一下它们的外观
+we're just tweaking slightly the appearance of them-- changing
+
+345
+00:13:23,730 --> 00:13:25,850
+换换颜色  增加一点儿内容
+some colors, adding a little bit more content--
+
+346
+00:13:25,850 --> 00:13:29,060
+但是我们却获得了非同寻常的体验
+but we've now got a very different experience.
+
+347
+00:13:29,060 --> 00:13:31,980
+而且core-list支持自适应高度
+And because core list supports variable height
+
+348
+00:13:31,980 --> 00:13:34,670
+所以这就这意味着
+content-- meaning that our rows don't all
+
+349
+00:13:34,670 --> 00:13:37,310
+我们不必过分的苛求相同大小
+have to be the exact same fixed size--
+
+350
+00:13:37,310 --> 00:13:39,825
+我们可以试试卡片式风格
+we can think about throwing cards inside of here.
+
+351
+00:13:39,825 --> 00:13:42,950
+而且如果我们这样做的话
+And if we do that, then we have an experience that looks kind
+
+352
+00:13:42,950 --> 00:13:44,890
+体验就会有点儿像Google plus
+of like G+.
+
+353
+00:13:44,890 --> 00:13:47,730
+再一次  我们的模式没有发生变化
+And again, none of my markup actually changed.
+
+354
+00:13:47,730 --> 00:13:50,830
+依旧有一个core-toolbar和paper-icon-button
+I still have a core-toolbar, I still have paper-icon-button,
+
+355
+00:13:50,830 --> 00:13:55,610
+以及paper-menu-button还有header-panel和core-panel 最后还有core-list
+still have paper-menu-button, header-panel, core-panel, and core-list.
+
+356
+00:13:55,610 --> 00:13:58,429
+所以说我们的模式没有变化
+So my markup remained the exact same.
+
+357
+00:13:58,429 --> 00:14:00,220
+唯一发生变化的  就是放在应用里面的
+The only thing that changed was the content
+
+358
+00:14:00,220 --> 00:14:02,386
+那些精彩纷呈的内容
+that I'm placing inside of it, which is pretty cool.
+
+359
+00:14:04,890 --> 00:14:08,220
+我想 这就是composition的力量
+Now in my mind, this is the power of composition.
+
+360
+00:14:08,220 --> 00:14:10,560
+当我们拥有一个饱含优良基因模块的移动端SDK
+When we have a mobile SDK that's full of these really
+
+361
+00:14:10,560 --> 00:14:13,600
+我们能开发出给人以不同体验的非凡应用
+good generic building blocks, we can build vastly different
+
+362
+00:14:13,600 --> 00:14:16,150
+仅仅通过适当的将模块进行组合
+experiences just by arranging them differently and tweaking
+
+363
+00:14:16,150 --> 00:14:17,070
+或者是微微调节
+them slightly.
+
+364
+00:14:17,070 --> 00:14:19,550
+信息量有点儿大
+I think that's huge.
+
+365
+00:14:19,550 --> 00:14:22,090
+好 让我们回到刚才的联系人应用
+So let's go back to our contacts app for a second.
+
+366
+00:14:22,090 --> 00:14:26,550
+我们已经得到了一个基本的页面
+We've got the basic pages kind of figured out,
+
+367
+00:14:26,550 --> 00:14:29,200
+但是我还没有向你展示如何从一个状态移动到
+but I haven't really shown you how to move from one state
+
+368
+00:14:29,200 --> 00:14:31,030
+另一个状态  这对很多人来说是个难点
+to the next, and this is a dilemma for a lot of folks.
+
+369
+00:14:31,030 --> 00:14:32,950
+他们开始构建组件并感到非常兴奋
+They start building components, they get really excited,
+
+370
+00:14:32,950 --> 00:14:34,408
+然后他们把这些组件整合到一个页面里
+they throw them together on a page,
+
+371
+00:14:34,408 --> 00:14:37,270
+然后他们会想该如何从一个状态
+and then they're like, how do I go from point A
+
+372
+00:14:37,270 --> 00:14:40,710
+过渡到了一个状态  就是说该如何做转换呢
+to point B. Basically, how do I do transitions?
+
+373
+00:14:40,710 --> 00:14:42,720
+这是我们正在解决的问题之一
+And this is one of those areas where we're still
+
+374
+00:14:42,720 --> 00:14:44,220
+但是我认为我们已经获得了
+working on it, but I think we've got
+
+375
+00:14:44,220 --> 00:14:46,380
+一些非常酷的东西
+some really cool stuff in the pipeline.
+
+376
+00:14:46,380 --> 00:14:48,967
+这是我之前向你们展示过的我认为很棒的元素
+One of the elements that I've shown before which I think
+
+377
+00:14:48,967 --> 00:14:51,550
+我在它上面放了一个演示用的图案
+is really awesome-- I put this little experimental badge on it
+
+378
+00:14:51,550 --> 00:14:53,950
+虽然这只是个小实验
+because it also is a little experimental--
+
+379
+00:14:53,950 --> 00:14:56,170
+但它是我喜欢展示的非常酷的东西
+but it's so freaking cool I like to show it.
+
+380
+00:14:56,170 --> 00:14:58,140
+这是一个叫做core-animated-pages的元素
+It's this element called core-animated-pages,
+
+381
+00:14:58,140 --> 00:15:00,350
+它提供了一个可组合的系统
+which gives you a pluggable system for transitioning
+
+382
+00:15:00,350 --> 00:15:03,060
+用于从应用的一个状态转换到另一个状态
+of one state of your application to the next.
+
+383
+00:15:03,060 --> 00:15:04,660
+它的基本使用方式是把一些section元素
+And basically, the way this works is I
+
+384
+00:15:04,660 --> 00:15:07,600
+放到core-animated-pages元素中
+put some sections inside of my core animated pages.
+
+385
+00:15:07,600 --> 00:15:09,020
+我配置了它的selected属性
+I configure its selected attribute
+
+386
+00:15:09,020 --> 00:15:12,424
+好告诉它一开始应该显示哪一个section
+to tell it which section should be displaying at the time,
+
+387
+00:15:12,424 --> 00:15:14,590
+我还给它加了一个transitions属性
+and I give it a transitions property and I tell it--
+
+388
+00:15:14,590 --> 00:15:16,340
+transitions属性是
+or sorry, transitions attribute to tell it
+
+389
+00:15:16,340 --> 00:15:17,714
+用来声明从一个状态到另一个状态
+which transitions I would like it
+
+390
+00:15:17,714 --> 00:15:20,840
+要做什么样的转换
+to play as it moves from one state to the next.
+
+391
+00:15:20,840 --> 00:15:23,430
+就像这样  我把他们装好了
+And with basically just that I've wired up
+
+392
+00:15:23,430 --> 00:15:25,360
+这真是非常酷的系统
+this is really cool system for animating
+
+393
+00:15:25,360 --> 00:15:28,770
+在我应用中的不同状态之间实现了动画效果
+through different states in my application.
+
+394
+00:15:28,770 --> 00:15:31,810
+这样在我的应用中标签看起来就是这个样子的
+So inside of my app, my markup kind of looks like this.
+
+395
+00:15:31,810 --> 00:15:34,510
+我得到了构建每个页面的一大堆标签
+I've got a whole bunch of markup that makes up every single page
+
+396
+00:15:34,510 --> 00:15:36,580
+所有这些组装到了一起
+and it's all kind of composed together.
+
+397
+00:15:36,580 --> 00:15:38,770
+那么我现在开始做状态转换
+And so the way that I'm going to transition
+
+398
+00:15:38,770 --> 00:15:41,700
+实际上拿走所有这些标签
+from one state to the next is actually take all this markup
+
+399
+00:15:41,700 --> 00:15:45,870
+然后把应用中的每个section变成一个自定义标签
+and turn each section of my application into a custom tag.
+
+400
+00:15:45,870 --> 00:15:49,050
+保留所有标签  创建一个它的元素
+Keep all that markup, make an element out of it.
+
+401
+00:15:49,050 --> 00:15:52,460
+接着我开始把所有这些自定义元素嵌入到
+core-animated-pages元素中
+Then I start nesting those elements inside of core-animated-pages.
+
+402
+00:15:52,460 --> 00:15:55,340
+我从contacts-page开始
+So I start with my contacts page.
+
+403
+00:15:55,340 --> 00:15:58,080
+然后放一个info-page
+当你点击联系人的时候出现
+I drop in an info page for when you click on a contact
+
+404
+00:15:58,080 --> 00:16:00,127
+你就实际看到他们的详细信息了
+and you actually can see their profile.
+
+405
+00:16:00,127 --> 00:16:03,450
+所以我在这里创建了一个
+叫做fade-scale的转换
+So I created a little custom transition here called fade scale.
+
+406
+00:16:03,450 --> 00:16:05,450
+它作为一个info-page的属性出现
+It's on my info page as an attribute.
+
+407
+00:16:05,450 --> 00:16:08,600
+同时它也作为core-animated-pages元素上
+transition属性的属性值
+It's also in the transitions attribute for core-animated-pages.
+
+408
+00:16:08,600 --> 00:16:10,308
+现在当你点击一个联系人时
+So now when you click on a contact, which
+
+409
+00:16:10,308 --> 00:16:12,740
+动画就出现了  如果你返回
+is going to animate up, so you're adding there
+
+410
+00:16:12,740 --> 00:16:15,170
+它就消失了
+and then it goes away.
+
+411
+00:16:15,170 --> 00:16:18,121
+接下来对于添加用户的页面
+And again, for the page where I add a user,
+
+412
+00:16:18,121 --> 00:16:19,370
+基本上也是一样的
+it's basically the same thing.
+
+413
+00:16:19,370 --> 00:16:20,710
+我在这里嵌入那个元素
+I nest that element inside of here.
+
+414
+00:16:20,710 --> 00:16:21,670
+给它加上一个转换属性
+I give it a transition.
+
+415
+00:16:21,670 --> 00:16:25,300
+在animated-pages的transition属性中也加上
+I add that transition to animated-pages transitions attribute.
+
+416
+00:16:25,300 --> 00:16:27,810
+现在我点击浮动按钮  就会弹出
+I click on my floating action button now, pops up.
+
+417
+00:16:27,810 --> 00:16:32,230
+我就可以添加新用户或者返回
+I can add a new user if I want and it goes away.
+
+418
+00:16:32,230 --> 00:16:34,470
+现在我想要和你分享另一个技巧
+Now, another tip that I want to share with you
+
+419
+00:16:34,470 --> 00:16:38,672
+是我在构建这个的时候偶然想到的
+is something that I came across as I was building this.
+
+420
+00:16:38,672 --> 00:16:40,130
+Core animated pages做了这么一件事
+Core animated pages does this thing
+
+421
+00:16:40,130 --> 00:16:41,714
+如果一个元素当前没有被显示
+where if an element is not displaying,
+
+422
+00:16:41,714 --> 00:16:43,921
+它将会被设置为 display none
+it's going to make it display none, which can totally
+
+423
+00:16:43,921 --> 00:16:46,100
+这时如果要计算它的高度或类似的事情
+screw it up if it's trying to figure out its height
+
+424
+00:16:46,100 --> 00:16:47,238
+就有麻烦了
+or do anything like that.
+
+425
+00:16:47,238 --> 00:16:49,446
+所以这里有个叫做
+So this magical event here called core animated pages
+
+426
+00:16:49,446 --> 00:16:52,310
+core-animated-pages-transition-prepare
+transition prepare, which is the longest
+
+427
+00:16:52,310 --> 00:16:55,550
+的世界最长的事件名
+this event name in the history of the world.
+
+428
+00:16:55,550 --> 00:16:57,800
+但是这个事件做了神奇的事情
+But this event does magical things
+
+429
+00:16:57,800 --> 00:17:00,660
+因为它基本上是在你的元素从display none
+because it basically fires the moment that your element goes
+
+430
+00:17:00,660 --> 00:17:02,900
+到display block的时候触发的
+from being display none to being display block.
+
+431
+00:17:02,900 --> 00:17:04,310
+这意味着你可以用它来做所有
+And that means that you can then do all the work
+
+432
+00:17:04,310 --> 00:17:06,250
+你需要确认测量到
+that you need to do to make sure that things are measured
+
+433
+00:17:06,250 --> 00:17:08,586
+正确的高度和类似的事情的事
+and have the right height and everything like that.
+
+434
+00:17:08,586 --> 00:17:11,210
+我再次确信当你看到这个事件时你会觉得
+Again, this is one of the things that I'm sure if you see this,
+
+435
+00:17:11,210 --> 00:17:14,895
+搞什么呀  看起来像便便  我完全同意
+you're like dude, that feels like a wart, and I totally agree.
+
+436
+00:17:14,895 --> 00:17:15,770
+我想你是对的
+I think you're right.
+
+437
+00:17:15,770 --> 00:17:18,369
+这是我们团队
+And this is one of the things that I
+
+438
+00:17:18,369 --> 00:17:20,020
+已经意识到的问题之一
+know the team is aware of and we're
+
+439
+00:17:20,020 --> 00:17:22,436
+我们正在想办法看看是否能消除这个问题
+going to work on to see if we can actually smooth this out
+
+440
+00:17:22,436 --> 00:17:25,229
+这样你就不必做这些自我欺骗的事情了
+for people so you don't have to do all that finagling yourself.
+
+441
+00:17:25,229 --> 00:17:27,020
+但是再一次我想让你注意到这个问题
+But again, I wanted to make you aware of it
+
+442
+00:17:27,020 --> 00:17:29,170
+所以如果你在跟着看这个视频
+so if you're following along with this video or something
+
+443
+00:17:29,170 --> 00:17:31,753
+或者事后想要自己尝试和实现这些
+afterwards, you want to try and implement this stuff yourself,
+
+444
+00:17:31,753 --> 00:17:34,040
+你知道应该如何去做了
+you know how to do it.
+
+445
+00:17:34,040 --> 00:17:37,070
+现在我有了这个网站的所有section
+So at this point, I have all the sections of my site together.
+
+446
+00:17:37,070 --> 00:17:38,890
+它们有动画效果  非常酷的东西
+They animate, they do really cool stuff,
+
+447
+00:17:38,890 --> 00:17:41,280
+但它们仅仅是个动画效果
+but really that's just animation.
+
+448
+00:17:41,280 --> 00:17:43,840
+我们并没有真正地改变状态
+We're not really changing the state, per se.
+
+449
+00:17:43,840 --> 00:17:46,651
+我们还有另一个要点路由没说
+We're missing the other half of the puzzle, which is routing,
+
+450
+00:17:46,651 --> 00:17:47,650
+这经常出现
+and this comes up a lot.
+
+451
+00:17:47,650 --> 00:17:50,450
+开发者总是喜欢问在Polymer中如何实现路由
+Developers are always like, how do I do routing in Polymer?
+
+452
+00:17:50,450 --> 00:17:55,080
+这里Polymer和Webfluenz并没有提供实际的方法
+And Polymer and Webfluenz don't really have an opinion here.
+
+453
+00:17:55,080 --> 00:17:56,840
+我们不会告诉你具体如何做
+We're not going to tell you specifically
+
+454
+00:17:56,840 --> 00:17:58,776
+并不要求你必须怎么做
+you have to do routing this way.
+
+455
+00:17:58,776 --> 00:18:00,900
+事实上这方面有两种处理方式
+There's really two ways that you can go about this.
+
+456
+00:18:00,900 --> 00:18:03,400
+你可以用JavaScript命令式指定
+You can do it imperatively in JavaScript
+
+457
+00:18:03,400 --> 00:18:05,615
+或者你可以用元素声明式地指定
+or you can do it declaratively with element.
+
+458
+00:18:05,615 --> 00:18:07,490
+我将给你展示这两种方法
+And so I'm going to show you both approaches,
+
+459
+00:18:07,490 --> 00:18:10,154
+然后你可以决定你喜欢哪种方式
+and you can decide which you prefer.
+
+460
+00:18:10,154 --> 00:18:11,820
+如果你想用命令式路由
+So if you're going the imperative route,
+
+461
+00:18:11,820 --> 00:18:13,050
+就像这样
+looks something like this.
+
+462
+00:18:13,050 --> 00:18:14,675
+就像看上去一样简单
+It's really as simple as just listening
+
+463
+00:18:14,675 --> 00:18:17,290
+使用一些路由库处理路由改变
+for a route change using some sort of routing library.
+
+464
+00:18:17,290 --> 00:18:20,090
+这里我用的是flatiron库
+Here, I'm using flat iron director library,
+
+465
+00:18:20,090 --> 00:18:23,380
+所以当匹配了一条路由   我告诉
+so when I hear a route match, I tell core-animated-pages, hey,
+
+466
+00:18:23,380 --> 00:18:25,515
+core-animated-pages改变它当前选择的页面
+change whichever page is currently selected.
+
+467
+00:18:25,515 --> 00:18:27,979
+这种方式非常直接
+It's pretty straightforward.
+
+468
+00:18:27,979 --> 00:18:30,270
+用JavaScript方式指定路由有一个好处
+Now, one of the nice things about routing in JavaScript
+
+469
+00:18:30,270 --> 00:18:32,730
+你可以进行细致入微的控制
+is it gives you pretty fine grained control if you want it.
+
+470
+00:18:32,730 --> 00:18:34,610
+ 如果路由里有参数的话
+So if there's parameters in my route,
+
+471
+00:18:34,610 --> 00:18:36,340
+可以很容易的进行匹配
+I can catch those when the route matches.
+
+472
+00:18:36,340 --> 00:18:38,550
+或者是
+I can go fetch more data if I need to
+
+473
+00:18:38,550 --> 00:18:40,552
+获取更多的数据
+and feed that to the page, or I can just
+
+474
+00:18:40,552 --> 00:18:42,260
+给页面传递参数
+pass those parameters to the page itself,
+
+475
+00:18:42,260 --> 00:18:44,760
+就像这样
+be like, here you go, here's the parameter that's coming in,
+
+476
+00:18:44,760 --> 00:18:46,320
+参数一进来就做出响应
+and change.
+
+477
+00:18:46,320 --> 00:18:48,330
+还有一个有意思的事
+So some interesting stuff there.
+
+478
+00:18:48,330 --> 00:18:51,297
+非常的酷
+One thing that is pretty cool, which I wasn't actually using
+
+479
+00:18:51,297 --> 00:18:52,880
+实际上在我演示时并没有用到
+my contacts as I experimented with it.
+
+480
+00:18:52,880 --> 00:18:54,070
+我想这是一个好主意
+I think it's a really cool idea.
+
+481
+00:18:54,070 --> 00:18:54,987
+未来也许会
+It's something that we're probably
+
+482
+00:18:54,987 --> 00:18:56,737
+应用的更加广泛
+going to be using a lot more in the future
+
+483
+00:18:56,737 --> 00:18:59,090
+这就是lazy loading import
+is this notion of lazy loading imports.
+
+484
+00:18:59,090 --> 00:19:01,640
+我们假设
+So actually, let's say you've got part of your site
+
+485
+00:19:01,640 --> 00:19:04,090
+页面有四五页深
+that's four or five pages deep, someone
+
+486
+00:19:04,090 --> 00:19:06,280
+此刻用户并不一定需要全部的页面
+doesn't need all of those components right away.
+
+487
+00:19:06,280 --> 00:19:07,370
+在Polymer里
+There's this mechanism in Polymer
+
+488
+00:19:07,370 --> 00:19:08,828
+有一个叫Polymer Import的组件
+called Polymer Import which you can
+
+489
+00:19:08,828 --> 00:19:11,380
+用以实现动态加载
+use to just sort of dynamically import things.
+
+490
+00:19:11,380 --> 00:19:13,100
+把它加在路由上
+So you can add that to your router.
+
+491
+00:19:13,100 --> 00:19:14,850
+当路由匹配时
+You can say, hey, when that route matches,
+
+492
+00:19:14,850 --> 00:19:18,780
+就加载一些新的内容
+that far away route, let's import some of that new stuff,
+
+493
+00:19:18,780 --> 00:19:21,277
+期间你可以在这放个加载界面什么的
+maybe throw a loading screen up during that time.
+
+494
+00:19:21,277 --> 00:19:23,610
+当一切准备就绪
+And when it's ready, Polymer Import gives us a call back
+
+495
+00:19:23,610 --> 00:19:25,760
+Polymer会给一个回调改变页面
+and we can change that page.
+
+496
+00:19:25,760 --> 00:19:27,630
+这就是用JavaScript方式指定路由
+So that's the JavaScript way of doing it.
+
+497
+00:19:27,630 --> 00:19:30,360
+你也可以通过
+There are also projects out there which do this in markup
+
+498
+00:19:30,360 --> 00:19:31,120
+元素声明式地指定路由
+with elements.
+
+499
+00:19:31,120 --> 00:19:32,911
+这里有一个由Erik Ringsmuth开发
+In particular, there's this really cool one
+
+500
+00:19:32,911 --> 00:19:34,500
+叫做app router的神奇东西
+called app-router by Erik Ringsmuth.
+
+501
+00:19:34,500 --> 00:19:35,980
+它能帮你处理URL变化
+It allows you to handle URL changes
+
+502
+00:19:35,980 --> 00:19:38,200
+更新应用视图
+and update the views in your application.
+
+503
+00:19:38,200 --> 00:19:43,250
+监测URL的hash变化以及Html的历史API
+It handles hashchange URLs, as well as HTMLs history API.
+
+504
+00:19:43,250 --> 00:19:46,015
+这样就又有一个可选的啦
+So you get either flavor that you prefer.
+
+505
+00:19:46,015 --> 00:19:48,390
+还有一个超棒的事情是
+The other cool thing is that it actually already supports
+
+506
+00:19:48,390 --> 00:19:52,270
+它早已支持core-animate-pags和Polymer import中的lazy importing元素
+core-animated pages and doing lazy importing with Polymer import.
+
+507
+00:19:52,270 --> 00:19:54,061
+在后台就帮你打理好了一切
+But it does all that under the hood for you
+
+508
+00:19:54,061 --> 00:19:55,640
+根本不用你亲自动手
+so you don't have to do it yourself.
+
+509
+00:19:55,640 --> 00:19:56,580
+再一次  两种选择
+So again, two options.
+
+510
+00:19:56,580 --> 00:19:58,470
+挑一个你喜欢的
+It really depends on which flavor
+
+511
+00:19:58,470 --> 00:20:00,900
+我倒是建议你两个都试一试
+you prefer, but definitely try both out and see
+
+512
+00:20:00,900 --> 00:20:02,316
+选一个表现最好的
+what you like in your application.
+
+513
+00:20:03,977 --> 00:20:06,560
+在这一环节  我们把所有的组件都缝合到了一起
+So this one, I feel like I have my application pretty sewn up.
+
+514
+00:20:06,560 --> 00:20:08,730
+为应用添加了很多有趣的动作
+It does all sorts of really interesting behaviors.
+
+515
+00:20:08,730 --> 00:20:10,396
+它看起来棒极了
+I'm pretty stoked with the way it looks,
+
+516
+00:20:10,396 --> 00:20:13,746
+现在是时候专注性能了
+and now it's time to focus on performance.
+
+517
+00:20:13,746 --> 00:20:16,200
+对不起  放错幻灯片了  Performance
+Sorry, that's the wrong slide-- performance.
+
+518
+00:20:16,200 --> 00:20:19,582
+让我们开始吧
+There we go.
+
+519
+00:20:19,582 --> 00:20:22,785
+我喜欢这个表情
+I love that lady's face.
+
+520
+00:20:22,785 --> 00:20:24,910
+人们和Polymer赛跑的领域
+One of the areas that people run afoul with Polymer
+
+521
+00:20:24,910 --> 00:20:27,404
+通常是路由文件的大小
+often is the route file size.
+
+522
+00:20:27,404 --> 00:20:28,320
+你之前八成听到过
+You'll even hear this.
+
+523
+00:20:28,320 --> 00:20:30,080
+Polymer太巨大臃肿了
+People will be like, Polymer's too big.
+
+524
+00:20:30,080 --> 00:20:31,740
+等等之类的话
+It's just bloated, whatever.
+
+525
+00:20:31,740 --> 00:20:34,940 
+我们可以通过很多方法来进行优化
+And there's some ways that you can mitigate this.
+
+526
+00:20:34,940 --> 00:20:37,450
+首先就是从x-gif的缔造者
+First is this thing that I stole from Glen Maddern, who
+
+527
+00:20:37,450 --> 00:20:40,740
+Glen Maddern大神那里搞来的
+is the creator of x-gif, which is the most important custom
+
+528
+00:20:40,740 --> 00:20:42,720
+有史以来最重要的custom element
+element ever made.
+
+529
+00:20:42,720 --> 00:20:44,430
+Yeah
+Yeah.
+
+530
+00:20:44,430 --> 00:20:45,800
+谢谢
+Thank you.
+
+531
+00:20:45,800 --> 00:20:49,940
+如果你还没领略过x-gif
+If you haven't seen x-gif you should take some time
+
+532
+00:20:49,940 --> 00:20:51,714
+那么一真该去花时间去看一看
+and spend it with x-gif.
+
+533
+00:20:51,714 --> 00:20:53,380
+而致胜的关键法宝
+So one really quick win that you can get
+
+534
+00:20:53,380 --> 00:20:55,050
+就是有条件的加载polyfill
+is just conditionally loading the polyfills.
+
+535
+00:20:55,050 --> 00:20:57,230
+你不必在每个平台上都加载polyfill
+You don't have to load the polyfills on every platform.
+
+536
+00:20:57,230 --> 00:20:58,813
+这是一些支持polyfill的平台
+There are platforms that support them.
+
+537
+00:20:58,813 --> 00:21:01,530
+Chrome  Opera  还有Android上的Chrome
+Chrome supports it, Opera supports it, Chrome for Android
+
+538
+00:21:01,530 --> 00:21:04,050
+Firefox也将很快提供支持
+supports it, and hopefully very soon Firefox.
+
+539
+00:21:04,050 --> 00:21:05,600
+所以我们要做的
+So all we're doing here's is just
+
+540
+00:21:05,600 --> 00:21:09,200
+仅仅是去核实每一个页面在不同标准下
+checking to see if the different standards are implemented
+
+541
+00:21:09,200 --> 00:21:09,700
+能否都能得以正常工作
+on the page.
+
+542
+00:21:09,700 --> 00:21:11,550
+若能  则万事大吉
+If they are, we just move right along.
+
+543
+00:21:11,550 --> 00:21:13,840
+若不能  我们就加载polyfill
+If they're not, then we load the polyfills.
+
+544
+00:21:13,840 --> 00:21:18,290
+这是能为你减少流量的奇技淫巧
+So this is an easy way to save yourself quite a bit of kilobytes.
+
+545
+00:21:18,290 --> 00:21:20,610
+请务必有条件的加载polyfill
+Just conditionally load stuff.
+
+546
+00:21:20,610 --> 00:21:21,890
+这是其一
+That's one trick.
+
+547
+00:21:21,890 --> 00:21:22,680
+还有件事
+And the other thing you've got to do
+
+548
+00:21:22,680 --> 00:21:24,120
+你需要打开你的开发者工具
+is you've got to actually pop open the dev tools
+
+549
+00:21:24,120 --> 00:21:26,860
+实时监视着每一个页面
+and you got to make sure that you're inspecting your page.
+
+550
+00:21:26,860 --> 00:21:29,144
+这里我打开我那个
+So I looked at the contacts app after I
+
+551
+00:21:29,144 --> 00:21:30,560
+引以为豪的联系人应用
+built it and was very proud of it.
+
+552
+00:21:30,560 --> 00:21:32,220
+点击上面的网络面板
+I popped open the network panel there
+
+553
+00:21:32,220 --> 00:21:36,870
+一共有109个请求  有点儿多啊
+and I saw that I was making 109 requests-- which is a lot--
+
+554
+00:21:36,870 --> 00:21:40,500
+并且共加载了943KB
+and I'm loading 943 kilobytes of stuff.
+
+555
+00:21:40,500 --> 00:21:43,280
+而且我这还是没有加载图片
+Now, keep in mind, I have excluded the images
+
+556
+00:21:43,280 --> 00:21:47,100
+仅仅是一些代码
+from this network panel, so that's just my code.
+
+557
+00:21:47,100 --> 00:21:50,370
+我靠  玩脱了
+Holy crap, that's a lot.
+
+558
+00:21:50,370 --> 00:21:54,640
+让我们看看这109个请求都有啥
+I recognize that 109 requests for some of you might be concerning.
+
+559
+00:21:54,640 --> 00:21:59,400
+这里面到底发生了什么
+But what's going on there is under the hood,
+
+560
+00:21:59,400 --> 00:22:00,500
+关键就在于插入的那些element
+I'm importing elements.
+
+561
+00:22:00,500 --> 00:22:02,239
+这些元素具有依赖性
+Those elements have dependencies.
+
+562
+00:22:02,239 --> 00:22:04,430
+它们再引入它们的依赖  如此循环
+They're importing their dependencies, and so on and so on.
+
+563
+00:22:04,430 --> 00:22:06,130
+它们就像一棵树一样
+It's basically this whole tree that's
+
+564
+00:22:06,130 --> 00:22:07,960
+在应用里越长越大
+growing out of my application.
+
+565
+00:22:07,960 --> 00:22:11,920
+为了解决这个问题  我们造了一个叫Vulcanize的工具
+And so to mitigate this, we created a tool called Vulcanize.
+
+566
+00:22:11,920 --> 00:22:18,060
+Vulcanize是一个
+And Vulcanize is a module which will actually
+
+567
+00:22:18,060 --> 00:22:20,617
+把你所有的import都串在一起的工具模块
+take all of your imports, concatenate them together,
+
+568
+00:22:20,617 --> 00:22:22,700
+将所有的JavaScript和CSS
+smoosh them all together, take all your JavaScript
+
+569
+00:22:22,700 --> 00:22:25,030
+都压制到一个文件里
+and your CSS, mash it all into one file,
+
+570
+00:22:25,030 --> 00:22:28,520
+这样应用仅需加载一个文件就可以
+and allow you to just load that one thing into your application.
+
+571
+00:22:28,520 --> 00:22:31,255
+你可以通过nodejs获取这个模块
+Now, it is available as a node module,
+
+572
+00:22:31,255 --> 00:22:33,380
+如果你对此不感冒的话
+but if you are not so stoked about doing everything
+
+573
+00:22:33,380 --> 00:22:35,810
+你也可以通过构建工具Grunt和Gulp
+on the command line, it's also available in a Grunt
+
+574
+00:22:35,810 --> 00:22:37,750
+获取它
+task and a Gulp task.
+
+575
+00:22:37,750 --> 00:22:40,070
+而对于刚才的这个联系人应用  我用的是Grunt
+And for the contacts app, I just used the Grunt task.
+
+576
+00:22:40,070 --> 00:22:43,142
+仅需设置一次  然后放手不管就可以
+I set it up once and I just never thought about it again.
+
+577
+00:22:43,142 --> 00:22:44,850
+简化工作  节省时间
+It just runs every time I'm about to push
+
+578
+00:22:44,850 --> 00:22:46,920
+这太棒了
+to production, which is cool.
+
+579
+00:22:46,920 --> 00:22:50,960
+现在  经过vulcanize化之后
+Now, after I Vulcanize and I make
+
+580
+00:22:50,960 --> 00:22:53,990
+重新把它推送到server上
+sure to put my stuff on a server that supports [INAUDIBLE],
+
+581
+00:22:53,990 --> 00:22:57,950
+应用请求只有3个  效果显著
+my application is now three requests, which is a significant change.
+
+582
+00:22:57,950 --> 00:23:01,020
+而且把文件加载也降低到了114KB  太棒啦 
+And I've got it down to 114 kilobytes, which is pretty nice.
+
+583
+00:23:01,020 --> 00:23:03,780
+现在加载的是所有应用代码
+Now, this is all the code for my entire application.
+
+584
+00:23:03,780 --> 00:23:05,800
+包括所有的JavaScript以及CSS
+This is all the JavaScript, all the CSS,
+
+585
+00:23:05,800 --> 00:23:08,820
+以及所有HTML
+all the HTML for my entire application.
+
+586
+00:23:08,820 --> 00:23:10,790
+我们把它降到了114K
+So I've got it down to 114 K, and this number
+
+587
+00:23:10,790 --> 00:23:13,340
+这个数字 在Polymer0.8版本中 
+gets actually even smaller, much smaller,
+
+588
+00:23:13,340 --> 00:23:16,740
+还可以变得更小  更简洁  酷毙了
+in Polymer 0.8, which is cool.
+
+589
+00:23:16,740 --> 00:23:19,150
+至此  我们最后要做的
+Now, the last thing we've got to do,
+
+590
+00:23:19,150 --> 00:23:20,970
+就是准备要将其打包
+we've got our app to the point where we're
+
+591
+00:23:20,970 --> 00:23:23,300
+与世界分享我们的应用
+ready to put it up there, share it with the world,
+
+592
+00:23:23,300 --> 00:23:25,634
+但是别忘了确保它能够脱机使用
+but we've got to make sure we're thinking about offline.
+
+593
+00:23:25,634 --> 00:23:27,633
+老生常谈  如果你的移动应用不提供离线支持的话
+Because again, if your app doesn't work offline,
+
+594
+00:23:27,633 --> 00:23:29,610
+怎能谈得上算是移动应用
+you really don't have a mobile experience.
+
+595
+00:23:29,610 --> 00:23:32,130
+今天我们讨论了不少跟Service Worker有关的东西
+And I know that we've talked a lot about ServiceWorker
+
+596
+00:23:32,130 --> 00:23:35,370
+我还是想再说说
+today, so I will talk about it again here because it's so
+
+597
+00:23:35,370 --> 00:23:37,520
+因为它实在是酷的要冒烟儿了
+freaking awesome and I'm so excited about it.
+
+598
+00:23:37,520 --> 00:23:40,790
+我所做的就是把Service Worker添加到应用里面
+What I did was I added service worker to this application.
+
+599
+00:23:40,790 --> 00:23:41,810
+简单粗暴
+Pretty straightforward.
+
+600
+00:23:41,810 --> 00:23:44,460
+看看Service Worker是否存在
+I just checked to see if ServiceWorker exists.
+
+601
+00:23:44,460 --> 00:23:47,159
+存在的话就安上
+If it does, I install it.
+
+602
+00:23:47,159 --> 00:23:48,950
+还有件重要的事要说说
+Important thing to note here is that as I'm
+
+603
+00:23:48,950 --> 00:23:49,990
+在我安装Service Worker时碰到的
+installing my ServiceWorker, I've
+
+604
+00:23:49,990 --> 00:23:52,490
+务必要确保使用root scope
+got to make sure that I'm using the root scope so that I can
+
+605
+00:23:52,490 --> 00:23:56,260
+这样才能在应用顶层捕捉到全部请求
+catch any request at sort of the top level of my application.
+
+606
+00:23:56,260 --> 00:23:59,435
+如果你把ServiceWorker嵌套在子目录里面
+If you nest your ServiceWorker inside of a subdirectory
+
+607
+00:23:59,435 --> 00:24:00,810
+或者其他类似的地方
+or something like that, then it's
+
+608
+00:24:00,810 --> 00:24:03,527
+Service Worker只能捕捉到当前Scope的请求
+only going to have access to the request in that scope, which
+
+609
+00:24:03,527 --> 00:24:04,110
+这糟透了
+sort of sucks.
+
+610
+00:24:04,110 --> 00:24:07,440
+尽可能的把它放在更高的层级
+You want to put it high up if you can.
+
+611
+00:24:07,440 --> 00:24:09,800
+在这个联系人应用里面  在启动的时候
+Inside my application, as soon as we boot up,
+
+612
+00:24:09,800 --> 00:24:12,460
+就尽可能的进行缓存
+I just try and cache as much stuff as I can.
+
+613
+00:24:12,460 --> 00:24:16,180
+你会注意到我在缓存所有element里面
+You'll notice that I'm caching the vulcanized bundle of all
+
+614
+00:24:16,180 --> 00:24:17,770
+vulcanize化的bundle
+of my elements.
+
+615
+00:24:17,770 --> 00:24:20,220
+所以UI才能像丝一般顺滑
+So my UI is just like instantly available.
+
+616
+00:24:20,220 --> 00:24:24,450
+我也缓存了不少来自data Service的初始请求
+I'm also caching the initial response from my data service
+
+617
+00:24:24,450 --> 00:24:27,832
+所以你看到联系人填充了列表
+so that there are contacts to populate my list there.
+
+618
+00:24:27,832 --> 00:24:29,290
+我做的另外一件事
+And then the other thing that I did
+
+619
+00:24:29,290 --> 00:24:31,150
+就是当用户来回滚动时
+was as the user is scrolling around,
+
+620
+00:24:31,150 --> 00:24:33,910
+动态缓存每一个
+I'm dynamically caching any sort of image
+
+621
+00:24:33,910 --> 00:24:37,130
+放在Amazon S3服务器上的图像
+that has a host name from S3.amazon.
+
+622
+00:24:37,130 --> 00:24:39,130
+不管你通过采用avatar头像
+So as you pass through an avatar image
+
+623
+00:24:39,130 --> 00:24:40,950
+还是从Amazon S3服务器获取的方式
+and call this S3 response method.
+
+624
+00:24:40,950 --> 00:24:43,280
+所有的一切  都只是为了获取那个头像
+And really, all it's doing is it's fetching that image,
+
+625
+00:24:43,280 --> 00:24:46,010
+将其通过Service Worker缓存  让Service Worker充当服务端
+it's caching it, and then serving up for people.
+
+626
+00:24:46,010 --> 00:24:50,650
+这样用户使用时就是从Service Worker上面获取相关资源
+So as user kind of uses my app, it just consumes things for them.
+
+627
+00:24:50,650 --> 00:24:52,830
+现在  我们在Chrome Canary版
+Now, if we pop this open in Canary
+
+628
+00:24:52,830 --> 00:24:55,940
+提供了Service Worker的相关支持  开始运行我们的应用
+and we've got Service Worker running, we started running our app.
+
+629
+00:24:55,940 --> 00:24:57,170
+我所要做的
+And what I'm doing here is at first,
+
+630
+00:24:57,170 --> 00:24:59,180
+就是快速的滑到最底部
+I'm just racing to the bottom of my application.
+
+631
+00:24:59,180 --> 00:25:02,670
+注意看  Service Worker并没有开启
+And right now, there's no Service Worker in play,
+
+632
+00:25:02,670 --> 00:25:04,770
+现在正在从网络上一次性加载
+and so what it's doing is loading all 300
+
+633
+00:25:04,770 --> 00:25:07,560
+所有的300个联系人头像
+of my contact images at once and just hammering the crap out
+
+634
+00:25:07,560 --> 00:25:08,950
+of the network.
+
+635
+00:25:08,950 --> 00:25:10,420
+你可能会说  哦  上帝
+And you'll see it's like, oh God,
+
+636
+00:25:10,420 --> 00:25:11,970
+为毛这样对我
+why are you doing this to me.
+
+637
+00:25:11,970 --> 00:25:14,800
+现在差不多加载完了
+And it finally all starts to load in.
+
+638
+00:25:14,800 --> 00:25:17,309
+现在让我们刷新一下下
+Now let's refresh it and see what
+
+639
+00:25:17,309 --> 00:25:18,850
+看看Service Worker运行会出现什么
+happens when ServiceWorker's in play.
+
+640
+00:25:18,850 --> 00:25:23,270
+关掉Wifi  刷新页面
+Let's turn our Wi-Fi off, refresh the page.
+
+641
+00:25:23,270 --> 00:25:25,050
+看Network这一栏
+You'll see here over in the column
+
+642
+00:25:25,050 --> 00:25:28,450
+我们所有的素材都来自Service Worker的缓存
+that our assets are now coming from ServiceWorker.
+
+643
+00:25:28,450 --> 00:25:30,200
+再一次滑到最底部
+So I race to the bottom of my application.
+
+644
+00:25:30,200 --> 00:25:32,730
+立等可现有木有
+All those things are just coming in immediately.
+
+645
+00:25:32,730 --> 00:25:35,836
+没有丝毫的延迟  太棒了
+There's no wait on those assets, which is really cool.
+
+646
+00:25:35,836 --> 00:25:39,676
+掌声
+[APPLAUSE]
+
+647
+00:25:42,670 --> 00:25:44,360
+好  基本齐活儿
+So, wrap up.
+
+648
+00:25:44,360 --> 00:25:45,630
+我们从中学到了什么呢
+What did we learn?
+
+649
+00:25:45,630 --> 00:25:47,400
+为了构建你的应用
+For structuring your application,
+
+650
+00:25:47,400 --> 00:25:49,870
+为了构建你的UI  
+for structuring your UI, you've got the core and the paper
+
+651
+00:25:49,870 --> 00:25:50,270
+你学会了使用了core和paper elements
+elements.
+
+652
+00:25:50,270 --> 00:25:51,644
+所以你才能把这些合成到一起
+So you can compose those together
+
+653
+00:25:51,644 --> 00:25:54,752
+只为创作出最佳的移动应用体验
+to make a really awesome mobile experience.
+
+654
+00:25:54,752 --> 00:25:57,210
+为了让应用的一个状态过渡到另外一个状态
+From moving from one state of your application to the next,
+
+655
+00:25:57,210 --> 00:25:59,168
+你学会了如何运用core-animated-pages
+you've got core-animated-pages, and you've also
+
+656
+00:25:59,168 --> 00:26:00,850
+学会了如何用命令式和声明式指定路由
+got imperative or declarative routing.
+
+657
+00:26:00,850 --> 00:26:03,360
+二者随你爱好  任选其一
+Kind of depends on how you like to do that.
+
+658
+00:26:03,360 --> 00:26:05,570
+出于性能的考虑  有选择的加载polyfill
+For performance, conditional polyfills.
+
+659
+00:26:05,570 --> 00:26:08,320
+最重要的是vulcanize化所有的一切
+And most importantly, vulcanize all the things.
+
+660
+00:26:08,320 --> 00:26:11,190
+使用Vulcanize尽可能的将其打包
+Use Vulcanize to bundle up as much as you possibly can.
+
+661
+00:26:11,190 --> 00:26:12,670
+能为你省很多事
+It'll save you a lot.
+
+662
+00:26:12,670 --> 00:26:14,952
+另外  还应该考虑研究延迟加载
+Also, consider exploring lazy loading.
+
+663
+00:26:14,952 --> 00:26:16,660
+这也是我们一直试图弄明白的事情之一
+It's one of those things that we're still
+
+664
+00:26:16,660 --> 00:26:18,580
+什么是合适的模式
+trying to figure out what's the right pattern, what's
+
+665
+00:26:18,580 --> 00:26:19,560
+什么才是合适的UI
+the right UX there.
+
+666
+00:26:19,560 --> 00:26:21,101
+我想在未来
+But it's something that I think we'll
+
+667
+00:26:21,101 --> 00:26:23,052
+我们会看到更多生动的例子
+be seeing a lot more in the future,
+
+668
+00:26:23,052 --> 00:26:24,510
+尤其是在Polymer世界
+especially in the world of Polymer.
+
+669
+00:26:24,510 --> 00:26:26,890
+最后  关于应用的离线支持  Service Worker会为你保驾护航
+Lastly, for offline, ServiceWorker's got your back.
+
+670
+00:26:26,890 --> 00:26:29,365
+学会在不同的浏览器上玩耍你的应用
+So as that starts to land in the various browsers--
+
+671
+00:26:29,365 --> 00:26:30,990
+即使在今天  尽情的演示吧
+I mean, even today, experiment with it.
+
+672
+00:26:30,990 --> 00:26:33,531
+打开不同的浏览器  放入你的App
+As it starts to land in various browsers, put it in your app.
+
+673
+00:26:33,531 --> 00:26:34,960
+这感觉棒极啦
+It's going to be really awesome.
+
+674
+00:26:34,960 --> 00:26:37,043
+如果你仍对这款联系人应用意犹未尽的话
+If you want to play around with this contacts app,
+
+675
+00:26:37,043 --> 00:26:39,070
+你可以在Github上找到它
+it's available up on the GitHubs.
+
+676
+00:26:39,070 --> 00:26:41,860
+它依旧会有Bug  为了让其变得更加完善
+It totally has a lot of bugs, so please
+
+677
+00:26:41,860 --> 00:26:45,470
+所以请不吝指教  提交bug report  尽情的pull requests
+file bug reports, but even better, submit pull requests.
+
+678
+00:26:47,996 --> 00:26:49,620
+如果你想了解更多关于Polymer
+If you want to learn more about Polymer
+
+679
+00:26:49,620 --> 00:26:51,161
+ 或者你对这一切都充满激情
+and you're just excited by everything
+
+680
+00:26:51,161 --> 00:26:54,120
+正如今天下午Matt所说
+you've seen this afternoon, as Matt mentioned,
+
+681
+00:26:54,120 --> 00:26:56,486
+我们在世界各地都有举办Polymer活动
+we're running Polymer events all over the world.
+
+682
+00:26:56,486 --> 00:26:57,610
+我们称之为Polytechnics
+We call these Polytechnics.
+
+683
+00:26:57,610 --> 00:27:01,480
+我看见你们当中有穿Polymer shirt  这非常的酷
+I see some of you wearing the shirts, which means you are cool.
+
+684
+00:27:01,480 --> 00:27:05,740
+你可以登陆itshackademic.com  找到离你最近的Polytech
+If you go to itshackademic.com, you can find a Polytechnic near you.
+
+685
+00:27:05,740 --> 00:27:07,760
+如果你想加入其中
+If you want to participate in one,
+
+686
+00:27:07,760 --> 00:27:10,470
+亦或是想自己举办一个  无论如何
+maybe you want to run your own, whatever,
+
+687
+00:27:10,470 --> 00:27:11,990
+都是触手可及
+all the material is up there.
+
+688
+00:27:11,990 --> 00:27:14,480
+若你自己已经举办了一个  烦请让我知道
+If you set one up, please let me know.
+
+689
+00:27:14,480 --> 00:27:16,542
+我好帮你宣传一番  等等
+Tweet about it, whatever.
+
+690
+00:27:16,542 --> 00:27:19,760
+这非常的棒  你们都该去看一看
+It's freaking awesome, so you should all go check it out.
+
+691
+00:27:19,760 --> 00:27:21,657
+当然  别忘了Polymer-project.org
+Most importantly, polymer-project.org.
+
+692
+00:27:21,657 --> 00:27:23,990 
+每时每刻
+As you've all been sitting here, we've actually secretly
+
+693
+00:27:23,990 --> 00:27:25,400
+我们都在秘密更新 
+been updating the website.
+
+694
+00:27:25,400 --> 00:27:27,420
+在那里你将会有一个全新的体验
+So there's kind of a new experience there.
+
+695
+00:27:27,420 --> 00:27:31,460
+删繁就简
+It's just a slight-- it's just a nicer coat of paint.
+
+696
+00:27:31,460 --> 00:27:33,610
+至臻至美
+It's not a full blown reboot of the site,
+
+697
+00:27:33,610 --> 00:27:35,485
+而所有一切
+but now it's a lot easier to find the content
+
+698
+00:27:35,485 --> 00:27:36,574
+都触手可得
+that you're looking for.
+
+699
+00:27:36,574 --> 00:27:38,990
+如果你想要入门Polymer
+The getting started experience is a lot easier if you just
+
+700
+00:27:38,990 --> 00:27:40,656
+这非常的简单
+want to get up and running with Polymer,
+
+701
+00:27:40,656 --> 00:27:44,140
+欢迎来到明天世界  赶快到polymer网站看一看相关教程吧
+so definitely check out the site, go through some of the tutorials.
+
+702
+00:27:44,140 --> 00:27:46,460 
+并且  我也期待大家所创造出的非凡作品
+And I'm looking forward to seeing all the really cool
+
+703
+00:27:46,460 --> 00:27:48,780
+再一次  感谢大家
+stuff that you guys build, so thanks.
+
+704
+00:27:48,780 --> 00:27:52,079
+掌声
+
