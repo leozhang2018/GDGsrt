@@ -7,7 +7,7 @@
  
 
 
-###Work in progress:
+###Working in progress:
 
  1.  [Launchpad Online: Customizing Google Analytics for your startup](https://www.youtube.com/watch?v=WLO3vVEsO9o)
 
