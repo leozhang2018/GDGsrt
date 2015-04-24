@@ -10,5 +10,6 @@
 
 
 ###Working in progress:
+1.  [Building a quality app from start to finish](https://www.youtube.com/watch?v=gfGuGdHdFJI)
 
 
