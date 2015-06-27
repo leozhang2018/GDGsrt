@@ -625,33 +625,37 @@ It's been externalized.
 
 129
 00:05:55,850 --> 00:05:56,740
+Right
 ANDREW GRIEVE: Right.
 
 130
 00:05:56,740 --> 00:05:58,156
-
+得益于Android平台上
 ALEXIS MOUSSINE-POUCHKINE: You get
 
 131
 00:05:58,156 --> 00:06:02,490
+Chrome WebView中的WebGL支持
 take benefits of having WebGL in the Chrome WebView on Android.
 
 132
 00:06:02,490 --> 00:06:04,900
+你大可不必在所有的平台上都那样做
 You may not be able to do this on all the platforms.
 
 133
 00:06:04,900 --> 00:06:06,850
+那么开发者如何应对呢?
 So how does a developer deal with that?
 
 134
 00:06:06,850 --> 00:06:09,090
-这也是一个项目留下的长期的
+这也是项目所留下的长期的
 ANDREW GRIEVE: Yes so this was historically
 
 135
 00:06:09,090 --> 00:06:14,650
-历史性的一个问题
+一个历史性的问题
 a really kind of growing problem for the project for a long time.
 
 136
@@ -761,11 +765,12 @@ a big problem.
 
 157
 00:07:25,810 --> 00:07:29,110
-
+至少它能让你在所有的Android版本上
 And it lets you use the latest and greatest WebView
 
 158
 00:07:29,110 --> 00:07:31,237
+用上最新最棒的Webview
 on all Android targets.
 
 159
