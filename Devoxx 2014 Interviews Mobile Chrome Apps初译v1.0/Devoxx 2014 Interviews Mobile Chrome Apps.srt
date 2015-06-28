@@ -765,7 +765,7 @@ a big problem.
 
 157
 00:07:25,810 --> 00:07:29,110
-至少它能让你在所有的Android版本上
+至少它能让你在所有的Android版本中
 And it lets you use the latest and greatest WebView
 
 158
@@ -775,26 +775,32 @@ on all Android targets.
 
 159
 00:07:31,237 --> 00:07:33,570
+那么我们刚刚谈了一些关于
 ALEXIS MOUSSINE-POUCHKINE: So walk us maybe a little bit
 
 160
 00:07:33,570 --> 00:07:37,325
+工作流  工具  以及API这类的东西
 through the workflow, the tooling, the APIs.
 
 161
 00:07:37,325 --> 00:07:39,290
+假如我想开始第一个Hello world项目
 I want to start my "Hello, World,"
 
 162
 00:07:39,290 --> 00:07:41,820
+构建属于我自己的  基于Chrome App的移动App
 and probably move a little bit beyond that
 
 163
 00:07:41,820 --> 00:07:46,331
+那么过程应该会比刚刚谈的复杂一点儿吧
 and build my first Chrome App-based mobile app.
 
 164
 00:07:46,331 --> 00:07:47,080
+这其中究竟是怎样实现的
 What does it take?
 
 165
@@ -803,126 +809,157 @@ ANDREW GRIEVE: Yeah.
 
 166
 00:07:47,410 --> 00:07:48,951
+有很多的方式
 So there's a couple of options there.
 
 167
 00:07:48,951 --> 00:07:51,560
+这里说一下最简单的开发一个Hello world的方式
 I'd say the easiest just for building a "Hello, World,"
 
 168
 00:07:51,560 --> 00:07:55,160
+使用Chrome Dev Editor就可以
 and toying around a little bit is to use the Chrome Dev Editor.
 
 169
 00:07:55,160 --> 00:07:56,850
+Chrome Dev Editor
 So this is, again, a project that
 
 170
 00:07:56,850 --> 00:07:59,900
+也是在今夏Google I/O上面发布的新项目
 was announced at the last Google I/O this summer.
 
 171
 00:07:59,900 --> 00:08:04,220
-And it's an ID which is actually built as a Chrome app itself.
+它是一个基于Chrome App构建的IDE
+And it's an IDE which is actually built as a Chrome app itself.
 
 172
 00:08:04,220 --> 00:08:08,760
+也是一种非常酷的技术演示
 So that's kind of cool as a technology demonstration.
 
 173
 00:08:08,760 --> 00:08:11,962
-But it's ID just for building from Chrome Apps.
+但是该IDE只能用于创建Chrome Apps
+But it's IDE just for building from Chrome Apps.
 
 174
 00:08:11,962 --> 00:08:13,374
+Chrome Dev Editor提供若干模板
 So there's templates in there.
 
 175
 00:08:13,374 --> 00:08:14,290
+里面会有一个 Play 按钮
 There's a Play button.
 
 176
 00:08:14,290 --> 00:08:16,770
+你点击按钮  它就会把你的应用
 If you click Play, it'll open your application
 
 177
 00:08:16,770 --> 00:08:18,540
+作为桌面Chrome应用程序打开
 as a desktop Chrome App.
 
 178
 00:08:18,540 --> 00:08:21,610
+如果你在companion tool中的下拉菜单里
 And then if you use the drop-down menu in our companion
 
 179
 00:08:21,610 --> 00:08:23,910
+选择使为移动端提供的Chrome App开发者工具的话
 tool for the Chrome App Developer tool for mobile,
 
 180
 00:08:23,910 --> 00:08:26,460
+就会提供一个部署到移动设备的按钮
 then there's a Deploy to Mobile Device button.
 
 181
 00:08:26,460 --> 00:08:30,410
+所以你就可以很容易地
 So you could easily, without installing any SDKs,
 
 182
 00:08:30,410 --> 00:08:32,690
+不用安装任何SDK就能创建面向桌面和移动设备的
 play around with what your app would look like
 
 183
 00:08:32,690 --> 00:08:34,460
+Chrome和Web应用程序
 both on mobile and on desktop.
 
 184
 00:08:34,460 --> 00:08:35,793
+Yeah
 ALEXIS MOUSSINE-POUCHKINE: Yeah.
 
 185
 00:08:35,793 --> 00:08:37,770
+所以说开发一个Hello world非常之快
 So the time to "Hello, World" is very
 
 186
 00:08:37,770 --> 00:08:39,775
+我的意思是  没有SDK
 short in this-- I mean, no SDKs.
 
 187
 00:08:39,775 --> 00:08:41,400
+是的  这可以算得上是
 ANDREW GRIEVE: That's the quickest path
 
 188
 00:08:41,400 --> 00:08:43,027
+写hello world最快速的捷径了
 to a "Hello, World," for sure.
 
 189
 00:08:43,027 --> 00:08:44,860
+最后
 ALEXIS MOUSSINE-POUCHKINE: And eventually, I
 
 190
 00:08:44,860 --> 00:08:46,920
+出色的应用已经开发完毕
 do build this awesome app.
 
 191
 00:08:46,920 --> 00:08:49,700
+我只需要把应用打包
 And I just package this and distribute this
 
 192
 00:08:49,700 --> 00:08:52,830
+通过Play store或者是Apple store发布就行了
 through traditional Play stores or Apple stores.
 
 193
 00:08:52,830 --> 00:08:53,330
+对吗
 Right?
 
 194
 00:08:53,330 --> 00:08:53,895
+就是这样的一个流程
 That's how it works.
 
 195
 00:08:53,895 --> 00:08:54,230
+Yeah
 ANDREW GRIEVE: Yeah.
 
 196
 00:08:54,230 --> 00:08:54,729
+Yeah
 Yeah.
 
 197
@@ -1007,26 +1044,32 @@ and development environment that developers have.
 
 217
 00:09:47,112 --> 00:09:47,945
+Yeah
 ANDREW GRIEVE: Yeah.
 
 218
 00:09:47,945 --> 00:09:49,910
+多数的Web开发者
 ALEXIS MOUSSINE-POUCHKINE: So web developers
 
 219
 00:09:49,910 --> 00:09:54,360
+习惯于使用各种框架以及开发库
 love using frameworks or libraries, whatever you want to call them.
 
 220
 00:09:54,360 --> 00:10:00,620
+对于移动的Chrome App来说,
 Does Chrome Apps recommend against or to use some libraries, if any,
 
 221
 00:10:00,620 --> 00:10:02,847
+有任何官方推荐或者不建议使用的库或者框架吗?
 especially in the mobile case?
 
 222
 00:10:02,847 --> 00:10:03,680
+Yeah
 ANDREW GRIEVE: Yeah.
 
 223
