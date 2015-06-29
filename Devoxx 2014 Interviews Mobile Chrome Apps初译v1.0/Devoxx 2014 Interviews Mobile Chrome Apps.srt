@@ -949,7 +949,7 @@ Right?
 
 194
 00:08:53,330 --> 00:08:53,895
-就是这样的一个流程
+大概就是这样的一个流程
 That's how it works.
 
 195
@@ -992,10 +992,12 @@ And we give you kind of a Ruby on Rails style--
 
 204
 00:09:14,675 --> 00:09:16,300
+框架吗?
 ALEXIS MOUSSINE POUCHKINE: Scaffolding.
 
 205
 00:09:16,300 --> 00:09:17,320
+确切的说  是的
 ANDREW GRIEVE: Yeah, exactly.
 
 206
@@ -1028,22 +1030,27 @@ And then that's what you upload to the stores.
 
 213
 00:09:37,180 --> 00:09:37,470
+并且  我觉得
 ALEXIS MOUSSINE POUCHKINE: And I'm
 
 214
 00:09:37,470 --> 00:09:41,090
+运用命令行工具对持续集成也有一定的贡献
 pretty sure having command line also helps with continuous integration
 
 215
 00:09:41,090 --> 00:09:44,880
+可以在任何的开发者所处的构造环境
 and integrating this in any build environment
 
 216
 00:09:44,880 --> 00:09:47,112
+以及开发环境上进行集成
 and development environment that developers have.
 
 217
 00:09:47,112 --> 00:09:47,945
+Yeah
 Yeah
 ANDREW GRIEVE: Yeah.
 
@@ -1074,22 +1081,27 @@ ANDREW GRIEVE: Yeah.
 
 223
 00:10:03,680 --> 00:10:05,860
+这也是一个  我们尽量
 I mean, that's mostly a question we
 
 224
 00:10:05,860 --> 00:10:09,640
+不去插手的问题
 try to stay out of a little bit.
 
 225
 00:10:09,640 --> 00:10:12,815
+如今新的框架如雨后春笋
 There's new frameworks popping up all the time.
 
 226
 00:10:12,815 --> 00:10:14,440
+而我们项目的目的就是
 I'd say our project goal is to give you
 
 227
 00:10:14,440 --> 00:10:19,910
+提供给你一个强大的空白画布  叫你自己去填充
 the awesomest, most powerful blank canvas to work with as possible.
 
 228
@@ -1098,66 +1110,82 @@ ALEXIS MOUSSINE POUCHKINE: Right.
 
 229
 00:10:21,285 --> 00:10:22,742
+索尼你们不会去干涉
 So you're not mandating anything.
 
 230
 00:10:22,742 --> 00:10:23,700
+对的
 ANDREW GRIEVE: Exactly.
 
 231
 00:10:23,700 --> 00:10:25,730
+Polymer  我觉得是一个有前景的项目
 So Polymer, I think, is a promising project.
 
 232
 00:10:25,730 --> 00:10:27,840
+我也和Angular愉快的玩耍过
 Angular, I've had good times with.
 
 233
 00:10:27,840 --> 00:10:32,780
+Ionic是一个用来构建Cordova应用的
 Ionic is a really popular Angular-based framework
 
 234
 00:10:32,780 --> 00:10:35,380
+基于Angular的流行框架
 for Cordova-based applications, which
 
 235
 00:10:35,380 --> 00:10:38,970
+在移动端的Chrome app开发上也非常的在行
 works just fine for Chrome Apps for Mobile.
 
 236
 00:10:38,970 --> 00:10:42,239
+我个人的建议是在这些框架上花些时间
 I mean, my personal advice is to spend the time
 
 237
 00:10:42,239 --> 00:10:44,530
+至少要明白这些框架都是做什么的
 to at least understand what these frameworks are doing.
 
 238
 00:10:44,530 --> 00:10:47,800
+但是我个人不会去说  偏向于使用哪个框架
 But I wouldn't say I have a strong preference for any of them.
 
 239
 00:10:47,800 --> 00:10:49,020
+选择就是意义
 ALEXIS MOUSSINE POUCHKINE: Choice is good.
 
 240
 00:10:49,020 --> 00:10:50,120
+我喜欢选择
 I like choice.
 
 241
 00:10:50,120 --> 00:10:53,080
+那么在Decoxx的现场
 So maybe to close off, you're here presenting at Devoxx.
 
 242
 00:10:53,080 --> 00:10:57,910
+我想你也一定会有一些建议或者是信息
 And I think you also have some tips or information about what
 
 243
 00:10:57,910 --> 00:10:59,830
+想传达给到场的开发者的
 kind of paradigm works for developers.
 
 244
 00:10:59,830 --> 00:11:00,580
+也许是关于移动应用方面的
 Maybe mobile apps.
 
 245
@@ -1178,10 +1206,12 @@ not the way they should build things in this environment.
 
 249
 00:11:09,950 --> 00:11:13,757
+想跟我们分享一下这方面吗
 Do you want to tell us more about this?
 
 250
 00:11:13,757 --> 00:11:14,590
+Yeah
 ANDREW GRIEVE: Yeah.
 
 251
