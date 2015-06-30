@@ -597,30 +597,37 @@ pretty much every mobile operating system that you can think of.
 
 122
 00:05:39,340 --> 00:05:40,881
+但是
 ALEXIS MOUSSINE-POUCHKINE: But do you
 
 123
 00:05:40,881 --> 00:05:42,900
+有必要根据WebView的支持情况
 need to develop to some very lowest
 
 124
 00:05:42,900 --> 00:05:46,130
+开发一些低特性的标准吗
 common denominator in terms of what a WebView can support?
 
 125
 00:05:46,130 --> 00:05:48,450
+我知道些很棒很新的特性
 I know one of the nice, very new features,
 
 126
 00:05:48,450 --> 00:05:51,450
+在如今的Android平台上
 I believe, in Android is the fact that the Chrome WebView is
 
 127
 00:05:51,450 --> 00:05:54,330
+Chrome Webview的更新已成为惯例
 now something that is being updated on a very regular basis.
 
 128
 00:05:54,330 --> 00:05:55,850
+并且已经具体化了
 It's been externalized.
 
 129
@@ -650,12 +657,12 @@ So how does a developer deal with that?
 
 134
 00:06:06,850 --> 00:06:09,090
-这也是项目所留下的长期的
+这也是项目所留下的
 ANDREW GRIEVE: Yes so this was historically
 
 135
 00:06:09,090 --> 00:06:14,650
-一个历史性的问题
+长期的一个历史性的问题
 a really kind of growing problem for the project for a long time.
 
 136
@@ -964,30 +971,37 @@ Yeah.
 
 197
 00:08:54,729 --> 00:08:55,660
+对于移动端来说
 For mobile, exactly.
 
 198
 00:08:55,660 --> 00:08:59,970
+就是iOS上的App Store以及Android上的Play Store
 So the App Store and iOS or the Play store on Android.
 
 199
 00:08:59,970 --> 00:09:02,580
+当你搞定了你的Hello world
 Once you get past your typical "Hello, World,"
 
 200
 00:09:02,580 --> 00:09:05,290
+你想安装我们的命令行工具
 you want to install our command line tools.
 
 201
 00:09:05,290 --> 00:09:08,500
+我们有专为移动版Chroem App准备的
 So we have-- Cordova's tools are based on Node.js,
 
 202
 00:09:08,500 --> 00:09:11,470
+基于Node.js的Cordova工具
 as are ours, for Chrome Apps for Mobile.
 
 203
 00:09:11,470 --> 00:09:14,675
+同时也提供了一些Ruby on Rails相关支持
 And we give you kind of a Ruby on Rails style--
 
 204
@@ -1002,30 +1016,37 @@ ANDREW GRIEVE: Yeah, exactly.
 
 206
 00:09:17,320 --> 00:09:19,160
+这个工具的名字叫cca
 You can do-- CCA is the name of the tool.
 
 207
 00:09:19,160 --> 00:09:24,354
+使用cca创建项目  cca创建Android程序包
 So cca Create Project, cca Build Android.
 
 208
 00:09:24,354 --> 00:09:25,770
+情况就是这样
 And that's about the extent of it,
 
 209
 00:09:25,770 --> 00:09:29,320
+所以此时需要为这个工具安装SDK
 so you need to install your SDKs at this point for this tool.
 
 210
 00:09:29,320 --> 00:09:31,510
+但是我们将其做了更好的封装
 But then we give you a nice wrapper around them
 
 211
 00:09:31,510 --> 00:09:35,180
+通过cca打包移动版Chrome APP为合适的移动应用包
 to just say cca build Android, cca build iOS.
 
 212
 00:09:35,180 --> 00:09:37,180
+之后就可以将其上传至相关的应用商店
 And then that's what you upload to the stores.
 
 213
@@ -1110,7 +1131,7 @@ ALEXIS MOUSSINE POUCHKINE: Right.
 
 229
 00:10:21,285 --> 00:10:22,742
-索尼你们不会去干涉
+所以你们不会去干涉
 So you're not mandating anything.
 
 230
@@ -1206,7 +1227,7 @@ not the way they should build things in this environment.
 
 249
 00:11:09,950 --> 00:11:13,757
-想跟我们分享一下这方面吗
+能跟我们分享一下这方面吗
 Do you want to tell us more about this?
 
 250
@@ -1216,10 +1237,12 @@ ANDREW GRIEVE: Yeah.
 
 251
 00:11:14,590 --> 00:11:21,070
+我为开发者做过不少的引导
 So I do have kind of developer guidance, I would say,
 
 252
 00:11:21,070 --> 00:11:22,460
+这里主要谈谈我的建议和想法
 tips and tricks in my talk.
 
 253
@@ -1244,66 +1267,82 @@ for the web platform wherever you are.
 
 258
 00:11:38,390 --> 00:11:41,300
+而对于Cordova应用来说  主要的技巧就是
 So for Cordova applications, the main trick there
 
 259
 00:11:41,300 --> 00:11:45,390
+时刻牢记你是在用web进行开发
 is to remember that you're building using web,
 
 260
 00:11:45,390 --> 00:11:51,550
+但是这毫不妨碍你的移动应用
 so it doesn't take much to make your mobile application
 
 261
 00:11:51,550 --> 00:11:53,490
+在桌面浏览器上运行
 run on a desktop browser.
 
 262
 00:11:53,490 --> 00:11:55,790
+Chrome开发者工具的仿真模式
 And Chrome Dev Tools emulation mode
 
 263
 00:11:55,790 --> 00:11:59,404
+给你提供了最简单的方式
 gives you a really easy way to make
 
 264
 00:11:59,404 --> 00:12:01,070
+将Chrome模拟成移动设备
 Chrome pretend like it's a mobile device
 
 265
 00:12:01,070 --> 00:12:03,410
+缩小成移动窗口以及诸如此类的东西
 and shrink your view port and whatnot.
 
 266
 00:12:03,410 --> 00:12:04,840
+非常之便捷
 It's really fast and convenient.
 
 267
 00:12:04,840 --> 00:12:07,600
+是一个无法取代的设备测试工具
 So it's no replacement for testing on device,
 
 268
 00:12:07,600 --> 00:12:10,605
+专为卓越的工作流而生
 but it certainly makes for a compelling workflow.
 
 269
 00:12:10,605 --> 00:12:11,980
+Great
 ALEXIS MOUSSINE POUCHKINE: Great.
 
 270
 00:12:11,980 --> 00:12:16,420
+那么这个项目在今天的进展如何呢
 So what is the status of this project altogether?
 
 271
 00:12:16,420 --> 00:12:18,010
+我的意思是人们现在就可以用吗
 I mean, can people use it today?
 
 272
 00:12:18,010 --> 00:12:20,250
+或者你建议人们现在就在
 And would you recommend people shipping
 
 273
 00:12:20,250 --> 00:12:22,527
+这个平台上进行开发吗?
 apps built on top of that today?
 
 274
@@ -1312,66 +1351,82 @@ ANDREW GRIEVE: Yeah.
 
 275
 00:12:23,360 --> 00:12:29,010
+每个应用都有不同的开发需求
 So I'd say every application has different requirements.
 
 276
 00:12:29,010 --> 00:12:31,850
+当然  对大多数的应用来说
 Certainly for some, this would be a perfectly reasonable
 
 277
 00:12:31,850 --> 00:12:34,120
+这已经是一个比较完美的平台了
 platform to use today.
 
 278
 00:12:34,120 --> 00:12:36,640
+但如今在 Crosswalk上也有一些问题等待解决
 There are some rough edges around us finishing up
 
 279
 00:12:36,640 --> 00:12:38,990
+举个例子
 the Crosswalk integration, for example.
 
 280
 00:12:41,670 --> 00:12:44,260
+我们还没有更新cca工具
 For example, we haven't yet updated cca
 
 281
 00:12:44,260 --> 00:12:48,400
+用以支持iPhone 6 Plus 的图标大小
 to support the iPhone 6 Plus icon sizes.
 
 282
 00:12:48,400 --> 00:12:51,550
+我们将在下一周着手解决这个问题
 So we'll have that done probably next week, some rough edges.
 
 283
 00:12:51,550 --> 00:12:54,890
+但是对于大部分来说  我们已经准备好了
 But I'd say for the most part, we're ready.
 
 284
 00:12:54,890 --> 00:12:59,212
+我们对Github上项目的bug追踪予以快速响应
 We've responded quickly to our bug tracker on GitHub.
 
 285
 00:12:59,212 --> 00:13:00,670
+恩
 ALEXIS MOUSSINE-POUCHKINE: And this
 
 286
 00:13:00,670 --> 00:13:03,810
+现在是向大家介绍这个开源项目的好时机
 is a good time to mention that this is a fully open source project.
 
 287
 00:13:03,810 --> 00:13:04,050
+Yes
 ANDREW GRIEVE: Yes.
 
 288
 00:13:04,050 --> 00:13:04,330
+所以
 ALEXIS MOUSSINE-POUCHKINE: So if people
 
 289
 00:13:04,330 --> 00:13:07,890
+如果人们想支持这个项目  或者了解项目的目前进展的话
 want to support, help, or at least know what's going on,
 
 290
 00:13:07,890 --> 00:13:09,007
+它是完全开放的
 it's done in the open.
 
 291
@@ -1380,36 +1435,45 @@ ANDREW GRIEVE: Exactly.
 
 292
 00:13:09,965 --> 00:13:10,580
+Yeah
 Yeah.
 
 293
 00:13:10,580 --> 00:13:11,830
+OK
 ALEXIS MOUSSINE-POUCHKINE: OK.
 
 294
 00:13:11,830 --> 00:13:12,788
+非常感谢你  Andrew
 Well thank you, Andrew.
 
 295
 00:13:12,788 --> 00:13:14,950
+我想我们采访也要接近尾声了
 That's, I guess, all the time we have for it.
 
 296
 00:13:14,950 --> 00:13:17,140
+感谢回答我的问题
 So thank you for answering my questions.
 
 297
 00:13:17,140 --> 00:13:19,070
+我们稍后
 And we'll be seeing you soon.
 
 298
 00:13:19,070 --> 00:13:19,890
+线上见
 Online probably.
 
 299
 00:13:19,890 --> 00:13:20,931
+好的
 ANDREW GRIEVE: All right.
 
 300
 00:13:20,931 --> 00:13:21,670
+谢谢
 Thanks.
