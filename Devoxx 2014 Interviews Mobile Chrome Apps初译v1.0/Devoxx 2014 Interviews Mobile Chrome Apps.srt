@@ -15,7 +15,7 @@ It's kind of cold today, actually.
 
 4
 00:00:09,630 --> 00:00:14,180
-我们将和我旁边的这位嘉宾谈一谈关于Chrome Apps 的相关事宜
+我将和我旁边的这位嘉宾谈一谈关于Chrome Apps 的相关事宜
 And I'm here with my guest to talk about Chrome Apps everywhere.
 
 5
@@ -30,17 +30,17 @@ ANDREW GRIEVE: Sure.
 
 7
 00:00:16,990 --> 00:00:20,110
-大家好  我是Andrew Grieve   目前从事Chrome移动项目
+大家好  我是Andrew Grieve目前从事Chrome移动项目
 So my name's Andrew Grieve, and I work on the Chrome Apps
 
 8
 00:00:20,110 --> 00:00:22,948
-相关 App 的开发工作
+相关App的开发工作
 for Mobile project.
 
 9
 00:00:22,948 --> 00:00:26,510
-我在 Google 从事了6年的web开发工作
+我在Google从事了6年的Web开发工作
 Yeah, I've been doing web development for the past six
 
 10
@@ -50,16 +50,17 @@ years at Google, and it's always an exciting time.
 
 11
 00:00:28,594 --> 00:00:29,926
+Yeah
 ALEXIS MOUSSINE-POUCHKINE: Yeah.
 
 12
 00:00:29,926 --> 00:00:31,440
-web是一个很有意思的领域
+Web是一个很有意思的领域
 The web is an exciting place.
 
 13
 00:00:31,440 --> 00:00:34,080
-从事web开发工作一直都很振奋人心
+从事Web开发工作一直都很振奋人心
 And it's always a good time to be developing for the web.
 
 14
@@ -79,7 +80,7 @@ The first one, Chrome apps.
 
 17
 00:00:40,010 --> 00:00:43,720
-你能为我们或者是新的听众们  重新诠释一下
+你能为我们或者是新的听众们 简单介绍一下
 Can you maybe redefine this for those that haven't heard of it
 
 18
@@ -89,7 +90,7 @@ or need a refresh.
 
 19
 00:00:45,710 --> 00:00:50,097
-它们和普通的网页或者是 web扩展有什么区别?
+它们和普通的网页或者是Web扩展有什么区别?
 How do they differ from web pages or web extensions?
 
 20
@@ -162,7 +163,7 @@ so things like the user's identity, raw sockets,
 
 34
 00:01:35,820 --> 00:01:43,100
-同步存储等等  更加强大引人入胜的API
+同步存储等等  更加强大的API
 or synced storage, some really more powerful and compelling APIs.
 
 35
@@ -264,7 +265,7 @@ And to most users, they'd be really hard pressed
 
 55
 00:02:29,257 --> 00:02:31,465
-会很难的察觉到  这一切都是源于web技术创造的
+会很难的察觉到这一切都是源于web技术创造的
 to figure out that they were built on web technology.
 
 56
@@ -378,7 +379,7 @@ But it's an opt-in thing.
 
 78
 00:03:27,440 --> 00:03:29,740
-然而对于Chrome apps,唯一的不同在于你别无它选
+然而对于Chrome apps  唯一的不同在于你别无它选
 So for Chrome Apps, the difference is it's not opt-in.
 
 79
@@ -403,7 +404,7 @@ just because we're giving you these more capable and powerful
 
 83
 00:03:39,970 --> 00:03:45,804
-所以用户承担的风险比遭受攻击要高多的多
+所以用户承担的风险比遭受攻击要高的多的多
 APIs, so the risk is kind of even greater to attacks.
 
 84
@@ -438,7 +439,7 @@ to build mobile apps nowadays with the same technology.
 
 90
 00:04:03,950 --> 00:04:07,400
-Oh  顺便说一下  chrome app就是运用web技术开发的
+顺便说一下  chrome app就是运用web技术开发的
 Oh, and by the way, Chrome apps are being built with web technologies,
 
 91
@@ -458,7 +459,7 @@ So take those skills that you have, those tools that you have to build
 
 94
 00:04:17,660 --> 00:04:20,700
-那么理论上移动版的app也应该适用
+那么理论上移动版的app也应该行得通
 desktop-like apps, but also mobile apps nowadays.
 
 95
@@ -472,17 +473,17 @@ ANDREW GRIEVE: Right.
 
 97
 00:04:22,610 --> 00:04:26,157
-对这个话题我了如指掌
+我对这个话题了如指掌
 So that is what I'm more intimately familiar with.
 
 98
 00:04:26,157 --> 00:04:28,490
-这也是过去的两年  我一直在努力的方向
+这也是过去的两年我一直在努力的方向
 That's what I've been working on for the past two years.
 
 99
 00:04:28,490 --> 00:04:30,530
-实际上  移动版的chrome app
+实际上移动版的chrome app
 So Chrome Apps for Mobile is actually
 
 100
@@ -577,7 +578,7 @@ So the biggest difference, I would say,
 
 118
 00:05:24,100 --> 00:05:29,590
-它提供了一个抽象概念  得以让你在多平台上运行
+它的抽象化  得以让你在多平台上运行
 is it provides an abstraction that lets you target multiple platforms.
 
 119
@@ -991,7 +992,7 @@ you want to install our command line tools.
 
 201
 00:09:05,290 --> 00:09:08,500
-我们有专为移动版Chroem App准备的
+我们有专为移动版Chrome App准备的
 So we have-- Cordova's tools are based on Node.js,
 
 202
@@ -1211,18 +1212,22 @@ Maybe mobile apps.
 
 245
 00:11:00,580 --> 00:11:02,288
+我的意思是  原本的一切都开发工作正常
 I mean, the things that really work well,
 
 246
 00:11:02,288 --> 00:11:04,810
+而使用新的事物有些时候效果又是那么的差强人意
 things that don't work all that well that people shouldn't
 
 247
 00:11:04,810 --> 00:11:07,310
+也许现在还不是用的时候
 maybe use yet or at all, because it's just
 
 248
 00:11:07,310 --> 00:11:09,950
+或者说是使用的姿势不对
 not the way they should build things in this environment.
 
 249
@@ -1247,22 +1252,27 @@ tips and tricks in my talk.
 
 253
 00:11:26,040 --> 00:11:28,160
+出色的开发
 Mostly I'd say what works well is just--
 
 254
 00:11:28,160 --> 00:11:29,720
+往往是在开发过程中能够
 the main thing I find is just make
 
 255
 00:11:29,720 --> 00:11:33,370
+获得最快的反馈的
 sure you have that fast feedback loop when you're developing.
 
 256
 00:11:33,370 --> 00:11:36,150
+这也是在不同的Web开发平台
 And that's kind of one of the best things about developing
 
 257
 00:11:36,150 --> 00:11:38,390
+进行开发时的美好事情之一
 for the web platform wherever you are.
 
 258
@@ -1272,7 +1282,7 @@ So for Cordova applications, the main trick there
 
 259
 00:11:41,300 --> 00:11:45,390
-时刻牢记你是在用web进行开发
+时刻牢记你是在使用Web进行开发
 is to remember that you're building using web,
 
 260
@@ -1381,7 +1391,7 @@ For example, we haven't yet updated cca
 
 281
 00:12:44,260 --> 00:12:48,400
-用以支持iPhone 6 Plus 的图标大小
+用以支持iPhone 6 Plus的图标大小
 to support the iPhone 6 Plus icon sizes.
 
 282
