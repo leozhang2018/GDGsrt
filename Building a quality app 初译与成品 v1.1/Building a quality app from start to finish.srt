@@ -1,0 +1,780 @@
+1
+00:00:00,900 --> 00:00:01,510
+嗨
+Hi.
+
+2
+00:00:01,510 --> 00:00:02,530
+我是Ricardo
+I'm Ricardo.
+
+3
+00:00:02,530 --> 00:00:04,350
+我来自Google Play团队
+I work on the Google Play team.
+
+4
+00:00:04,350 --> 00:00:06,630
+现在就让我来跟你讲几个
+I'm going to tell you about all the tools
+
+5
+00:00:06,630 --> 00:00:08,340
+在开发者控制台里能够施展的招数吧
+available in the Developer Console
+
+6
+00:00:08,340 --> 00:00:11,480
+让它们来帮你为Google Play创作出高质量的应用
+to help you build high quality apps for Google Play,
+
+7
+00:00:11,480 --> 00:00:13,620
+我会从发布过程中的小提示讲起
+from tips in the publishing process,
+
+8
+00:00:13,620 --> 00:00:18,210
+还会涵盖如何获得对自己有用的数据报表
+to how to make the best of the data reporting available to you.
+
+9
+00:00:18,210 --> 00:00:22,000
+让我们从最基本的开始  确立合适的目标用户
+Let's start from the basics-- targeting the right audience.
+
+10
+00:00:22,000 --> 00:00:25,190
+首先  做一些市场调查和目标用户评估
+First, it's a good idea to do a bit of market research
+
+11
+00:00:25,190 --> 00:00:27,070
+还是很不错的
+and assess your target audience.
+
+12
+00:00:27,070 --> 00:00:29,950
+还要去了解哪些Android版本和屏幕尺寸
+Understand and what and what versions and screen sizes
+
+13
+00:00:29,950 --> 00:00:32,040
+是你所要去适配的
+you want to target.
+
+14
+00:00:32,040 --> 00:00:34,000
+访问developer.android.com
+If you go to developer.android.com
+
+15
+00:00:34,000 --> 00:00:36,850
+在Dashboard项里  可以得到一些相关的图表
+and search for dashboards, you can get relevant graphs
+
+16
+00:00:36,850 --> 00:00:39,970
+它们会告诉你的应用都应该支持哪些版本
+to show you which versions you would want to support.
+
+17
+00:00:39,970 --> 00:00:43,000
+如果一开始你就为各种移动设备的适配做足了准备
+You're likely to get the best result, if you design your app
+
+18
+00:00:43,000 --> 00:00:45,100
+那么你离成功也就不远了
+to work on tablets from the start.
+
+19
+00:00:45,100 --> 00:00:46,780
+屏幕尺寸的种类变多
+The increased screen area on tablets
+
+20
+00:00:46,780 --> 00:00:48,920
+给了你更多的机会
+gives you more possibilities and allows
+
+21
+00:00:48,920 --> 00:00:51,290
+这让你能够拉到更多不同需求的用户
+for more engagement with the user, which
+
+22
+00:00:51,290 --> 00:00:56,130
+从而就会有不断增长的使用量  并会赚到更多的钱
+can mean increased usage as well as more monetization opportunities.
+
+23
+00:00:56,130 --> 00:00:57,880
+如果你想开发一款游戏的话
+If you're building a game, make sure you
+
+24
+00:00:57,880 --> 00:01:00,730
+请在Google Play列出的最新的18种分类里
+choose the right category among the 18 new game
+
+25
+00:01:00,730 --> 00:01:04,349
+为你的游戏选择一个合适的分类
+categories recently added in Google Play.
+
+26
+00:01:04,349 --> 00:01:06,540
+在理顺完开发要点  确定产品定位后
+After sorting out the general outline and placement
+
+27
+00:01:06,540 --> 00:01:09,010
+就可以动手开发了
+of your app, it's time to start building it.
+
+28
+00:01:09,010 --> 00:01:11,150
+但是不要等到100%都做完时
+But don't wait until your app is 100%
+
+29
+00:01:11,150 --> 00:01:12,900
+才向用户推出你的应用
+finished before showing it to people.
+
+30
+00:01:12,900 --> 00:01:15,000
+我们为开发者提供了测试工具
+We have designed beta testing to help
+
+31
+00:01:15,000 --> 00:01:18,020
+以帮助开发者能够尽早的得到用户反馈
+you get user feedback as early as possible.
+
+32
+00:01:18,020 --> 00:01:20,470
+在应用尚未正式面世之前
+Before your app is ready to be seen by the world,
+
+33
+00:01:20,470 --> 00:01:23,390
+你可以先将应用推送至你安排好的用户测试组
+you can distribute it to a group of users you select.
+
+34
+00:01:23,390 --> 00:01:26,689
+我们称之为Alpha/Beta版测试组
+We call this alpha and beta test groups.
+
+35
+00:01:26,689 --> 00:01:28,980
+若你的应用尚未发布正式版本
+If you don't yet have a production version of your app,
+
+36
+00:01:28,980 --> 00:01:31,540
+除了那些已经在测试组里面的用户
+your app will be invisible in Google Play,
+
+37
+00:01:31,540 --> 00:01:33,990
+你的应用在Google Play上对其他人是不可见的
+except to the testers you choose.
+
+38
+00:01:33,990 --> 00:01:36,750
+如果你正在使用Google Play游戏服务
+If you're using Google Play Games Services,
+
+39
+00:01:36,750 --> 00:01:39,090
+你也可以通过Alpha/Beta版测试工具
+you can use the alpha and beta testing
+
+40
+00:01:39,090 --> 00:01:41,590
+来测试你的游戏服务
+to test your game services as well.
+
+41
+00:01:41,590 --> 00:01:45,540
+你可以利用Google网上论坛或者G+社群
+You can use Google groups or Google+ communities to indicate
+
+42
+00:01:45,540 --> 00:01:48,300
+安排测试人员对你的应用
+which users you want to be able to access the test versions
+
+43
+00:01:48,300 --> 00:01:49,630
+进行测试
+of your apps.
+
+44
+00:01:49,630 --> 00:01:52,790
+你可以对应用的每个版本都设置发布范围
+You can set a what's new field for each version of your app,
+
+45
+00:01:52,790 --> 00:01:54,620
+也可以对测试组进行归类
+including the ones for testers.
+
+46
+00:01:54,620 --> 00:01:57,450
+这样一来  很容易就能通知到各测试组的人员
+And this is really useful to tell your testers what's
+
+47
+00:01:57,450 --> 00:02:01,350
+刚才给他们发布的Alpha/Beta版应用都有哪些新特征
+new in the alpha and beta versions they are about to receive.
+
+48
+00:02:01,350 --> 00:02:04,470
+每位用户都有权成为应用的测试人员
+Each user will need to opt in to be a tester for each app
+
+49
+00:02:04,470 --> 00:02:05,730
+同样有权卸载应用
+and unload the app of course.
+
+50
+00:02:05,730 --> 00:02:09,490
+为了帮助用户成为测试人员  开发人员会建立一个简单的网页
+To aid users in doing so, many developers create a little web
+
+51
+00:02:09,490 --> 00:02:11,890
+把为测试人员准备的教程挂到上面
+page with a set of instructions that they send out
+
+52
+00:02:11,890 --> 00:02:17,290
+或者把教程挂到Google网上论坛  G+社群上
+to their testers, or mention it in their group or Google+ community.
+
+53
+00:02:17,290 --> 00:02:20,080
+在进行Alpha/Beta版测试的过程中
+Now that your alpha and beta test is in progress.
+
+54
+00:02:20,080 --> 00:02:23,310
+告诉你一个好消息  Alpha/Beta版的测试人员
+It's good to know that users who are alpha or beta testers
+
+55
+00:02:23,310 --> 00:02:25,370
+是无法对你的应用进行相关评价的
+cannot leave reviews for your app.
+
+56
+00:02:25,370 --> 00:02:28,020
+通过这种方式  可以有效的防止
+In this way, you can protect against leaks
+
+57
+00:02:28,020 --> 00:02:30,680
+新版本中的内容被泄露出去
+about your secret app or harm to your ratings
+
+58
+00:02:30,680 --> 00:02:33,660
+也不用担心因测试版存在bug而导致排名下降
+if you're beta version still has some bugs.
+
+59
+00:02:33,660 --> 00:02:37,670
+不过  你可以在开发者控制台中看到崩溃记录
+However, you can still see crash reports, optimization tips,
+
+60
+00:02:37,670 --> 00:02:40,220
+优化建议和数据统计
+and statistics in the Developer Console.
+
+61
+00:02:40,220 --> 00:02:42,330
+控制台会把属于不同Alpha/Beta版的数据
+And we explicitly mark out results
+
+62
+00:02:42,330 --> 00:02:45,160
+都明确的标记出来
+that pertain to your alpha or beta test.
+
+63
+00:02:45,160 --> 00:02:48,530
+举个例子  你可以很快速地就能拿到
+So for example, you can quickly isolate all application crashes
+
+64
+00:02:48,530 --> 00:02:51,660
+Beta版测试时的崩溃报告
+that your beta testers are experiencing.
+
+65
+00:02:51,660 --> 00:02:53,900
+通过测试能更有助于
+Your beta testers are great for identifying
+
+66
+00:02:53,900 --> 00:02:56,210
+帮你发现bug和使用上的问题
+bugs and the usability problems.
+
+67
+00:02:56,210 --> 00:02:58,850
+不过还是要注意  他们并不能完全
+But keep in mind, they are not a representative sample
+
+68
+00:02:58,850 --> 00:03:01,390
+代表应用的目标用户
+of your target user population.
+
+69
+00:03:01,390 --> 00:03:03,880
+如果你的应用在测试组里反馈还算不错
+Once your app is looking good to your beta testers,
+
+70
+00:03:03,880 --> 00:03:06,560
+并且已经做足了测试
+and it has been through a full round of testing on your side,
+
+71
+00:03:06,560 --> 00:03:08,404
+那就可以正式发布出去了
+it's time to publish.
+
+72
+00:03:08,404 --> 00:03:10,070
+当应用面向所有用户正式发布之后
+Once your app is published to all users,
+
+73
+00:03:10,070 --> 00:03:13,430
+再对其进行更新升级时  就会有更多的方案供你选择
+you will have some options when you roll out your next updates.
+
+74
+00:03:13,430 --> 00:03:14,564
+在我们Google
+Here at Google.
+
+75
+00:03:14,564 --> 00:03:16,730
+当我们的一款应用推出新版本更新时
+We want to be sure that everything goes well when we
+
+76
+00:03:16,730 --> 00:03:18,385
+我们总是希望应用能够一切正常
+roll out new version of our apps.
+
+77
+00:03:18,385 --> 00:03:20,540
+你也一定是这么想的吧
+And we know that you do as well.
+
+78
+00:03:20,540 --> 00:03:23,440
+为此  我们推出了分阶段发布模式
+For this, we design staged rollouts.
+
+79
+00:03:23,440 --> 00:03:26,400
+你可以先向一定比例的用户提供应用更新
+You can rollout updates of your app
+
+80
+00:03:26,400 --> 00:03:28,120
+比如说5%的用户
+to just a percentage of your users, like 5%,
+
+81
+00:03:28,120 --> 00:03:30,430
+随着时间的推移
+and then crank it up to 100% when
+
+82
+00:03:30,430 --> 00:03:32,310
+如果发现反馈一切良好  并且没出现什么问题
+you can see that the reviews are still good,
+
+83
+00:03:32,310 --> 00:03:34,830
+再将更新比例逐步扩大到100%
+and there are no problems on the horizon.
+
+84
+00:03:34,830 --> 00:03:38,070
+在分阶段发布模式下  如果你意识到
+Don't panic, if you realize that you rolled out a bad version
+
+85
+00:03:38,070 --> 00:03:40,340
+你推出了一个糟糕的版本  不要慌
+while a staged rollout is still in progress.
+
+86
+00:03:40,340 --> 00:03:42,860
+把bug修复  再发布一个新版本即可
+Spin up a bug fix and publish a new version.
+
+87
+00:03:42,860 --> 00:03:45,000
+新版本会只推送给装有bug版本的用户
+Your fix will go out to the users who have the bad one,
+
+88
+00:03:45,000 --> 00:03:46,510
+应用的发布进程也得以持续下去
+and you can resume the rollout.
+
+89
+00:03:49,240 --> 00:03:51,710
+至此  我们已经把应用的发布过程中该注意的事情讨论完了
+Now that I covered the publishing process, let's focus
+
+90
+00:03:51,710 --> 00:03:54,140
+现在让我们看一下应用的监测吧
+on monitoring how your app is doing.
+
+91
+00:03:54,140 --> 00:03:56,740
+在Google  我们认为  只有那些
+Here at Google we think that the developers do best
+
+92
+00:03:56,740 --> 00:04:00,940
+对自己的用户和应用的表现有敏锐洞察力的开发者们才能够取得成功
+when they have lots of insights into their users and app performance.
+
+93
+00:04:00,940 --> 00:04:02,640
+许多取得成功的开发者们都会说
+Most successful developers tell us
+
+94
+00:04:02,640 --> 00:04:04,570
+他们每天都登录开发者控制台
+that they log into the Developer Console
+
+95
+00:04:04,570 --> 00:04:07,740
+检视应用的统计数据  各种评价
+every day to check on their statistics, reviews,
+
+96
+00:04:07,740 --> 00:04:09,880
+以及优化建议
+and optimization tips.
+
+97
+00:04:09,880 --> 00:04:12,560
+这是由开发者控制台生成的
+Here's an overview of some of the types of data
+
+98
+00:04:12,560 --> 00:04:14,440
+一个数据概览
+that is offered in the Developer Console
+
+99
+00:04:14,440 --> 00:04:17,560
+我们希望开发者们都应该留意一下
+that we think more developers should be looking at.
+
+100
+00:04:17,560 --> 00:04:19,610
+最基础的
+Starting from the basics, most of you
+
+101
+00:04:19,610 --> 00:04:21,950
+你可以在开发者控制台看到
+know that you can see installs and the uninstalls
+
+102
+00:04:21,950 --> 00:04:23,930
+指定日期范围内应用的安装量和卸载量
+over time in the Developer Console.
+
+103
+00:04:23,930 --> 00:04:27,460
+另外  在统计信息页里
+In addition to that, if you just go to the statistics page,
+
+104
+00:04:27,460 --> 00:04:30,440
+你可以看到应用在一段时间内的评分变化  崩溃趋势
+you can see how your app ratings have changed over time, crash
+
+105
+00:04:30,440 --> 00:04:31,940
+和有效用户人数
+trends and if you link your Developer Console
+
+106
+00:04:31,940 --> 00:04:36,230
+前提是将开发者控制台与Google Analytics（分析）帐户进行了关联
+account with Google Analytics, data about your active users,
+
+107
+00:04:36,230 --> 00:04:39,320
+还能看到用户互动度
+and their engagement with your app.
+
+108
+00:04:39,320 --> 00:04:41,120
+别忘了看一下App Version里的内容
+Be sure to click on app version to make
+
+109
+00:04:41,120 --> 00:04:44,290
+以确保能进行应用新旧版本之间的对比
+sure you compare your new versions against the older ones.
+
+110
+00:04:44,290 --> 00:04:48,390
+同样还可以以SCV格式导出
+Also use the CSV exports to download the full data set
+
+111
+00:04:48,390 --> 00:04:50,485
+并下载完整的数据
+beyond the first top 10 values.
+
+112
+00:04:50,485 --> 00:04:53,610
+如果你是一名游戏开发者并且使用Google Play游戏服务的话
+If you're a game developer and you use Google Play Games
+
+113
+00:04:53,610 --> 00:04:56,590
+利用几周前我们刚刚发布的最新的游戏统计模块
+Services in your app, you can monitor your game performance
+
+114
+00:04:56,590 --> 00:04:59,610
+你可以时刻监测游戏的业绩
+and key player metrics using the new game stats module
+
+115
+00:04:59,610 --> 00:05:02,560
+以及核心玩家的各项指标
+that we just launched a few weeks ago.
+
+116
+00:05:02,560 --> 00:05:04,390
+应用崩溃是一个很重要的问题
+Crashes can be a major problem.
+
+117
+00:05:04,390 --> 00:05:06,980
+它们会令用户感到不满
+They make users unhappy and dissatisfied.
+
+118
+00:05:06,980 --> 00:05:08,990
+也会导致应用收到一系列的差评
+They can result in bad reviews and users
+
+119
+00:05:08,990 --> 00:05:11,210
+最后用户忍无可忍只能卸载掉
+uninstalling your app in frustration.
+
+120
+00:05:11,210 --> 00:05:13,915
+所以我们花了大把的时间让开发者控制台中的
+So we have spent time making the crash reporting feature
+
+121
+00:05:13,915 --> 00:05:17,520
+崩溃报告功能变得更加完善
+in the Developer Console even better.
+
+122
+00:05:17,520 --> 00:05:20,310
+你可以查看不同版本号下
+You can check on your beta test and your stage rollout
+
+123
+00:05:20,310 --> 00:05:22,390
+测试版和分阶段发布版的崩溃报告
+by filtering your crashes by version.
+
+124
+00:05:22,390 --> 00:05:24,590
+并且还可以理清
+You can also see how these crashes break
+
+125
+00:05:24,590 --> 00:05:27,880
+这些崩溃都来自于哪几种设备和哪些Android版本
+down across different devices and Android versions
+
+126
+00:05:27,880 --> 00:05:30,610
+这样就可以搞清楚问题到底出在了哪
+to make it easier to track down what's going wrong
+
+127
+00:05:30,610 --> 00:05:34,130
+也能让你知道为什么总有那么几种机型的用户在抱怨
+or why users on a certain device are complaining.
+
+128
+00:05:34,130 --> 00:05:37,220
+如果你开发本地代码的话
+If you develop a native code, we have improved the reporting
+
+129
+00:05:37,220 --> 00:05:40,280
+我们特地针对本地崩溃完善了报告形式
+and presentation, specifically for native crashes,
+
+130
+00:05:40,280 --> 00:05:42,380
+更好的将相似的崩溃加以归类
+with better clustering of similar crashes
+
+131
+00:05:42,380 --> 00:05:45,190
+并得出结论信息
+and summarizing of relevant information.
+
+132
+00:05:45,190 --> 00:05:48,500
+而且  崩溃的收集是实时的
+Also, remember that we collect crashes in real time,
+
+133
+00:05:48,500 --> 00:05:51,660
+所以在发布了你的分阶段发布版或者测试版之后
+so you can monitor your staged rollout or beta version
+
+134
+00:05:51,660 --> 00:05:53,860
+紧接着就可以开始监测了
+minutes after publishing it.
+
+135
+00:05:53,860 --> 00:05:57,810
+最后  优化建议会告诉你应用可进行优化的途径
+Finally, optimization tips show you new ways
+
+136
+00:05:57,810 --> 00:06:00,810
+它是为你的应用和用户量身打造的
+that you can improve, tailored to your own apps and users.
+
+137
+00:06:00,810 --> 00:06:04,080
+从添加翻译  到确保你的应用在移动设备上工作正常
+From adding translations, making sure your app works well
+
+138
+00:06:04,080 --> 00:06:08,980
+再到确认使用的Google服务是否是最新版本
+on tablets and ensuring your app is using the latest
+
+139
+00:06:08,980 --> 00:06:10,480
+它应有尽有
+versions of the Google services you integrate with.
+
+140
+00:06:10,480 --> 00:06:12,090
+如果应用在安装量  卸载量
+We also help you out with alerts,
+
+141
+00:06:12,090 --> 00:06:15,300
+评分  或者崩溃数上发生显著变化
+letting you know if there's been a big change in your installs,
+
+142
+00:06:15,300 --> 00:06:18,510
+我们会向你发送提醒
+uninstalls, ratings, or crashes.
+
+143
+00:06:18,510 --> 00:06:20,130
+有了提醒机制
+With alerts, you can trust Google to alert you
+
+144
+00:06:20,130 --> 00:06:23,210
+你完全可以信任Google在事件发生的第一时间就通知到你
+whenever a relevant event occurs.
+
+145
+00:06:23,210 --> 00:06:26,190
+所以你就只需专注于应用的开发即可
+So you can focus on building your app.
+
+146
+00:06:26,190 --> 00:06:28,670
+我们也添加了电子邮件提醒的功能
+We just added the ability to get these alerts over e-mail.
+
+147
+00:06:28,670 --> 00:06:31,150
+请确保在开发者控制台的设置中
+So make sure you subscribe to this new service
+
+148
+00:06:31,150 --> 00:06:34,210
+开启了这项服务
+from the setting section of the Developer Console.
+
+149
+00:06:34,210 --> 00:06:37,430
+最后做一个总结  让我们简单回顾下开发高质量应用的几个关键点
+To summarize, let me remind you the core aspects in building
+
+150
+00:06:37,430 --> 00:06:41,370
+首先  研究并确定你的目标用户
+a quality app-- research and identify your target audience,
+
+151
+00:06:41,370 --> 00:06:43,690
+在开发阶段
+collect early feedback by your beta testers
+
+152
+00:06:43,690 --> 00:06:45,980
+通过发布测试尽早的收集反馈
+while development is still in progress,
+
+153
+00:06:45,980 --> 00:06:48,720
+利用分阶段发布模式达到零风险发布
+do risk-free releases with stage rollouts,
+
+154
+00:06:48,720 --> 00:06:50,710
+另外  利用Google Play提供的相关数据
+and keep optimizing your app with the data
+
+155
+00:06:50,710 --> 00:06:52,680
+不断优化你的应用
+that Google Play makes available to you.
+
+156
+00:06:52,680 --> 00:06:54,750
+让我们行动起来吧
+Now get cracking.
+

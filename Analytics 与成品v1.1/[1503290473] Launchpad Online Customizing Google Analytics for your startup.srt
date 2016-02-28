@@ -1,0 +1,474 @@
+﻿1
+00:00:00,420 --> 00:00:01,260
+Hi
+ANDY GRANOWITZ: Hi.
+
+2
+00:00:01,260 --> 00:00:04,560
+我是Andy granowitz  Google Analytics的开发技术推广工程师
+Andy Granowitz here, developer advocate for Google Analytics.
+
+3
+00:00:04,560 --> 00:00:07,090
+今天我要谈谈  如何去配置Google Analytics
+Today I'm going to talk a little about setting up Google
+
+4
+00:00:07,090 --> 00:00:10,040
+在初次使用的时候
+Analytics for the first time.
+
+5
+00:00:10,040 --> 00:00:12,840
+Google Analytics以其在网站及移动App上
+Google Analytics is known for being straightforward to deploy
+
+6
+00:00:12,840 --> 00:00:15,062
+轻便部署而闻名
+on your website or app.
+
+7
+00:00:15,062 --> 00:00:17,520
+事实的确如此  
+And although this is true, there are a few important things
+
+8
+00:00:17,520 --> 00:00:19,360
+然而在首次安装Google Analytics之前
+to consider when you install Google
+
+9
+00:00:19,360 --> 00:00:21,250
+仍有一些重要的事情需要考虑
+Analytics for the first time to make
+
+10
+00:00:21,250 --> 00:00:23,580
+以确保最大限度的发挥
+sure you get the most out of the powerful features
+
+11
+00:00:23,580 --> 00:00:25,900
+Google Analytics的无穷潜力
+that Google Analytics offers.
+
+12
+00:00:25,900 --> 00:00:27,587
+最基本的数据收集方式
+The most basic measurement track--
+
+13
+00:00:27,587 --> 00:00:29,670
+就是在移动应用和网站上
+measurement is going to be pageview or screen view
+
+14
+00:00:29,670 --> 00:00:33,370
+分别运用Pageview和Screen view tracking
+tracking on web and app, respectively.
+
+15
+00:00:33,370 --> 00:00:36,539
+对于大多数网站来说  设置pageview tracking非常简单
+For most websites, setting up pageview tracking is straightforward.
+
+16
+00:00:36,539 --> 00:00:38,330
+只需向每一个网页里
+Add the Google Analytics JavaScript snippet
+
+17
+00:00:38,330 --> 00:00:40,140
+插入一段JavaScript跟踪代码
+on every page, and Google Analytics
+
+18 
+00:00:40,140 --> 00:00:43,300
+Google Analytics会自动统计页面的浏览量
+will count each time the page is loaded.
+
+19
+00:00:43,300 --> 00:00:45,690
+这点在移动应用上实现起来会有点儿复杂
+This is a little bit more involved on mobile apps.
+
+20
+00:00:45,690 --> 00:00:47,400
+但是通过使用iOS或者是Android的相关SDK
+But once you set up screen view tracking
+
+21
+00:00:47,400 --> 00:00:51,790
+设置screen view tracking  二者的效果是相同的
+using iOS or Android SDK, the results are very similar.
+
+22
+00:00:51,790 --> 00:00:54,940
+Google Analytics仍会默认地进行大量的数据收集
+Google Analytics will measure a lot by default, even
+
+23
+00:00:54,940 --> 00:00:58,070
+即使是进行基本的设置
+with this basic setup.
+
+24
+00:00:58,070 --> 00:01:01,000
+例如  通过设置基本的page或者是screen view tracking
+For example, with just page or screen view tracking,
+
+25
+00:01:01,000 --> 00:01:02,650
+Google Analytics会自动地
+Google Analytics will automatically
+
+26
+00:01:02,650 --> 00:01:05,160
+帮你分析会话时长  特定网页或者是页面的浏览时间
+allow you to analyze the session duration, time
+
+27
+00:01:05,160 --> 00:01:08,470
+地理位置信息  比如国家地区以及城市
+on specific pages or screens; geo-information, like city
+
+28
+00:01:08,470 --> 00:01:12,240
+相关技术数据  比如浏览器和移动设备信息
+and state; technology data, like mobile device or browser;
+
+29
+00:01:12,240 --> 00:01:14,410
+每页上的用户流量
+user flow between pages or screens;
+
+30
+00:01:14,410 --> 00:01:16,960
+用户流量来自哪里  搜索引擎
+and where users are coming from, like search engines,
+
+31
+00:01:16,960 --> 00:01:20,620
+社交网络 还是其他站点  等等
+social networks, referrals from other sites, and so on.
+
+32
+00:01:20,620 --> 00:01:24,000
+Google Analytics会自动捕捉大量的信息
+So there's a lot that's captured automatically.
+
+33
+00:01:24,000 --> 00:01:26,560
+但是通过个性化的定制
+But with some customization, Google Analytics
+
+34
+00:01:26,560 --> 00:01:28,320
+Google Analytics会有的放矢选择捕捉一些
+can capture user interactions that
+
+35
+00:01:28,320 --> 00:01:31,030
+对你来说重要的  在站点或者是移动应用上
+are unique to your site or app and that are really
+
+36
+00:01:31,030 --> 00:01:32,810
+产生的用户互动信息
+important to your business.
+
+37
+00:01:32,810 --> 00:01:35,540
+Google Analytics为不同的应用场合
+Google Analytics offers many different customizations
+
+38
+00:01:35,540 --> 00:01:37,880
+提供了多种个性化方案
+for many different use cases ranging
+
+39
+00:01:37,880 --> 00:01:41,935
+从电子商务到资源的载入时间的统计
+from measuring e-commerce to how long resources take to load,
+
+40
+00:01:41,935 --> 00:01:43,310
+但是在初次开始配置Google Analytics时
+but there are three that I'd like
+
+41
+00:01:43,310 --> 00:01:46,120
+我想着重强调三个个性化方案 
+to highlight when first getting set up--
+
+42
+00:01:46,120 --> 00:01:51,520
+事件  自定义维度 以及  广告标记
+events, custom dimensions, and campaign tagging.
+
+43
+00:01:51,520 --> 00:01:54,170
+事件是用来查看用户如何与您的网站或应用进行互动的
+Events are used to measure interactions within a given
+
+44
+00:01:54,170 --> 00:01:56,530
+换句话说  一切不是载入网页
+page, in other words, anything that is not
+
+45
+00:01:56,530 --> 00:01:58,930
+或者是载入应用新界面的动作
+a page load or a new screen.
+
+46
+00:01:58,930 --> 00:02:02,250
+但是你不必统计所有的事件
+But keep in mind that you don't need to measure everything.
+
+47
+00:02:02,250 --> 00:02:05,110
+只需思考对你来说重要的用户互动事件
+Think about what are the most important user interactions
+
+48
+00:02:05,110 --> 00:02:06,850
+然后有计划的统计它们
+and plan to measure those.
+
+49
+00:02:06,850 --> 00:02:10,660
+这能有效防止在进行分析时的数据过载
+This will prevent data overload when doing analysis.
+
+50
+00:02:10,660 --> 00:02:12,540
+自定义维度
+Custom dimensions.
+
+51
+00:02:12,540 --> 00:02:16,660
+正如我们之前所讲  Google Analytics默认会捕捉大量的信息
+As we discussed, Google Analytics captures a lot of data by default.
+
+52
+00:02:16,660 --> 00:02:19,620
+但是一般来讲  重要信息对你
+But often, the most important information
+
+53
+00:02:19,620 --> 00:02:21,824
+往往会非常特别
+is very specific to your business,
+
+54
+00:02:21,824 --> 00:02:23,490
+没有了你的帮助  Google Analytics在统计关键信息时
+making it difficult for Google Analytics
+
+55
+00:02:23,490 --> 00:02:26,500
+就变的异常困难
+to measure without a little help from you.
+
+56
+00:02:26,500 --> 00:02:29,040
+通过自定义维度  你可以向Google Analytics导入
+With custom dimensions, you can send custom data
+
+57
+00:02:29,040 --> 00:02:31,160
+自定义的数据  它会自动的
+to Google Analytics, which will automatically
+
+58
+00:02:31,160 --> 00:02:32,970
+和Google Analytics已收集的现有
+get correlated with all of the other data
+ 
+59
+00:02:32,970 --> 00:02:35,480
+其他所有数据相关联起来
+that Google Analytics collects.
+
+60
+00:02:35,480 --> 00:02:38,890
+举个例子  当用户订阅了你的实时通讯
+For example, when signing up for your newsletter,
+
+61
+00:02:38,890 --> 00:02:41,850
+用户可以有选择的去订阅服务商
+if the user has the option to identify their industry,
+
+62
+00:02:41,850 --> 00:02:45,060
+通过自定义维度你可以把这个信息传递给用户
+you may want to pass this information as a custom dimension.
+
+63
+00:02:45,060 --> 00:02:48,240
+另一个例子  则是发生在用户注册你的服务时
+Another example might be when a user signs up for your service,
+
+64
+00:02:48,240 --> 00:02:50,207
+他(她)们的身份是30天免费试用呢
+whether they signed up for the 30-day trial,
+
+65
+00:02:50,207 --> 00:02:52,165
+还是标准会员  亦或是高级会员
+a standard membership, or a premium membership.
+
+66
+00:02:54,840 --> 00:02:57,020
+最后一个我想谈谈的个性化方案
+The final customization that I'd like to talk about
+
+67
+00:02:57,020 --> 00:02:58,780
+叫做广告标记
+is campaign tagging.
+
+68
+00:02:58,780 --> 00:03:00,989
+Google Analytics会密切的监视HTTP referer
+Google Analytics looks at the HTTP refer
+
+69
+00:03:00,989 --> 00:03:04,300
+并且不遗余力的计算出你的流量都是从哪里来的
+and does its best to figure out where your traffic is coming from.
+
+70
+00:03:04,300 --> 00:03:06,710
+但是当你开始使用自定义广告
+But when you run custom campaigns, like through an ad
+
+71
+00:03:06,710 --> 00:03:09,380
+无论是通过广告网络  还是电子邮件交易
+network, or if you're doing some email marketing,
+
+72
+00:03:09,380 --> 00:03:11,310
+亦或是其它之类的媒介
+or, really, any other medium, you
+
+73
+00:03:11,310 --> 00:03:13,590
+你都可以使用Google Analystics的网址构建工具
+can use the Google Analytics URL Builder
+
+74
+00:03:13,590 --> 00:03:18,420
+向推广给客户的网址中添加自定义广告系列参数
+to add query parameters to the URL you're promoting to your users.
+
+75
+00:03:18,420 --> 00:03:21,250
+当用户点击链接  网址中添加参数
+When users click on that link, the parameters you've added
+
+76
+00:03:21,250 --> 00:03:23,710
+会自动的被Google Analytics识别
+are automatically recognized by Google Analytics.
+
+77
+00:03:23,710 --> 00:03:26,010
+所以在报告中  你可以准确的知道
+So in your reports, you'll be able to find out exactly
+
+78
+00:03:26,010 --> 00:03:29,050
+哪个广告为你的网站或者是应用带来了用户
+which campaigns brought users to your site or app
+
+79
+00:03:29,050 --> 00:03:32,390
+以及最终他(她)们都干了什么
+and what they ultimately did.
+
+80
+00:03:32,390 --> 00:03:33,250
+有一个特例
+One special case.
+
+81
+00:03:33,250 --> 00:03:35,230
+如果你使用Adwords服务的话  我强烈建议
+If you use AdWords, I strongly recommend
+
+82
+00:03:35,230 --> 00:03:38,180
+将Google Analytics和AdWords账户关联起来
+that you link Google Analytics and AdWords accounts.
+
+83
+00:03:38,180 --> 00:03:41,430
+这样做  AdWords会自动
+By doing so, your AdWords campaigns will automatically
+
+84
+00:03:41,430 --> 00:03:43,470
+将广告参数标记出来
+get tagged with campaign parameters,
+
+85
+00:03:43,470 --> 00:03:45,850
+大量的数据会被导入到Google Analytics账户
+and a lot of other valuable data will
+
+86
+00:03:45,850 --> 00:03:50,010
+促进数据间的互惠共享
+be imported into your Google Analytics account.
+
+87
+00:03:50,010 --> 00:03:52,380
+除了能和AdWords紧密关联
+In addition to this deep integration with AdWords,
+
+88
+00:03:52,380 --> 00:03:53,930
+Google Analytics也可以和Google的其他产品
+Google Analytics can also integrate
+
+89
+00:03:53,930 --> 00:03:57,770
+密切结合  比如AdSence  Webmaster Tools
+with other Google products, such as AdSense, Webmaster Tools,
+
+90
+00:03:57,770 --> 00:03:59,830
+AdMod  以及其他
+AdMob, and more.
+
+91
+00:03:59,830 --> 00:04:01,580
+确保使用  对你来说最容易的方式
+Be sure to find out if there's an easy way
+
+92
+00:04:01,580 --> 00:04:03,246
+来连接Google Analytics
+to connect Google Analytics and whatever
+
+93
+00:04:03,246 --> 00:04:08,080
+无论你用的什么技术  以及他们是不是Google家的
+technologies you are using, whether they are Google or not.
+
+94
+00:04:08,080 --> 00:04:10,740
+ 想要获取更多的相关个性化信息
+For more information on these customizations and more,
+
+95
+00:04:10,740 --> 00:04:13,925
+请登陆屏幕下方的网址  developers.google.com/analytics  
+check out the links below or go to developers.google.com/analytics.

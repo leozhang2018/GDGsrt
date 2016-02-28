@@ -1,0 +1,5507 @@
+1
+00:00:00,000 --> 00:00:05,399
+
+
+2
+00:00:05,399 --> 00:00:06,190
+Hi
+ALEX KOMOROSKE: Hi.
+
+3
+00:00:06,190 --> 00:00:06,780
+欢迎大家
+Welcome.
+
+4
+00:00:06,780 --> 00:00:08,529
+我们的直播
+So we're going to get started before we're
+
+5
+00:00:08,529 --> 00:00:10,530
+即将开始
+all full in this room just for the live stream.
+
+6
+00:00:10,530 --> 00:00:11,440
+我是 Alex Komoroske
+I'm Alex Komoroske.
+
+7
+00:00:11,440 --> 00:00:14,169
+Chrome web平台开发组的产品经理
+I'm lead product manager on Chrome's web platform team.
+
+8
+00:00:14,169 --> 00:00:15,210
+Hi
+ELISABETH MORANT: And hi.
+
+9
+00:00:15,210 --> 00:00:17,880
+我是 Elisabeth Morant
+My name is Elisabeth Morant and I am the product manager
+
+10
+00:00:17,880 --> 00:00:18,714
+Chrome 安全团队的产品经理
+for Chrome security.
+
+11
+00:00:18,714 --> 00:00:20,254
+我们今天将要讨论四个话题
+ALEX KOMOROSKE: So today, we're going
+
+12
+00:00:20,254 --> 00:00:23,030
+有新也有旧
+to tell you about four forces, some of them old, some of them
+
+13
+00:00:23,030 --> 00:00:25,420
+我们把它融合在一起
+new, that together combine to create
+
+14
+00:00:25,420 --> 00:00:27,580
+创造出下一代移动互联网
+the next generation mobile web.
+
+15
+00:00:27,580 --> 00:00:30,010
+我们将在此
+Now, a lot of times at I/O, we tell you
+
+16
+00:00:30,010 --> 00:00:31,920
+告诉你们一些新奇的特性
+about all kinds of amazing features
+
+17
+00:00:31,920 --> 00:00:34,730
+它们会在6个月后和大家见面  也许是一年之后
+that are going to come six months, maybe a year from now,
+
+18
+00:00:34,730 --> 00:00:37,390
+但是今天  我们将要揭开某些特性的面纱
+but today, we're going to cover only things that are already
+
+19
+00:00:37,390 --> 00:00:39,370
+并且在Chrome上你们已经可以使用
+shipped in Chrome that you can use.
+
+20
+00:00:39,370 --> 00:00:41,960
+由于时间有限  所以我们只涵盖了
+So we don't have that much time, so we'll cover things
+
+21
+00:00:41,960 --> 00:00:43,510
+一些很高层面的东西  
+at a pretty high level, but there's
+
+22
+00:00:43,510 --> 00:00:45,670
+但是仍然有很多高质量的DevByte以及Box Talk
+lots of great DevBytes and Box Talks
+
+23
+00:00:45,670 --> 00:00:48,585
+供大家在IO上参加
+here at I/O that go into more depth on all of these.
+
+24
+00:00:48,585 --> 00:00:50,429
+让我们开始吧
+So let's get started.
+
+25
+00:00:50,429 --> 00:00:52,220
+Elisabeth和我能站在这的原因只有一个
+So the reason that Elisabeth and I are here
+
+26
+00:00:52,220 --> 00:00:53,801
+那就是我们都爱Chrome
+is because we love Chrome.
+
+27
+00:00:53,801 --> 00:00:55,300
+和大家一样  我们爱Chrome
+ELISABETH MORANT: And we love Chrome
+
+28
+00:00:55,300 --> 00:00:57,147
+是因为我们都爱web
+because, like many of you, we love the web.
+
+29
+00:00:57,147 --> 00:00:58,980
+Web的神奇之处在于
+ALEX KOMOROSKE: I mean, it's kind of amazing
+
+30
+00:00:58,980 --> 00:01:02,020
+你可以不通过任何人的允许
+that you can connect with any topic or community you want
+
+31
+00:01:02,020 --> 00:01:04,099
+就可以连接任何一个主题或者是社区
+without asking anyone permission,
+
+32
+00:01:04,099 --> 00:01:07,110
+让一切神奇的事情得以发生
+which allows all kinds of wacky stuff to happen.
+
+33
+00:01:07,110 --> 00:01:08,930
+我个人最喜欢的站点
+So my personal favorite is this site
+
+34
+00:01:08,930 --> 00:01:10,560
+叫做Real Ultimate Power
+called Real Ultimate Power.
+
+35
+00:01:10,560 --> 00:01:12,984
+有人知道它吗
+Anybody know what that is?
+
+36
+00:01:12,984 --> 00:01:14,400
+我看到你了
+So there's a few of you out there.
+
+37
+00:01:14,400 --> 00:01:17,020
+这是一个讽刺类的主题站点
+So this is this amazing satire site.
+
+38
+00:01:17,020 --> 00:01:19,870
+这位老兄有一个关于忍者的页面
+This guy has a page about ninjas.
+
+39
+00:01:19,870 --> 00:01:22,147
+他对忍着超级痴迷并且痛恨海盗
+He's super crazy into ninjas and he hates pirates.
+
+40
+00:01:22,147 --> 00:01:23,480
+当然
+ELISABETH MORANT: Oh, of course.
+
+41
+00:01:23,480 --> 00:01:25,030
+这才是重点
+ALEX KOMOROSKE: That's important.
+
+42
+00:01:25,030 --> 00:01:26,540
+他把网页挂在那
+But he just put this site up there.
+
+43
+00:01:26,540 --> 00:01:28,170
+人们都捧腹大笑
+People thought it was hilarious.
+
+44
+00:01:28,170 --> 00:01:29,620
+纷纷的去分享它
+They shared it.
+
+45
+00:01:29,620 --> 00:01:31,210
+发现并喜欢它
+People found it and loved it.
+
+46
+00:01:31,210 --> 00:01:32,630
+我们团队也非常喜欢这个
+My crew team, we actually found it
+
+47
+00:01:32,630 --> 00:01:35,344
+以至于也摆pose拍了张照片
+and loved it so much that we actually posed
+
+48
+00:01:35,344 --> 00:01:37,510
+上传到这个站点上面
+for a picture as ninjas and uploaded it to the site.
+
+49
+00:01:37,510 --> 00:01:37,710
+ELISABETH MORANT: OK.
+
+50
+00:01:37,710 --> 00:01:39,350
+你必须给大家看看这张照片
+You have to show everyone this photo.
+
+51
+00:01:39,350 --> 00:01:39,740
+ALEX KOMOROSKE: OK.
+
+52
+00:01:39,740 --> 00:01:41,365
+我也试图那样做了
+I'm trying to psych myself up for that,
+
+53
+00:01:41,365 --> 00:01:43,620
+但是这照片真是有点年头了
+but here's the picture that I am extremely
+
+54
+00:01:43,620 --> 00:01:45,612
+至今也引以为傲
+proud of from a number of years ago.
+
+55
+00:01:45,612 --> 00:01:47,070
+哪一个是你
+ELISABETH MORANT: Which one is you?
+
+56
+00:01:47,070 --> 00:01:49,100
+我也不是太确定
+ALEX KOMOROSKE: So I'm actually not entirely sure,
+
+57
+00:01:49,100 --> 00:01:50,550
+但是看到了古铜色的皮肤
+but based on the farmer's tan, I'm
+
+58
+00:01:50,550 --> 00:01:53,800
+我确定那个就是我
+pretty sure that that one's me.
+
+59
+00:01:53,800 --> 00:01:56,220
+无论如何  我囧了 这次该轮到你囧了
+Anyway, I embarrassed myself, you embarrass yourself.
+
+60
+00:01:56,220 --> 00:01:56,485
+ELISABETH MORANT: OK.
+
+61
+00:01:56,485 --> 00:01:56,985
+All right.
+
+62
+00:01:56,985 --> 00:01:58,800
+我想这样才是公平
+I guess it's only fair.
+
+63
+00:01:58,800 --> 00:02:02,980
+当我12岁的时候  极度痴迷于视频游戏
+So when I was 12, I was really into video games, especially
+
+64
+00:02:02,980 --> 00:02:06,540
+尤其是冒险类游戏  所以我上网并制作了
+adventure games, so I took to the internet
+
+65
+00:02:06,540 --> 00:02:08,090
+我的第一个网站
+to make my first website.
+
+66
+00:02:08,090 --> 00:02:11,300
+这也是我第一次接触编程
+And clearly, this was my first introduction to programming
+
+67
+00:02:11,300 --> 00:02:14,710
+网页中间还有一个巨大的空间
+and I owned up to it with the giant space in the bottom
+
+68
+00:02:14,710 --> 00:02:16,504
+我根本不知道怎么把它去掉
+that I didn't know how to get rid of.
+
+69
+00:02:16,504 --> 00:02:17,670
+非常巧妙
+ALEX KOMOROSKE: Very subtle.
+
+70
+00:02:17,670 --> 00:02:18,520
+但是正是这一次
+ELISABETH MORANT: But the point is
+
+71
+00:02:18,520 --> 00:02:21,300
+才真正的把我和那些
+that this let me connect with this huge community of people
+
+72
+00:02:21,300 --> 00:02:23,197
+具有相同热情的人一起联系起来
+out there who had the same passions as I did.
+
+73
+00:02:23,197 --> 00:02:24,780
+是的  大约400多个呢
+ALEX KOMOROSKE: Yeah, all 400 of them,
+
+74
+00:02:24,780 --> 00:02:26,110
+如果计数器没错的话
+if I see that counter right.
+
+75
+00:02:26,110 --> 00:02:30,210
+其实多半都是我自己刷的
+ELISABETH MORANT: Half of them were me refreshing the page.
+
+76
+00:02:30,210 --> 00:02:33,530
+无论如何这只是一些简单的例子
+Anyway, so these are just a few weird examples,
+
+77
+00:02:33,530 --> 00:02:35,730
+但是web确实是一个强大的技术
+but the web is a really powerful technology
+
+78
+00:02:35,730 --> 00:02:39,180
+它开启了一个昌盛的经济时代
+that's enabled a number of very thriving businesses to form.
+
+79
+00:02:39,180 --> 00:02:44,715
+电子商务在2014年的成交额已经超过了1.5万亿
+E-commerce alone in 2014 was worth more than $1.5 trillion.
+
+80
+00:02:44,715 --> 00:02:45,590
+我的天
+ALEX KOMOROSKE: Jeez.
+
+81
+00:02:45,590 --> 00:02:46,700
+数额非常之巨大
+ELISABETH MORANT: That's huge.
+
+82
+00:02:46,700 --> 00:02:47,600
+T级别的万亿
+ALEX KOMOROSKE: That's trillion with a T.
+
+83
+00:02:47,600 --> 00:02:48,530
+是的
+ELISABETH MORANT: Yes.
+
+84
+00:02:48,530 --> 00:02:49,363
+Wow
+ALEX KOMOROSKE: Wow.
+
+85
+00:02:49,363 --> 00:02:51,8007
+我们分享了一些过去的例子
+So the point of this is we've shared some examples
+
+86
+00:02:51,800 --> 00:02:54,220
+但是不局限于此
+from our past, but we're not alone.
+
+87
+00:02:54,220 --> 00:02:56,490
+事实上   我敢说这个房间里参与直播的每一个人
+In fact, I bet that almost everyone in this room
+
+88
+00:02:56,490 --> 00:02:59,480
+都已经连上了网
+and on the live stream has a connection to the web.
+
+89
+00:02:59,480 --> 00:03:02,880
+我们都是这个奇妙而强大的全球化社区
+It's this amazing, vibrant, weird, global community
+
+90
+00:03:02,880 --> 00:03:04,090
+其中的一员
+that we're all a part of.
+
+91
+00:03:04,090 --> 00:03:04,645
+这太棒了
+It's awesome.
+
+92
+00:03:04,645 --> 00:03:05,520
+ELISABETH MORANT: OK.
+
+93
+00:03:05,520 --> 00:03:09,370
+今天的主题是下一代移动网络
+So the title of the talk is the next generation mobile web, so
+
+94
+00:03:09,370 --> 00:03:10,790
+那么我们在移动端上面都能做什么呢
+what are we doing on mobile?
+
+95
+00:03:10,790 --> 00:03:12,456
+问的好
+ALEX KOMOROSKE: That's a great question.
+
+96
+00:03:12,456 --> 00:03:14,050
+移动端是一个重大的改变
+So mobile was a fundamental shift.
+
+97
+00:03:14,050 --> 00:03:16,820
+它由桌面端演化而来
+It changed the assumptions from desktop.
+
+98
+00:03:16,820 --> 00:03:19,610
+所以性能就显得格外重要
+So performance became incredibly important,
+
+99
+00:03:19,610 --> 00:03:21,820
+确保设备上能够达到60fps
+making sure that you could hit 60 frames per second
+
+100
+00:03:21,820 --> 00:03:24,170
+在设备使用电池的情况下
+on devices that were running battery power.
+
+101
+00:03:24,170 --> 00:03:25,660
+并且还有其他功能
+And there's other capabilities that
+
+102
+00:03:25,660 --> 00:03:27,900
+让情况变得更加严峻
+just became totally critical.
+
+103
+00:03:27,900 --> 00:03:29,920
+举个例子  推送通知
+Push notifications, for example, are
+
+104
+00:03:29,920 --> 00:03:32,340
+让你和自己设备进行交互
+just crucial to how you interact with your mobile device
+
+105
+00:03:32,340 --> 00:03:34,170
+web不能做到这些
+and the web couldn't do it.
+
+106
+00:03:34,170 --> 00:03:35,950
+事实上  本地应用就非常的
+To be honest, native apps really just
+
+107
+00:03:35,950 --> 00:03:37,860
+适合这种环境
+were well suited to this environment.
+
+108
+00:03:37,860 --> 00:03:38,330
+ELISABETH MORANT: All right.
+
+109
+00:03:38,330 --> 00:03:40,860
+你的意思是我们都该去开发本地应用
+So I guess we should all just make native apps, then?
+
+110
+00:03:40,860 --> 00:03:41,830
+我可没说
+ALEX KOMOROSKE: I'm not saying that.
+
+111
+00:03:41,830 --> 00:03:44,370
+如今本地应用非常的出色   但是web也一样毫不逊色
+Now, native apps are great, but the web is also amazing.
+
+112
+00:03:44,370 --> 00:03:46,080
+事实上  它所拥有的一些优点
+In fact, a number of its strengths
+
+113
+00:03:46,080 --> 00:03:49,060
+让其在桌面端更加的强大
+that made it so strong on desktop are as strong as ever.
+
+114
+00:03:49,060 --> 00:03:52,100
+有一天我查看了下
+So just the other day I looked, and I
+
+115
+00:03:52,100 --> 00:03:56,590
+在过去的一周里有多少人使用Devtool
+checked to see how many people used DevTools in the past week.
+
+116
+00:03:56,590 --> 00:03:59,020
+相比来说  
+So as a point of comparison, Android
+
+117
+00:03:59,020 --> 00:04:01,260
+Android是一个比较成功的平台
+is an amazingly successful platform.
+
+118
+00:04:01,260 --> 00:04:04,280
+我看到公共统计大约有4百万
+I've seen public stats somewhere around four million
+
+119
+00:04:04,280 --> 00:04:06,230
+而开发者大约则是1百万
+or so for an estimate for developers.
+
+120
+00:04:06,230 --> 00:04:09,580
+你猜有多少人使用了Chrome DevTools
+So how many people do you think loaded Chrome DevTools
+
+121
+00:04:09,580 --> 00:04:11,340
+在过去的一周
+in the past week?
+
+122
+00:04:11,340 --> 00:04:12,460
+一周吗
+ELISABETH MORANT: A week?
+
+123
+00:04:12,460 --> 00:04:13,700
+也许有1百万吧
+Maybe a million.
+
+124
+00:04:13,700 --> 00:04:15,200
+揭晓答案
+ALEX KOMOROSKE: Turns out the answer
+
+125
+00:04:15,200 --> 00:04:17,390
+大约有250万的人使用Chrome DevTools
+is 25 million people have used Chrome
+
+126
+00:04:17,390 --> 00:04:19,149
+在过去的一周
+DevTools in the last week.
+
+127
+00:04:19,149 --> 00:04:21,959
+非常的酷因为这不是一个死的数字
+That's really cool because that's not a stagnant number.
+
+128
+00:04:21,959 --> 00:04:24,240
+仍然一直在增长
+That's actually growing over time.
+
+129
+00:04:24,240 --> 00:04:26,510
+所以这些人并不是都在构造
+So the point is not all these people
+
+130
+00:04:26,510 --> 00:04:28,950
+巨大而又复杂的网站
+are building huge, complicated websites.
+
+131
+00:04:28,950 --> 00:04:30,145
+其中的一些人只是在修修补补
+Some of them are tinkering.
+
+132
+00:04:30,145 --> 00:04:33,600
+我们是这个巨大社区中的一份子
+But this community that we're all a part of, it's huge, it's
+
+133
+00:04:33,600 --> 00:04:35,600
+它在不断的变强变大
+strong, and it's growing.
+
+134
+00:04:35,600 --> 00:04:38,850
+所以今天的演讲就是针对这些
+So this talk today is for those people
+
+135
+00:04:38,850 --> 00:04:41,210
+处在这个社区中  并且热爱web的250万人
+in this community, those 25 million people who
+
+136
+00:04:41,210 --> 00:04:43,050
+而说的
+love the web.
+
+137
+00:04:43,050 --> 00:04:47,261 
+[APPLAUSE]
+
+138
+00:04:47,261 --> 00:04:48,760
+一开始
+ELISABETH MORANT: So to start, we're
+
+139
+00:04:48,760 --> 00:04:51,477
+我们谈论了它的范围  以及web的超强力量
+going to talk about reach, the superpower of the web.
+
+140
+00:04:51,477 --> 00:04:54,060
+我们也聊了一些性能方面的问题
+ALEX KOMOROSKE: We're also then talk about performance and how
+
+141
+00:04:54,060 --> 00:04:55,710
+以及因此产生的巨大变革
+we made big strides there.
+
+142
+00:04:55,710 --> 00:04:56,290
+最后
+ELISABETH MORANT: And finally, we're
+
+143
+00:04:56,290 --> 00:04:58,040
+我们将要谈谈  以及
+going to talk about engagement, how we're
+
+144
+00:04:58,040 --> 00:05:00,130
+我们如何帮助你创造出拟真的体验
+helping you build immersive experience that
+
+145
+00:05:00,130 --> 00:05:02,000
+让用户回来
+keep users coming back.
+
+146
+00:05:02,000 --> 00:05:05,430
+这三个话题虽说是分开的
+ALEX KOMOROSKE: So the three of these separately, whatever.
+
+147
+00:05:05,430 --> 00:05:08,520
+但是联系在一起  与全球化社区相结合起来
+But together, combined with that global community,
+
+148
+00:05:08,520 --> 00:05:10,890
+就变得非常的特别了
+that's something special.
+
+149
+00:05:10,890 --> 00:05:13,450
+Web以及它的成功
+ELISABETH MORANT: So the web is extremely successful,
+
+150
+00:05:13,450 --> 00:05:15,180
+不仅是因为它范围之广
+largely because of its reach, and we
+
+151
+00:05:15,180 --> 00:05:16,450
+don't give it enough credit.
+
+152
+00:05:16,450 --> 00:05:17,770
+ALEX KOMOROSKE: I mean, we give it a fair bit of credit.
+
+153
+00:05:17,770 --> 00:05:19,870
+我们都知道浏览器能运行在每一个设备
+We understand that browsers are on every device
+
+154
+00:05:19,870 --> 00:05:21,420
+以及每一个操作系统上
+and every operating system.
+
+155
+00:05:21,420 --> 00:05:22,670
+没错
+ELISABETH MORANT: That's true.
+
+156
+00:05:22,670 --> 00:05:27,590
+甚至现在汽车上都有浏览器  我们有超过十亿的Chrome用户
+Even now cars have browsers and we have over one billion Chrome
+
+157
+00:05:27,590 --> 00:05:29,120
+这还不算那些
+users, and that doesn't even count
+
+158
+00:05:29,120 --> 00:05:31,255
+其他的浏览器以及通过它浏览Web的人
+other browsers and other people browsing the web.
+
+159
+00:05:31,255 --> 00:05:33,680
+但是我要谈的是关于范围的另外一方面
+But what I'm talking about is another aspect
+
+160
+00:05:33,680 --> 00:05:36,470
+不是浏览器的范围
+of reach, that is, not the reach of browsers
+
+161
+00:05:36,470 --> 00:05:39,220
+而是内容的范围
+but the reach of content.
+
+162
+00:05:39,220 --> 00:05:41,360
+我思考的方式则是把Web想象成一棵
+So the way I think about it is the web
+
+163
+00:05:41,360 --> 00:05:43,860
+拥有很多节点的树
+is a series of trees with nodes, right,
+
+164
+00:05:43,860 --> 00:05:46,570
+每一个网页都是一棵树  而树根
+where every website is a tree and the root is
+
+165
+00:05:46,570 --> 00:05:48,376
+则是像Pinterest.com之类的站点
+like Pinterest.com, and then you dig deep,
+
+166
+00:05:48,376 --> 00:05:50,250
+然后每一个网页就是树的叶子节点
+and then you're on a board and that's a leaf.
+
+167
+00:05:50,250 --> 00:05:51,630
+你从一个URL跳到另一个URL
+And then if you jump from URL to URL,
+
+168
+00:05:51,630 --> 00:05:53,730
+也就是你从一个叶子节点跳到另一个叶子节点
+then you're jumping from leaf node to leaf node
+
+169
+00:05:53,730 --> 00:05:55,190
+如此这般的
+and so on and so forth, and that's
+
+170
+00:05:55,190 --> 00:05:56,982
+这也是为什么能在链接间跳来跳去
+why it's so easy jump between link to link.
+
+171
+00:05:56,982 --> 00:05:58,648
+我真的不明白
+ALEX KOMOROSKE: I have literally no idea
+
+172
+00:05:58,648 --> 00:05:59,780
+你在说什么
+what you're talking about.
+
+173
+00:05:59,780 --> 00:06:00,140
+ELISABETH MORANT: OK.
+
+174
+00:06:00,140 --> 00:06:00,410
+Fair.
+
+175
+00:06:00,410 --> 00:06:01,450
+让我给你展示个例子
+Let me show you an example.
+
+176
+00:06:01,450 --> 00:06:02,366
+好的
+ALEX KOMOROSKE: Great.
+
+177
+00:06:02,366 --> 00:06:05,930
+假如我现在跳到了这个演示的笔记本电脑上
+ELISABETH MORANT: So if I could jump to the demo laptop?
+
+178
+00:06:05,930 --> 00:06:06,430
+Great.
+
+179
+00:06:06,430 --> 00:06:10,451
+我们打开Imagine Dragons乐队最新的单曲视频
+So let's start on a video of the latest Imagine Dragons single,
+
+180
+00:06:10,451 --> 00:06:10,950
+&quot;Shots.&quot;
+
+181
+00:06:10,950 --> 00:06:13,680
+我想在座的观众里面
+So I know that every single one of you in the audience
+
+182
+00:06:13,680 --> 00:06:16,000
+应该会有些人和我一样喜欢Imagine Dragons
+loves Imagine Dragons probably not as much as I do.
+
+183
+00:06:16,000 --> 00:06:18,060
+这也许是有史以来最棒的乐队
+It's basically the best band that's ever existed.
+
+184
+00:06:18,060 --> 00:06:19,430
+比Beatles好多了
+It's better than the Beatles, really.
+
+185
+00:06:19,430 --> 00:06:20,020
+我要继续演示了
+I could go on about it.
+
+186
+00:06:20,020 --> 00:06:20,373
+ALEX KOMOROSKE: Wow.
+
+187
+00:06:20,373 --> 00:06:20,726
+OK.
+
+188
+00:06:20,726 --> 00:06:21,226
+Sure.
+
+189
+00:06:21,226 --> 00:06:24,710
+关键在于web  范围  以及树
+ELISABETH MORANT: So the point is the web, reach, trees,
+
+190
+00:06:24,710 --> 00:06:25,210
+right.
+
+191
+00:06:25,210 --> 00:06:28,850
+所以Youtube在此就是一棵特别的树
+So YouTube is a tree and this particular piece
+
+192
+00:06:28,850 --> 00:06:30,240
+而视频内容则是一个节点
+of video content is a node.
+
+193
+00:06:30,240 --> 00:06:32,390
+我可以把URL分享给你
+And so I could just share a URL with you
+
+194
+00:06:32,390 --> 00:06:34,680
+然后你就能看到这个内容
+and then you can watch this piece of content.
+
+195
+00:06:34,680 --> 00:06:39,340
+同样的  我也能了解更多关于Imagine Dragon的信息
+And likewise, I can learn more about Imagine Dragons,
+
+196
+00:06:39,340 --> 00:06:44,640
+通过YouTube中的导航链接  或许你可以跳到维基百科
+navigate through YouTube, maybe jump to Wikipedia.
+
+197
+00:06:44,640 --> 00:06:46,810
+这样的话  我就是从其中一个节点跳到了
+At this point, I've jumped from one node
+
+198
+00:06:46,810 --> 00:06:49,210
+另外维基百科这棵树的节点上面
+to the node of another tree, the Wikipedia tree,
+
+199
+00:06:49,210 --> 00:06:52,910
+我也可以获得维基百科上面深层次的内容
+and I so easily reached a piece of content deep in Wikipedia
+
+200
+00:06:52,910 --> 00:06:55,870
+只需点击一下链接
+just by clicking a link.
+
+201
+00:06:55,870 --> 00:07:02,090
+从这里我可以阅读一些文章
+And so from here, I can read some articles,
+
+202
+00:07:02,090 --> 00:07:05,580
+来回的跳转  了解Alt-J  再跳回来
+jump around, learn about Alt-J, jump back.
+
+203
+00:07:05,580 --> 00:07:07,970
+我并没有带你浏览完
+I'm not going to bring you through the entirety
+
+204
+00:07:07,970 --> 00:07:08,840
+整个网络
+of the web.
+
+205
+00:07:08,840 --> 00:07:10,740
+那会花相当长的时间
+ALEX KOMOROSKE: That would take a long time.
+
+206
+00:07:10,740 --> 00:07:13,031
+我能跳转到他们的乐队主页
+ELISABETH MORANT: And I can jump to their band website.
+
+207
+00:07:13,031 --> 00:07:15,890
+这种情况下  我就不需要
+In this case, I wouldn't necessarily
+
+208
+00:07:15,890 --> 00:07:18,610
+那些每一个我喜欢乐队的应用了
+want an app for every band that I love,
+
+209
+00:07:18,610 --> 00:07:21,010
+我只需要去他们的网站就行了
+but I do want to be able to go to their website
+
+210
+00:07:21,010 --> 00:07:24,380
+了解一些信息  比如查看什么时候开巡演之类的
+and learn about things like when they're going on tour
+
+211
+00:07:24,380 --> 00:07:27,480
+Alex
+and find out-- hey, Alex?
+
+212
+00:07:27,480 --> 00:07:28,460
+怎么了
+ALEX KOMOROSKE: What?
+
+213
+00:07:28,460 --> 00:07:30,940
+你能等一下吗
+ELISABETH MORANT: Can you take over for a second?
+
+214
+00:07:30,940 --> 00:07:32,580
+他们正在开巡演
+I just-- they're on tour and I know
+
+215
+00:07:32,580 --> 00:07:33,580
+并且票已经快要卖光了
+the tickets are going to sell out
+
+216
+00:07:33,580 --> 00:07:35,220
+我需要现在就买上一张
+and I just really need to buy a ticket right now.
+
+217
+00:07:35,220 --> 00:07:35,810
+你逗我呢吧
+ALEX KOMOROSKE: Are you kidding me?
+
+218
+00:07:35,810 --> 00:07:36,330
+就一会儿
+ELISABETH MORANT: Please?
+
+219
+00:07:36,330 --> 00:07:37,360
+你知道slide的
+You know the slides.
+
+220
+00:07:37,360 --> 00:07:37,820
+好
+ALEX KOMOROSKE: OK.
+
+221
+00:07:37,820 --> 00:07:39,940
+事实上我也可以跳转到WolfVision
+ELISABETH MORANT: Actually, can we jump to WolfVision
+
+222
+00:07:39,940 --> 00:07:41,870
+这样我就能和所有人分享买票的这个经历了
+so everyone can share in this experience of buying tickets
+
+223
+00:07:41,870 --> 00:07:42,400
+with me?
+
+224
+00:07:42,400 --> 00:07:42,590
+Wow
+ALEX KOMOROSKE: Wow.
+
+225
+00:07:42,590 --> 00:07:43,230
+看来你真是Imagine Dragons的铁杆粉
+You really love Imagine Dragons.
+
+226
+00:07:43,230 --> 00:07:44,959
+我爱Imagine Dragons
+ELISABETH MORANT: I love Imagine Dragons.
+
+227
+00:07:44,959 --> 00:07:45,750
+ALEX KOMOROSKE: OK.
+
+228
+00:07:45,750 --> 00:07:47,458
+她正在做的这件事
+While she's doing that, it's kind of cool
+
+229
+00:07:47,458 --> 00:07:48,502
+这真是一件非常酷的事情
+what she was doing.
+
+230
+00:07:48,502 --> 00:07:49,960
+在几十秒钟内
+In the course of a few seconds, she
+
+231
+00:07:49,960 --> 00:07:52,250
+她先后浏览了大约七种不同的服务
+visited what, like seven different services,
+
+232
+00:07:52,250 --> 00:07:53,920
+都没有安装任何的东西
+all without installing anything.
+
+233
+00:07:53,920 --> 00:07:55,100
+非常棒
+That's kind of cool.
+
+234
+00:07:55,100 --> 00:07:57,100
+这一切在web上
+It's something that just happens that we totally
+
+235
+00:07:57,100 --> 00:07:58,977
+就好像理所当然一样
+take for granted on the web.
+
+236
+00:07:58,977 --> 00:08:00,310
+抱歉
+ELISABETH MORANT: Anyway, sorry.
+
+237
+00:08:00,310 --> 00:08:00,810
+我回来了
+I'm back.
+
+238
+00:08:00,810 --> 00:08:01,310
+我回来了
+I'm back.
+
+239
+00:08:01,310 --> 00:08:02,312
+我回来了
+I'm back, guys.
+
+240
+00:08:02,312 --> 00:08:04,270
+票现在还没开卖
+So it turns out the tickets aren't on sale yet,
+
+241
+00:08:04,270 --> 00:08:06,300
+所以我到了它们的网站
+so I just went to their website and opted
+
+242
+00:08:06,300 --> 00:08:09,090
+选择了售票时通知我
+to get a notification when they come back on sale.
+
+243
+00:08:09,090 --> 00:08:09,960
+ALEX KOMOROSKE: OK.
+
+244
+00:08:09,960 --> 00:08:11,956
+我们刚才谈到哪里了
+ELISABETH MORANT: Anyway, so where were we?
+
+245
+00:08:11,956 --> 00:08:14,107
+我们能回到之前的那页slide吗?
+Can we go back to the slides?
+
+246
+00:08:14,107 --> 00:08:16,065
+关于范围的
+ALEX KOMOROSKE: Something about reach, I think.
+
+247
+00:08:16,065 --> 00:08:17,190
+ELISABETH MORANT: Oh right.
+
+248
+00:08:17,190 --> 00:08:18,740
+Friction.
+
+249
+00:08:18,740 --> 00:08:22,650
+Friction sucks, friction being the amount of overhead
+
+250
+00:08:22,650 --> 00:08:25,340
+from a user wanting to get somewhere to actually being
+
+251
+00:08:25,340 --> 00:08:27,910
+able to get to that piece of content, and on the web,
+
+252
+00:08:27,910 --> 00:08:29,749
+它就像点击链接一样简单
+it's as easy as just tapping a link.
+
+253
+00:08:29,749 --> 00:08:30,540
+ALEX KOMOROSKE: OK.
+
+254
+00:08:30,540 --> 00:08:32,669
+我想我知道这是怎么一回事了
+So I think I see what's going on here
+
+255
+00:08:32,669 --> 00:08:34,154
+但是这似乎太抽象了
+but this seems all really abstract.
+
+256
+00:08:34,154 --> 00:08:36,320
+你能举一个实际的例子吗
+Is this something that actually matters in practice?
+
+257
+00:08:36,320 --> 00:08:37,278
+ELISABETH MORANT: Yeah.
+
+258
+00:08:37,278 --> 00:08:39,240
+例子来了
+So here's something.
+
+259
+00:08:39,240 --> 00:08:45,550
+平均每个用户每个月大约使用12到20个应用
+On average, the average person uses around 12 to 20 apps
+
+260
+00:08:45,550 --> 00:08:47,500
+在他们的手机上
+per month on their phone.
+
+261
+00:08:47,500 --> 00:08:48,120
+取决于你用的哪一个统计数据了
+ALEX KOMOROSKE: Depending on which stat you use.
+
+262
+00:08:48,120 --> 00:08:49,190
+是的取决于你看的哪一个数据源
+ELISABETH MORANT: Yeah, depending on what source
+
+263
+00:08:49,190 --> 00:08:50,270
+you look at.
+
+264
+00:08:50,270 --> 00:08:52,760
+猜一猜Chrome for Android 用户
+So keeping that in mind, guess how many sites
+
+265
+00:08:52,760 --> 00:08:55,829
+平均每月要访问多少个站点
+the average Chrome for Android user visits in every month.
+
+266
+00:08:55,829 --> 00:08:56,620
+ALEX KOMOROSKE: OK.
+
+267
+00:08:56,620 --> 00:08:59,170
+也包括第三方内容以及页面吗
+So are we including third party content and iframes and stuff?
+
+268
+00:08:59,170 --> 00:08:59,270
+不
+ELISABETH MORANT: No.
+
+269
+00:08:59,270 --> 00:09:01,160
+就只是直接的导航链接
+I'm talking about direct link navigation,
+
+270
+00:09:01,160 --> 00:09:02,550
+通过Omnibox
+going through the Omnibox.
+
+271
+00:09:02,550 --> 00:09:03,980
+都是些不同的域名
+This is all unique domains.
+
+272
+00:09:03,980 --> 00:09:04,771
+ALEX KOMOROSKE: OK.
+
+273
+00:09:04,771 --> 00:09:05,960
+使用12到20个应用的话
+So 12 to 20 for apps.
+
+274
+00:09:05,960 --> 00:09:08,860
+那么这个应该是那个的两倍 40个
+Maybe double that, like 40 or so.
+
+275
+00:09:08,860 --> 00:09:12,117
+超过100个网站
+ELISABETH MORANT: Over 100 websites a month.
+
+276
+00:09:12,117 --> 00:09:12,950
+ALEX KOMOROSKE: Wow.
+
+277
+00:09:12,950 --> 00:09:14,040
+这真蛮令人震惊
+That's actually really impressive.
+
+278
+00:09:14,040 --> 00:09:15,090
+我从未意识到有这么大
+I didn't realize it was going to be that big.
+
+279
+00:09:15,090 --> 00:09:15,430
+看见了吗
+ELISABETH MORANT: See?
+
+280
+00:09:15,430 --> 00:09:16,930
+这就是web所能触及的范围
+That right there is reach in action.
+
+281
+00:09:16,930 --> 00:09:18,850
+人们可以通过简单的点击
+It's so easy for people to just tap a link
+
+282
+00:09:18,850 --> 00:09:23,090
+就访问数以万计的站点
+and visit tons of new sites with no friction.
+
+283
+00:09:23,090 --> 00:09:26,070
+事实上美国运营商的移动流量
+And in fact, it turns out that 85% of US retailers'
+
+284
+00:09:26,070 --> 00:09:28,110
+占到了Web流量的85%
+mobile traffic is on the web, and that accounts
+
+285
+00:09:28,110 --> 00:09:29,307
+并且占它们收入的90%以上
+for 90% of their revenue.
+
+286
+00:09:29,307 --> 00:09:30,140
+ALEX KOMOROSKE: Wow.
+
+287
+00:09:30,140 --> 00:09:32,264
+这仅仅只是一个例子
+ELISABETH MORANT: And now this is just one example,
+
+288
+00:09:32,264 --> 00:09:35,880
+这也是我为什么说Web有着超强的力量
+and this is why I consider reach the superpower of the web.
+
+289
+00:09:35,880 --> 00:09:39,960
+所以我的结论就是
+So the way I think of it is-- bear with me-- you want people
+
+290
+00:09:39,960 --> 00:09:42,410
+如果你想要人们和你的东西产生联系
+to form a meaningful relationship with your stuff,
+
+291
+00:09:42,410 --> 00:09:44,570
+人们必须得能发现它
+but first people have to find it.
+
+292
+00:09:44,570 --> 00:09:48,100
+Web就像一个巨大的速配会
+So it's kind of like the web is one big speed dating venue
+
+293
+00:09:48,100 --> 00:09:50,890
+你可以从一个人跳到另外一个人
+where you can jump from person to person and get to know them
+
+294
+00:09:50,890 --> 00:09:53,420
+一点一点的接触他  就像你从一个站点跳到另一个站点一样
+a little bit, just like you can jump from website to website
+
+295
+00:09:53,420 --> 00:09:55,461
+在你没和那部分内容建立关系之前
+and get to know it a little bit before committing
+
+296
+00:09:55,461 --> 00:09:58,310
+你就能对它有所了解
+and developing a relationship with that content.
+
+297
+00:09:58,310 --> 00:10:00,730
+你无需担心非得点击一个链接
+And you're never afraid to necessarily click
+
+298
+00:10:00,730 --> 00:10:02,860
+因为最坏的情况下又能发生什么呢
+a link because what's the worst that can happen?
+
+299
+00:10:02,860 --> 00:10:04,610
+五分钟后  铃响了
+After five minutes, the bell rings and you
+
+300
+00:10:04,610 --> 00:10:06,406
+你又要移动到了另外一个地方
+move onto the next place.
+
+301
+00:10:06,406 --> 00:10:09,030
+关键在于只要你想
+And the point is that then, when you decide you want to commit,
+
+302
+00:10:09,030 --> 00:10:11,450
+你就能快速的建立联系
+you can build that relationship over time.
+
+303
+00:10:11,450 --> 00:10:13,490
+这前所未有的重要
+And so we take reach for granted but it's really
+
+304
+00:10:13,490 --> 00:10:14,962
+as important as ever.
+
+305
+00:10:14,962 --> 00:10:16,920
+这就是Web的延伸范围
+ALEX KOMOROSKE: So that's reach, but of course,
+
+306
+00:10:16,920 --> 00:10:19,660
+和移动端的性能一样重要
+just as important on mobile is performance.
+
+307
+00:10:19,660 --> 00:10:21,160
+但是你又如何去衡量性能
+But what does good performance mean?
+
+308
+00:10:21,160 --> 00:10:23,710
+你怎么知道你做完了并且完成的足够出色
+How do you know when you're done and when you're good enough?
+
+309
+00:10:23,710 --> 00:10:25,210
+非常简单
+ELISABETH MORANT: Well, that's easy.
+
+310
+00:10:25,210 --> 00:10:27,030
+一个页面加载的时间
+It's just the amount of time it takes a page to load.
+
+311
+00:10:27,030 --> 00:10:28,010
+页面加载时间
+ALEX KOMOROSKE: So page load time
+
+312
+00:10:28,010 --> 00:10:30,301
+人尽皆知
+is something that we've all known about as a community.
+
+313
+00:10:30,301 --> 00:10:31,680
+我们把称它为PLT或者是其他
+We call it PLT or whatever.
+
+314
+00:10:31,680 --> 00:10:34,100
+我们有很深的理解  也有强有利的工具
+We have good understanding, got good tools.
+
+315
+00:10:34,100 --> 00:10:36,047
+There's whole conferences on it.
+
+316
+00:10:36,047 --> 00:10:37,880
+这并不是说我们已经很完美了  顺便说
+That's not to say we're perfect, by the way.
+
+317
+00:10:37,880 --> 00:10:39,588
+很多人都不必去亲身体验
+There's a lot of us who don't necessarily
+
+318
+00:10:39,588 --> 00:10:41,240
+我们在这说的这些东西
+practice what we preach here.
+
+319
+00:10:41,240 --> 00:10:43,990
+但是移动领域  也有其他的指标
+But on mobile, other metrics matter, too,
+
+320
+00:10:43,990 --> 00:10:45,115
+比如说滚动性能
+like scrolling performance.
+
+321
+00:10:45,115 --> 00:10:47,700
+为了实现
+To have the illusion that the content is sticking
+
+322
+00:10:47,700 --> 00:10:49,310
+内容就像随着你手指滚动的错觉
+to your finger as you scroll, you've
+
+323
+00:10:49,310 --> 00:10:51,660
+你必须达到60fps
+got to hit 60 frames per second consistently.
+
+324
+00:10:51,660 --> 00:10:53,160
+但是这些指标哪些是
+But which of these metrics should we
+
+325
+00:10:53,160 --> 00:10:56,020
+值得我们关注并且优化的呢
+look at and which one should we be optimizing?
+
+326
+00:10:56,020 --> 00:10:58,472
+答案就是RAIL
+So the answer to that is this concept that we call RAIL.
+
+327
+00:10:58,472 --> 00:11:00,180
+另外一个缩写
+ELISABETH MORANT: Great, another acronym.
+
+328
+00:11:00,180 --> 00:11:00,890
+当然
+ALEX KOMOROSKE: Of course.
+
+329
+00:11:00,890 --> 00:11:01,990
+就是这个
+What did you expect?
+
+330
+00:11:01,990 --> 00:11:03,810
+它是一个概念
+So it's basically a conceptual framework
+
+331
+00:11:03,810 --> 00:11:06,380
+用来感知什么时候发挥出了出色性能
+for knowing when you have good enough performance.
+
+332
+00:11:06,380 --> 00:11:09,080
+那么什么时候才算性能出色呢
+So the key insight is when is performance good enough?
+
+333
+00:11:09,080 --> 00:11:11,162
+就是用户察觉不到性能的问题的时候
+Well, when the user can't perceive it.
+
+334
+00:11:11,162 --> 00:11:12,370
+这才是性能出色
+That's when it's good enough.
+
+335
+00:11:12,370 --> 00:11:13,770
+我感保证Don Draper可没说过那个
+ELISABETH MORANT: I'm pretty sure Don Draper didn't actually
+
+336
+00:11:13,770 --> 00:11:14,365
+say that.
+
+337
+00:11:14,365 --> 00:11:15,490
+好眼力
+ALEX KOMOROSKE: Good catch.
+
+338
+00:11:15,490 --> 00:11:17,031
+据我所知他的确没说过
+He didn't say that, as far as I know,
+
+339
+00:11:17,031 --> 00:11:18,733
+但是他说过
+but he might have said it if only
+
+340
+00:11:18,733 --> 00:11:20,490
+如果他想关注某个东西的一方面
+he had cared about this kind of stuff.
+
+341
+00:11:20,490 --> 00:11:21,865
+那么就要为此
+But the point is there's actually
+
+342
+00:11:21,865 --> 00:11:23,280
+做出足够的研究
+a lot of research on this.
+
+343
+00:11:23,280 --> 00:11:26,050
+所以如果你想实现所谓的平滑滚动
+So if you're trying to get that illusion of smooth motion,
+
+344
+00:11:26,050 --> 00:11:28,300
+那么一定得达到60fps
+of course you want to hit 60 frames per second,
+
+345
+00:11:28,300 --> 00:11:32,850
+意味着每一帧至少要16.67毫秒
+which means 16.67 milliseconds to put each frame on screen.
+
+346
+00:11:32,850 --> 00:11:34,970
+而现在  如果你想要用户
+Now, if you want to have the user feel
+
+347
+00:11:34,970 --> 00:11:37,040
+感到这一切都是瞬间完成的
+that the thing happened instantaneously,
+
+348
+00:11:37,040 --> 00:11:40,060
+研究告诉我们至少得100毫秒
+research tells us you've got about 100 milliseconds.
+
+349
+00:11:40,060 --> 00:11:42,930
+如果你在一秒内完成
+And if you do something within one second, well then,
+
+350
+00:11:42,930 --> 00:11:45,769
+人的思路能停留在上面
+someone's train of thought can stay on it,
+
+351
+00:11:45,769 --> 00:11:47,310
+如果你超过了十秒
+and if you take more than 10 seconds,
+
+352
+00:11:47,310 --> 00:11:49,690
+那就能玩纸牌了
+well then they're off playing solitaire or something.
+
+353
+00:11:49,690 --> 00:11:51,080
+肯定超过十秒
+ELISABETH MORANT: Definitely took more than 10 seconds.
+
+354
+00:11:51,080 --> 00:11:53,121
+真是一个好例子
+ALEX KOMOROSKE: Thank you for that great example.
+
+355
+00:11:53,121 --> 00:11:56,690
+无论如何这有一个黄金法则需要你去遵守
+So anyway, these are the golden standard for you to hit,
+
+356
+00:11:56,690 --> 00:11:58,320
+而RAIL的概念则是为此而生
+and RAIL is basically just hitting
+
+357
+00:11:58,320 --> 00:12:01,890
+专注于web性能
+these goals in the context of your web performance.
+
+358
+00:12:01,890 --> 00:12:05,150
+第一个R代表响应时间
+So the first one is R for reaction time.
+
+359
+00:12:05,150 --> 00:12:07,740
+这是代表
+So basically, this is exactly when
+
+360
+00:12:07,740 --> 00:12:09,880
+从用户开始滑动屏幕上的手指
+the user puts their finger down on the glass
+
+361
+00:12:09,880 --> 00:12:10,890
+再到开始交互的时间
+and starts interacting.
+
+362
+00:12:10,890 --> 00:12:13,474
+你有100毫秒的时间处理事务
+You have 100 milliseconds to do something, to show you got it.
+
+363
+00:12:13,474 --> 00:12:14,681
+ELISABETH MORANT: Yeah, sure.
+
+364
+00:12:14,681 --> 00:12:16,781
+否则的话应用就会感觉卡顿
+Otherwise, the app feels broken or slow.
+
+365
+00:12:16,781 --> 00:12:17,780
+ALEX KOMOROSKE: Exactly.
+
+366
+00:12:17,780 --> 00:12:20,560
+100毫秒内改变按钮的颜色
+So that's 100 milliseconds to change the button color
+
+367
+00:12:20,560 --> 00:12:23,120
+或者展示一个进度条
+or to show a loading indicator or show, I got it.
+
+368
+00:12:23,120 --> 00:12:24,620
+证明没有卡住
+I'm not frozen.
+
+369
+00:12:24,620 --> 00:12:26,660
+A代表动画时间
+Next one is Animation time.
+
+370
+00:12:26,660 --> 00:12:28,470
+60帧每秒是黄金法则
+You've got, of course, 60 frames per second
+
+371
+00:12:28,470 --> 00:12:32,380
+意味着每帧16.67毫秒
+is the gold standard, which means 16.67 milliseconds.
+
+372
+00:12:32,380 --> 00:12:35,470
+不算太长
+Now, that's not a lot of time, so if you do anything,
+
+373
+00:12:35,470 --> 00:12:39,300
+你可能会错过  所以一定要格外注意
+you might miss that, so you have to really, really careful.
+
+374
+00:12:39,300 --> 00:12:42,049
+I则是代表空闲
+So the next one is Idle.
+
+375
+00:12:42,049 --> 00:12:43,840
+为啥Idle是RAIL的一部分
+ELISABETH MORANT: Why is Idle part of RAIL?
+
+376
+00:12:43,840 --> 00:12:45,470
+你必须得做一些工作
+ALEX KOMOROSKE: So you have to do
+
+377
+00:12:45,470 --> 00:12:48,280
+这要花些时间  比如说渲染图片什么的
+some work that's going to take some time, like image decodes
+
+378
+00:12:48,280 --> 00:12:52,060
+无论如何你不能在用户交互时干这个
+or whatever, and you can't do it when the user is interacting,
+
+379
+00:12:52,060 --> 00:12:54,046
+最佳时间是用户还没把手指
+so a good time is when the user doesn't have
+
+380
+00:12:54,046 --> 00:12:55,170
+放在屏幕上
+their finger on the screen.
+
+381
+00:12:55,170 --> 00:12:56,050
+ELISABETH MORANT: Right.
+
+382
+00:12:56,050 --> 00:12:58,591
+如果用户在你做这些工作的途中
+ALEX KOMOROSKE: However, what if the user's finger comes back
+
+383
+00:12:58,591 --> 00:13:00,170
+手指放回来了会怎样
+in while you're doing that work?
+
+384
+00:13:00,170 --> 00:13:00,650
+我想想
+ELISABETH MORANT: I see.
+
+385
+00:13:00,650 --> 00:13:01,920
+你一定不想在中途发生这个
+You don't want to be the middle of idle time
+
+386
+00:13:01,920 --> 00:13:03,570
+因为这样的话  你就无法完成交互
+because otherwise, you're not going to be able to react.
+
+387
+00:13:03,570 --> 00:13:05,300
+用户会以为卡住了
+The user might think the app is broken.
+
+388
+00:13:05,300 --> 00:13:05,520
+ALEX KOMOROSKE: Right.
+
+389
+00:13:05,520 --> 00:13:07,710
+所以如果你想确保在没开始与用户交互之前
+So you want to make sure you chunk up your work you
+
+390
+00:13:07,710 --> 00:13:09,840
+也就是Idle阶段
+that you even in idle so if at any point
+
+391
+00:13:09,840 --> 00:13:12,400
+就完成整体的工作
+the user starts interacting with you, you're good to go
+
+392
+00:13:12,400 --> 00:13:16,170
+你最好要抓住那100毫秒的响应时间
+and can hit that 100 milliseconds, the R of RAIL.
+
+393
+00:13:16,170 --> 00:13:19,100
+最后一个  则是加载时间
+And the last one, of course, is our friend Load time.
+
+394
+00:13:19,100 --> 00:13:22,197
+当然  这在移动端仍然是问题
+Of course, it still matters, if not more, on mobile.
+
+395
+00:13:22,197 --> 00:13:24,030
+黄金法则告诉我们
+And the gold standard here to keep the train
+
+396
+00:13:24,030 --> 00:13:25,782
+临界值在1秒
+of thought solid is one second.
+
+397
+00:13:25,782 --> 00:13:27,990
+我希望一切都能载入的那样快
+ELISABETH MORANT: I wish everything loaded that fast.
+
+398
+00:13:27,990 --> 00:13:28,865
+ALEX KOMOROSKE: Yeah.
+
+399
+00:13:28,865 --> 00:13:29,920
+It's pretty low, right?
+
+400
+00:13:29,920 --> 00:13:32,530
+请记住  这样才算是完美的性能
+Remember, this is for perfect performance,
+
+401
+00:13:32,530 --> 00:13:34,450
+Quick 和 Service Worker 首次让此
+and things like Quick and Service Worker
+
+402
+00:13:34,450 --> 00:13:37,590
+得以可行
+actually make this feasible for the first time.
+
+403
+00:13:37,590 --> 00:13:40,070
+当然  如果你不能全部的都加载出来
+And of course, if you can't get your entire site loaded up
+
+404
+00:13:40,070 --> 00:13:41,910
+还有一个技巧则是
+on screen, well, the next best thing
+
+405
+00:13:41,910 --> 00:13:45,200
+在屏幕展示一些标识来证明我在加载
+is putting reasonable pixels on screen to show I've loaded,
+
+406
+00:13:45,200 --> 00:13:46,559
+我在努力加载  我没有卡住
+I'm working, I'm not just stuck.
+
+407
+00:13:46,559 --> 00:13:48,350
+一些加载进度条什么的
+ELISABETH MORANT: Sure, some loading image.
+
+408
+00:13:48,350 --> 00:13:48,890
+ALEX KOMOROSKE: Right.
+
+409
+00:13:48,890 --> 00:13:50,270
+这就是整个的理论
+ELISABETH MORANT: So this is all great in theory,
+
+410
+00:13:50,270 --> 00:13:52,010
+但是实际中又意味着什么呢
+but what does it actually mean in practice?
+
+411
+00:13:52,010 --> 00:13:54,301
+RAIL对于我们来说
+ALEX KOMOROSKE: So RAIL is a great conceptual framework
+
+412
+00:13:54,301 --> 00:13:55,470
+是一个良好的概念性框架
+for us across the community.
+
+413
+00:13:55,470 --> 00:13:57,980
+尤其是对于浏览器厂商
+So for browser vendors in particular,
+
+414
+00:13:57,980 --> 00:14:00,080
+它给予你如开发者般
+it means giving you as developers
+
+415
+00:14:00,080 --> 00:14:02,690
+更多的上升空间  你亲自去操刀你的代码
+more headroom, more space for your own code
+
+416
+00:14:02,690 --> 00:14:06,990
+完成这些工作  这样你就能跨越这些壁垒
+to do this work so that you don't cross those boundaries.
+
+417
+00:14:06,990 --> 00:14:09,120
+Chrome的Web平台团队
+So the Chrome Web Platform team is
+
+418
+00:14:09,120 --> 00:14:12,450
+就是一路过来的  大约有200个工程师
+way over-- I think 200 engineers last time I checked.
+
+419
+00:14:12,450 --> 00:14:14,100
+很多人  并且绝大多数的人
+A lot of people, the vast majority,
+
+420
+00:14:14,100 --> 00:14:16,630
+都在为性能方面努力着
+work on some aspect of performance.
+
+421
+00:14:16,630 --> 00:14:19,520
+我们为此做了大量的工作  以及大量的重构
+We've been doing tons of work, vast re-architectures,
+
+422
+00:14:19,520 --> 00:14:21,570
+旨在优化移动端的性能
+to optimize for mobile performance.
+
+423
+00:14:21,570 --> 00:14:24,730
+我们没有太多的时间去深说其中的每一个
+Now, we don't have time to dive into any of these in any depth,
+
+424
+00:14:24,730 --> 00:14:27,170
+但是让我选其中的一个
+but let me just pick one.
+
+425
+00:14:27,170 --> 00:14:29,220
+两个月前  我们启动了一个新特性
+So a couple months ago, we launched this feature
+
+426
+00:14:29,220 --> 00:14:30,470
+叫做Scheduler
+called the Scheduler.
+
+427
+00:14:30,470 --> 00:14:32,180
+大意是说
+And the basic idea is that when you
+
+428
+00:14:32,180 --> 00:14:34,890
+当你开始和一个界面开始交互的时候
+start interacting with a page, that's when, of course,
+
+429
+00:14:34,890 --> 00:14:38,390
+滚动优先于一切
+you want to prioritize scrolling and frames over everything
+
+430
+00:14:38,390 --> 00:14:39,260
+else.
+
+431
+00:14:39,260 --> 00:14:42,324
+这样的效果非常显著
+And it turns out that this can have a really big impact,
+
+432
+00:14:42,324 --> 00:14:43,990
+尤其是在拥有大量资源要加载
+especially during page load when there's
+
+433
+00:14:43,990 --> 00:14:45,780
+以及工作要做的情况下
+lots of work being done.
+
+434
+00:14:45,780 --> 00:14:48,740
+这里有一个演示视频  打开一个视频界面
+So here we've got a video, and if you can roll the video,
+
+435
+00:14:48,740 --> 00:14:51,580
+左边开启了scheduler  而右边则没有开启
+we have on the left with the scheduler, on the right
+
+436
+00:14:51,580 --> 00:14:52,390
+without.
+
+437
+00:14:52,390 --> 00:14:55,300
+我们刷新一下重新加载界面
+We refresh the page so we're doing tons of work,
+
+438
+00:14:55,300 --> 00:14:57,980
+你可以非常明显的看到
+and you can see the one on the left scrolls way
+
+439
+00:14:57,980 --> 00:15:00,740
+左边比右边的滑动的更顺滑
+more smoothly than the one on the right.
+
+440
+00:15:00,740 --> 00:15:04,140
+这就是一个由RAIL理念驱动的良好例子
+So this is a great example of RAIL motivating work for us
+
+441
+00:15:04,140 --> 00:15:06,570
+浏览器厂商自动使你的网页
+as browser vendors to make your site just
+
+442
+00:15:06,570 --> 00:15:07,820
+变得更快
+get faster automatically.
+
+443
+00:15:07,820 --> 00:15:09,276
+[APPLAUSE]
+
+444
+00:15:09,276 --> 00:15:09,776
+谢谢
+Thanks.
+
+445
+00:15:09,776 --> 00:15:14,180
+
+
+446
+00:15:14,180 --> 00:15:16,640
+下一张slide
+So if we can move on to the next slide.
+
+447
+00:15:16,640 --> 00:15:18,630
+不仅仅是我们自己
+So it's not just on us.
+
+448
+00:15:18,630 --> 00:15:21,770
+我们也为开发者们
+It's also on developers that work with us.
+
+449
+00:15:21,770 --> 00:15:23,570
+提供了良好的工具
+And so part of it is better tooling
+
+450
+00:15:23,570 --> 00:15:26,880
+这样的话你就能轻易的了解性能情况
+so that you can understand your own performance really well.
+
+451
+00:15:26,880 --> 00:15:29,720
+当然  DevTools是一个无比强大的工具
+So of course, DevTools is incredibly powerful.
+
+452
+00:15:29,720 --> 00:15:32,250
+一个你现在可以在Canary 版本里体验到的新特性
+A new feature that you can try out in Canary behind the flag
+
+453
+00:15:32,250 --> 00:15:35,400
+叫做Filmstrip
+today is a feature called Filmstrip.
+
+454
+00:15:35,400 --> 00:15:38,530
+它是怎样工作的呢  你会注意到
+So what it does, it shows you-- you can see it up there
+
+455
+00:15:38,530 --> 00:15:41,310
+那里有一行图片
+in that row of images-- it shows what
+
+456
+00:15:41,310 --> 00:15:43,380
+它展示出了加载页面时
+pixels were on screen at different parts
+
+457
+00:15:43,380 --> 00:15:44,830
+不同时刻的情况
+as you loaded the page.
+
+458
+00:15:44,830 --> 00:15:48,430
+你可以看到
+And so you can see here this random cwilso guy,
+
+459
+00:15:48,430 --> 00:15:51,870
+加载他的博客大约用了8秒
+his blog is hitting about eight seconds for the pixels
+
+460
+00:15:51,870 --> 00:15:54,640
+才完全的体现在屏幕上
+to be on screen, which is way past the one
+
+461
+00:15:54,640 --> 00:15:56,410
+当你想要用RAIL的理念去优化它
+second that you want with RAIL.
+
+462
+00:15:56,410 --> 00:15:58,460
+这样的话  你就需要通过DevTools深挖
+And so now, of course, you dig in with DevTools
+
+463
+00:15:58,460 --> 00:15:59,620
+看看究竟是怎么回事
+and figure out what's going on.
+
+464
+00:15:59,620 --> 00:16:01,619
+所以说DevTools是一个强大的工具
+ELISABETH MORANT: So DevTools is really powerful
+
+465
+00:16:01,619 --> 00:16:03,930
+当时你需要拥有一个PhD才能弄懂他
+but you basically need a PhD to understand all of it.
+
+466
+00:16:03,930 --> 00:16:04,804
+ALEX KOMOROSKE: Yeah.
+
+467
+00:16:04,804 --> 00:16:06,870
+有时候它的确是压倒性般强大
+It's so overwhelmingly powerful sometimes.
+
+468
+00:16:06,870 --> 00:16:08,460
+我们也在这方面努力
+So we're also working on tools that
+
+469
+00:16:08,460 --> 00:16:10,660
+这样当你打开DevTools
+will make it so that you can open up DevTools
+
+470
+00:16:10,660 --> 00:16:12,930
+它会说hey  你忽略了
+and it will say, hey, you're consistently
+
+471
+00:16:12,930 --> 00:16:14,640
+RAIL规则中的A
+missing the A in RAIL.
+
+472
+00:16:14,640 --> 00:16:18,520
+这个统计功能的第三方脚本
+Turns out that this third party script, this analytic script,
+
+473
+00:16:18,520 --> 00:16:20,740
+妨碍了滚动工作
+is doing way too much work on scroll.
+
+474
+00:16:20,740 --> 00:16:22,060
+你该考虑移走它
+Consider removing it.
+
+475
+00:16:22,060 --> 00:16:24,020
+这样的话就容易多了
+And so making it much easier for you to dive in
+
+476
+00:16:24,020 --> 00:16:26,112
+在你没有拿到PhD的情况下
+without having to get a PhD.
+
+477
+00:16:26,112 --> 00:16:27,570
+最后一个则是
+And of course, the last one is just
+
+478
+00:16:27,570 --> 00:16:29,400
+把我们自己 看成是高标准的
+holding ourselves as web developers
+
+479
+00:16:29,400 --> 00:16:30,920
+web开发者
+to a higher standard.
+
+480
+00:16:30,920 --> 00:16:33,660
+I\O的web应用就是个很好的例子
+So the I/O web app is an amazing example
+
+481
+00:16:33,660 --> 00:16:37,070
+一个高度响应式  能到达60fps的Web应用
+of a highly responsive, 60 frames per second web app.
+
+482
+00:16:37,070 --> 00:16:41,300
+目前这个开发不容易  但是每一天都会变得
+Now, it wasn't easy to build but it is getting easier and easier
+
+483
+00:16:41,300 --> 00:16:42,550
+越来越简单
+every day.
+
+484
+00:16:42,550 --> 00:16:44,520
+对于我们来说
+And all of us, every single time we
+
+485
+00:16:44,520 --> 00:16:46,930
+当我们引入一个第三方的脚本或者是资源
+include a third party script or resource
+
+486
+00:16:46,930 --> 00:16:49,361
+以及从第三方域名上取得的东西
+or we fetch out to another third party domain,
+
+487
+00:16:49,361 --> 00:16:51,110
+我们应该问问自己这样值得吗
+we should ask ourselves, is this worth it?
+
+488
+00:16:51,110 --> 00:16:55,900
+用RAIL理念的话会更快吗
+Is this going to make me go past those goals in RAIL?
+
+489
+00:16:55,900 --> 00:16:58,060
+我们花了不少时间谈论性能
+So there's only so much time to cover performance.
+
+490
+00:16:58,060 --> 00:17:00,190
+旨在说明我们已经做到了巨大的进步
+The point is that we've made a lot of big strides
+
+491
+00:17:00,190 --> 00:17:02,150
+我觉得这对于我们来说是一个良好的理念框架
+and I think this is a great framework for us
+
+492
+00:17:02,150 --> 00:17:03,960
+as a community.
+
+493
+00:17:03,960 --> 00:17:06,650
+Web有着广阔的延伸范围
+ELISABETH MORANT: So the web has a superpower of reach,
+
+494
+00:17:06,650 --> 00:17:09,270
+我们现在已经达到了60fps  即使是对于一些
+and now it's possible to have 60 frames per second, even
+
+495
+00:17:09,270 --> 00:17:11,420
+非常复杂的移动应用
+for the most complex mobile apps,
+
+496
+00:17:11,420 --> 00:17:13,390
+但是web所缺少的则是
+but what the web is missing is the ability
+
+497
+00:17:13,390 --> 00:17:16,319
+帮助用户和那些他们真正需要的内容
+for users to build meaningful relationships with the stuff
+
+498
+00:17:16,319 --> 00:17:17,653
+构建起联系的能力
+that they find to really engage.
+
+499
+00:17:17,653 --> 00:17:18,527
+ALEX KOMOROSKE: Yeah.
+
+500
+00:17:18,527 --> 00:17:19,902
+速配虽好
+So I mean, speed dating is great.
+
+501
+00:17:19,902 --> 00:17:22,568
+你会在短时间内遇见各式各样的人
+You meet a whole bunch of people in a very short amount of time,
+
+502
+00:17:22,568 --> 00:17:24,260
+但是如果你和你遇到的人
+but what if you meet that person and you
+
+503
+00:17:24,260 --> 00:17:25,020
+都碰不出火花呢
+got a little bit of a spark?
+
+504
+00:17:25,020 --> 00:17:27,039
+你不想深入的了解他们
+You want to get to know them a little bit.
+
+505
+00:17:27,039 --> 00:17:29,580
+的确  本地应用在此做的就比较好
+ELISABETH MORANT: Exactly, and native apps are great at this.
+
+506
+00:17:29,580 --> 00:17:29,830
+ALEX KOMOROSKE: OK.
+
+507zuoda
+00:17:29,830 --> 00:17:30,690
+我有个主意
+I've got an idea.
+
+508
+00:17:30,690 --> 00:17:32,231
+我们为什么不把
+Why don't we just list all the things
+
+509
+00:17:32,231 --> 00:17:34,439
+本地应用能做到的移植到Web上面
+native apps can do and just copy that for the web?
+
+510
+00:17:34,439 --> 00:17:36,480
+看着简单
+ELISABETH MORANT: Well, I wish it were that easy.
+
+511
+00:17:36,480 --> 00:17:38,640
+问题是
+The problem is that with every new API also
+
+512
+00:17:38,640 --> 00:17:41,260
+也会带来全新的风险
+comes a whole new set of risks, and we
+
+513
+00:17:41,260 --> 00:17:42,980
+我们要保证Web的安全性
+want to maintain the security guarantees
+
+514
+00:17:42,980 --> 00:17:45,390
+以及不能让用户从一个链接跳转到另一个链接时
+of the web, the ability for users to jump to a link
+
+515
+00:17:45,390 --> 00:17:47,820
+承担相关的风险
+and not worry that something's going to happen to them.
+
+516
+00:17:47,820 --> 00:17:50,560
+举个例子  后台同步
+So let's take, for example, background sync, background
+
+517
+00:17:50,560 --> 00:17:56,050
+后台同步得以在应用关闭的情况下
+sync being the ability for an app to fetch and send content
+
+518
+00:17:56,050 --> 00:17:58,300
+与服务器交换数据
+when the app is closed.
+
+519
+00:17:58,300 --> 00:18:01,759
+如果你每一个月浏览超过100个站点
+So if you're visiting over 100 sites a month,
+
+520
+00:18:01,759 --> 00:18:04,300
+你当然不愿意让它们在后台
+then you don't necessarily want them all to arbitrarily start
+
+521
+00:18:04,300 --> 00:18:05,840
+随意的进行同步
+syncing the background.
+
+522
+00:18:05,840 --> 00:18:08,700
+比如说你在家浏览一些令人尴尬的站点
+Just like let's say you browse some embarrassing sites
+
+523
+00:18:08,700 --> 00:18:10,630
+比如明星八卦绯闻什么的
+at home, like some celebrity gossip site.
+
+524
+00:18:10,630 --> 00:18:12,577
+我当然不是说Alex热衷于
+I'm not going to call what celebrity Alex is
+
+525
+00:18:12,577 --> 00:18:13,160
+明星绯闻哈
+obsessed with.
+
+526
+00:18:13,160 --> 00:18:13,760
+ALEX KOMOROSKE: Guilty.
+
+527
+00:18:13,760 --> 00:18:15,150
+然后你要去工作了
+ELISABETH MORANT: And then you go to work,
+
+528
+00:18:15,150 --> 00:18:16,900
+于此同时你手机没有电了
+and in the meantime, your phone lost battery.
+
+529
+00:18:16,900 --> 00:18:18,520
+当你工作时你打开了它  瞬间
+You turn it on when you get to work, and all of a sudden,
+
+530
+00:18:18,520 --> 00:18:20,686
+后台开始同步那些令人尴尬的信息
+you start fetching embarrassing content while you're
+
+531
+00:18:20,686 --> 00:18:22,009
+在你的企业网络里
+on your corporate network.
+
+532
+00:18:22,009 --> 00:18:23,800
+我们试图拯救那些像Alex一样
+Well, we're trying to save people like Alex
+
+533
+00:18:23,800 --> 00:18:26,099
+从浏览一个尴尬站点再到被叫进主管办公室的那些人
+from an embarrassing visit to the sys admin's office.
+
+534
+00:18:26,099 --> 00:18:26,890
+ALEX KOMOROSKE: OK.
+
+535
+00:18:26,890 --> 00:18:27,900
+我知道了
+I get that.
+
+536
+00:18:27,900 --> 00:18:28,890
+我明白了
+I see.
+
+537
+00:18:28,890 --> 00:18:31,056
+让我们回到刚才的那个速配比喻
+ELISABETH MORANT: And so basically, if we bring back
+
+538
+00:18:31,056 --> 00:18:33,020
+假如说
+the speed dating metaphor, let's say
+
+539
+00:18:33,020 --> 00:18:35,380
+你第一次遇见了一个
+that you meet someone for the first time
+
+540
+00:18:35,380 --> 00:18:37,660
+可以碰撞出火花并且你觉得
+and you really feel that spark and you think,
+
+541
+00:18:37,660 --> 00:18:39,030
+这就是你要找的那一个
+this could be the one.
+
+542
+00:18:39,030 --> 00:18:40,902
+你会给她们你公寓的钥匙吗
+Do you give them the keys to your apartment,
+
+543
+00:18:40,902 --> 00:18:43,110
+或者是带她见家长  半跪着求婚
+introduce them to your parents, bend down on one knee
+
+544
+00:18:43,110 --> 00:18:44,790
+并且发誓要彼此共度余生吗
+and vow to spend the rest of your life together?
+
+545
+00:18:44,790 --> 00:18:45,230
+ALEX KOMOROSKE: Yes.
+
+546
+00:18:45,230 --> 00:18:46,105
+ELISABETH MORANT: No.
+
+547
+00:18:46,105 --> 00:18:47,670
+当然不
+Of course not.
+
+548
+00:18:47,670 --> 00:18:50,750
+天啊  那可能会是一个连环杀手
+Jeez, that could be a serial killer.
+
+549
+00:18:50,750 --> 00:18:54,580
+你需要的是慢慢的培养出感情
+So the idea is that you want to build a relationship slowly.
+
+550
+00:18:54,580 --> 00:18:58,110
+问题在于我们无法效仿  或者是把本地应用的强大模型
+The problem is that we can't necessarily emulate or copy
+
+551
+00:18:58,110 --> 00:18:59,780
+复制过来
+the powerful model of native apps
+
+552
+00:18:59,780 --> 00:19:02,840
+因为本地应用有商店  它们有运维团队
+because native apps have a store, they have ops teams,
+
+553
+00:19:02,840 --> 00:19:04,360
+而web则是开放的
+and the web is open.
+
+554
+00:19:04,360 --> 00:19:06,720
+我们想做的
+And so what we want to do is enable
+
+555
+00:19:06,720 --> 00:19:09,130
+只是逐渐的开启Web请求使用
+websites to progressively ask permission
+
+556
+00:19:09,130 --> 00:19:11,270
+更加强大特性的权限
+for powerful and engaging features.
+
+557
+00:19:11,270 --> 00:19:12,810
+应该由用户表明
+And the idea is that users should
+
+558
+00:19:12,810 --> 00:19:14,710
+什么时候他们想信任该站点
+be able to indicate when they want
+
+559
+00:19:14,710 --> 00:19:18,390
+并且给予相关的权限
+to trust this site enough to give them certain permissions.
+
+560
+00:19:18,390 --> 00:19:21,240
+如果每一个人都能访问到你的银行账户
+Basically, if everyone got access to your bank account
+
+561
+00:19:21,240 --> 00:19:23,030
+只要你见到他们的时候
+as soon as you met them, you probably
+
+562
+00:19:23,030 --> 00:19:24,480
+你可能一步都不会离开你的家门
+wouldn't want to leave your house.
+
+563
+00:19:24,480 --> 00:19:26,520
+相比于拥有这些能力
+ALEX KOMOROSKE: So it's more important for the reach
+
+564
+00:19:26,520 --> 00:19:28,480
+为你保留Web的广度
+of the web than to have all these capabilities
+
+565
+00:19:28,480 --> 00:19:29,860
+比此更加的重要
+for every random site you go to.
+
+566
+00:19:29,860 --> 00:19:30,250
+ELISABETH MORANT: Exactly.
+
+567
+00:19:30,250 --> 00:19:31,420
+明白了
+ALEX KOMOROSKE: Got it.
+
+568
+00:19:31,420 --> 00:19:32,795
+所以说
+ELISABETH MORANT: And so the idea
+
+569
+00:19:32,795 --> 00:19:35,230
+这些新API也会带来全新的风险
+is that with all these new APIs come a set of risks,
+
+570
+00:19:35,230 --> 00:19:37,380
+Chrome有这个责任来确保
+and Chrome has this responsibility
+
+571
+00:19:37,380 --> 00:19:41,089
+每一个用户浏览的网页都是安全的
+to make sure that people can still browse the web securely.
+
+572
+00:19:41,089 --> 00:19:42,630
+从这个角度说
+Now, with this in mind, we've already
+
+573
+00:19:42,630 --> 00:19:44,600
+我们已经把部分API带到了Web上
+brought a few exciting APIs to the web
+
+574
+00:19:44,600 --> 00:19:47,530
+我们今天谈谈其中的两个
+and we're going to talk about two of them right now.
+
+575
+00:19:47,530 --> 00:19:49,800
+第一个是添加到主屏幕
+The first is Add to Homescreen.
+
+576
+00:19:49,800 --> 00:19:52,440
+打字  尤其是在移动端上
+So typing, especially on a mobile,
+
+577
+00:19:52,440 --> 00:19:55,482
+是非常困难的  但是移动端也是人们消磨时间最多的地方
+is really hard, but mobile is where people go to kill time.
+
+578
+00:19:55,482 --> 00:19:57,690
+当你到咖啡厅去
+ALEX KOMOROSKE: So, I mean, you go to the coffee shop
+
+579
+00:19:57,690 --> 00:19:58,523
+和你朋友见面的时候
+to meet your friend.
+
+580
+00:19:58,523 --> 00:19:59,564
+他们还没到
+They aren't there yet.
+
+581 
+00:19:59,564 --> 00:20:01,480
+你想读一些有趣的东西
+You want to read something interesting but not
+
+582
+00:20:01,480 --> 00:20:03,830
+但是又很无趣因为随时他们都可能会出现
+too interesting because at any point they might show up
+
+583
+00:20:03,830 --> 00:20:04,850
+你必须把你的手机放在一边
+and you have to put your phone away.
+
+584
+00:20:04,850 --> 00:20:05,933
+ELISABETH MORANT: Exactly.
+
+585
+00:20:05,933 --> 00:20:08,190
+你可以打开你的手机  点击一个图标
+So you open up your phone, you tap an icon,
+
+586
+00:20:08,190 --> 00:20:10,700
+然后你沉浸其中
+and you fall into some experience
+
+587
+00:20:10,700 --> 00:20:14,690
+你随时都可以退回来
+that you're OK jumping back out of again.
+
+588
+00:20:14,690 --> 00:20:17,210
+我们早已为用户推出了这个
+And so we already have the ability for people
+
+589
+00:20:17,210 --> 00:20:18,890
+添加站点到主屏幕的特性
+to add sites to their home screen.
+
+590
+00:20:18,890 --> 00:20:20,800
+它在设置里的层级很深
+It's buried deep in the settings,
+
+591
+00:20:20,800 --> 00:20:22,634
+但是我们发现它却有着超高的使用率
+but we found it had surprisingly high usage.
+
+592
+00:20:22,634 --> 00:20:25,258
+我们为什么不能弄得更加明显些
+ALEX KOMOROSKE: So why don't we just make that way more obvious
+
+593
+00:20:25,258 --> 00:20:26,592
+这样就不容易被忽略了
+and make it really hard to miss?
+
+594
+00:20:26,592 --> 00:20:27,966
+ELISABETH MORANT: Well, if people
+
+595
+00:20:27,966 --> 00:20:29,550
+如果人们每月访问100个网站的话
+are visiting 100 websites every month,
+
+596
+00:20:29,550 --> 00:20:33,300
+并不是每个都是有用的
+then probably every new help form you go to,
+
+597
+00:20:33,300 --> 00:20:35,860
+你不必都想把它填到主屏幕上
+you don't want to necessarily add it to your home screen.
+
+598
+00:20:35,860 --> 00:20:38,700
+我们的做法是利用一些真正智能启发性机制
+And so what we've done is we've incorporated some really smart
+
+599
+00:20:38,700 --> 00:20:41,490
+开发者可以使用这个API
+heuristics and said developers can use this API
+
+600
+00:20:41,490 --> 00:20:43,520
+让应用请求被添加到主屏上面
+and request to be added to the home screen
+
+601
+00:20:43,520 --> 00:20:46,190
+只要用户和应用有着足够充分的接触
+as long as people have in each with the app enough
+
+602
+00:20:46,190 --> 00:20:48,410
+我们就能检测到用户的确是想把那个应用
+that we've detected that they actually want
+
+603
+00:20:48,410 --> 00:20:50,890
+添加到主屏幕上
+that app on their home screen.
+
+604
+00:20:50,890 --> 00:20:53,170
+我举个例子
+So take this as an example.
+
+605
+00:20:53,170 --> 00:20:55,920
+我非常喜欢阅读Vice News
+I really enjoy reading Vice News,
+
+606
+00:20:55,920 --> 00:20:58,050
+这周的早些时候我阅读了一篇文章
+and I read an article earlier this week.
+
+607
+00:20:58,050 --> 00:21:00,060
+并且早上我又打开了
+And this morning I opened it up again,
+
+608
+00:21:00,060 --> 00:21:02,990
+我发现收到了是否把Vice News 
+And I found that I got this prompt from Vice to add
+
+609
+00:21:02,990 --> 00:21:05,749
+添加到主屏幕上的请求
+the website to my home screen.
+
+610
+00:21:05,749 --> 00:21:06,540
+ALEX KOMOROSKE: OK.
+
+611
+00:21:06,540 --> 00:21:08,539
+非常酷  但是要是你在没联网的情况下
+That's awesome, but what happens if you tap that
+
+612
+00:21:08,539 --> 00:21:09,950
+打开它会怎样
+and you don't have connectivity?
+
+613
+00:21:09,950 --> 00:21:10,680
+你肯定不想看到的是
+ELISABETH MORANT: Well, what you don't
+
+614
+00:21:10,680 --> 00:21:13,210
+那个可怕的离线小恐龙
+want to see is the dreaded offline dinosaur,
+
+615
+00:21:13,210 --> 00:21:16,020
+然而本地应用在这方面处理的就非常的好
+and so native apps actually handle this case very well.
+
+616
+00:21:16,020 --> 00:21:18,790
+即使是一个只有网络连接才能工作的应用
+Even if an app depends on connectivity to work,
+
+617
+00:21:18,790 --> 00:21:21,230
+它们通常会有一个屏幕界面说
+they usually have some sort of splash screen saying,
+
+618
+00:21:21,230 --> 00:21:23,420
+sorry 你还不能使用这个  稍后回来
+sorry, you can't use this, but come back later,
+
+619
+00:21:23,420 --> 00:21:24,826
+等等对应用一些的自定义
+something custom to the app.
+
+620
+00:21:24,826 --> 00:21:26,450
+出于这个原因  我们只对
+And for that reason, we've only enabled
+
+621
+00:21:26,450 --> 00:21:28,040
+那些拥有良好离线体验的站点
+Add to Homescreen for those sites that
+
+622
+00:21:28,040 --> 00:21:29,840
+开启了添加到主屏幕的功能
+have a meaningful offline experience.
+
+623
+00:21:29,840 --> 00:21:30,760
+所以说
+ALEX KOMOROSKE: Which is a great point
+
+624
+00:21:30,760 --> 00:21:32,830
+离线体验格外重要
+that offline is an incredibly important thing
+
+625
+00:21:32,830 --> 00:21:35,910
+尤其是对于在移动网络上创造出色体验来说
+for building engaging experiences on mobile web.
+
+626
+00:21:35,910 --> 00:21:38,240
+在你的移动设备上
+So obviously, on your mobile devices,
+
+627
+00:21:38,240 --> 00:21:42,100
+你更可能出现连接不稳定或者是无连接的情况
+you're way more likely to have a flaky connectivity
+
+628
+00:21:42,100 --> 00:21:45,190
+比如参加了Wi-Fi坏掉了的
+or no connectivity, like being at a tech conference where
+
+629
+00:21:45,190 --> 00:21:47,700
+一个技术会议
+the Wi-Fi doesn't work exactly as it should.
+
+630
+00:21:47,700 --> 00:21:49,740
+这也是一个历史性问题
+The problem is that historically, we've only
+
+631
+00:21:49,740 --> 00:21:51,150
+我们只能通过应用缓存来解决
+had App Cache to handle this.
+
+632
+00:21:51,150 --> 00:21:53,630
+应用缓存有什么问题吗
+ELISABETH MORANT: So what's the problem with App Cache?
+
+633
+00:21:53,630 --> 00:21:56,900
+应用缓存还不是那么的流行
+ALEX KOMOROSKE: App Cache wasn't exactly very popular.
+
+634
+00:21:56,900 --> 00:22:00,070
+非常容易上手  很好
+So it was easy to get started, which is great,
+
+635
+00:22:00,070 --> 00:22:02,480
+and it's declarative, which is also great,
+
+636
+00:22:02,480 --> 00:22:04,190
+但是却有几分复杂
+but it's kind of complex.
+
+637
+00:22:04,190 --> 00:22:06,822
+如果你做的事情比较复杂
+If you do anything rather slightly complex,
+
+638
+00:22:06,822 --> 00:22:08,405
+你就不能做你想做的事情
+you can't do the things you want to do
+
+639
+00:22:08,405 --> 00:22:09,712
+并且很快就失败了
+and it quickly falls down.
+
+640
+00:22:09,712 --> 00:22:10,920
+在实际中它并不适用
+It is unworkable in practice.
+
+641
+00:22:10,920 --> 00:22:13,670
+所以你需要的是更多的掌控
+So what you need, of course, is more control,
+
+642
+00:22:13,670 --> 00:22:16,180
+而Service Worker可以帮你掌控
+and Service Worker brings you that control.
+
+643
+00:22:16,180 --> 00:22:18,620
+让我讲讲它是如何工作的
+So let me tell you how it works.
+
+644
+00:22:18,620 --> 00:22:21,320
+大意是说当你访问一个站点
+The basic idea is when you visit a site,
+
+645
+00:22:21,320 --> 00:22:22,941
+你可以安装一个Service Worker
+you can install a Service Worker,
+
+646
+00:22:22,941 --> 00:22:24,440
+Service Worker 是一个基本的
+and that Service Worker is basically
+
+647
+00:22:24,440 --> 00:22:26,670
+脚本
+a script off to the side.
+
+648
+00:22:26,670 --> 00:22:29,700
+当浏览器准备从域名上
+And now, when the browser is going
+
+649
+00:22:29,700 --> 00:22:32,260
+获取资源的时候
+to fetch a resource from your domain,
+
+650
+00:22:32,260 --> 00:22:34,200
+不是直接的去访问网络
+instead of going to the network, it
+
+651
+00:22:34,200 --> 00:22:36,740
+而是去问Service Worker   hey  你想要做什么
+asks the Service Worker, hey, what do you want to do?
+
+652
+00:22:36,740 --> 00:22:38,454
+Service Worker会说
+And the Service Worker can say, just do
+
+653
+00:22:38,454 --> 00:22:40,620
+做你要做的吧  请去访问网络
+what you would have done, go to the network, please,
+
+654
+00:22:40,620 --> 00:22:44,260
+或者是说请到缓存里面去取
+or it can say, please hand back this thing from the cache,
+
+655
+00:22:44,260 --> 00:22:47,900
+甚至是忽略这个请求
+or it can even say, create a resource on the fly
+
+656
+00:22:47,900 --> 00:22:48,500
+并返回
+and pass that.
+
+657
+00:22:48,500 --> 00:22:50,000
+所以说  这是一个
+ELISABETH MORANT: So basically, it's
+
+658
+00:22:50,000 --> 00:22:52,001
+用JavaScript写的代理客户端
+a client side proxy written in JavaScript.
+
+659
+00:22:52,001 --> 00:22:53,000
+差不多
+ALEX KOMOROSKE: Exactly.
+
+660
+00:22:53,000 --> 00:22:55,890
+这个能让你更加任意地构建出复杂的
+So this allows you to build arbitrarily
+
+661
+00:22:55,890 --> 00:22:57,970
+离线体验
+complex offline experiences.
+
+662
+00:22:57,970 --> 00:23:00,000
+当我说任意地的时候
+And when I say &quot;arbitrarily,&quot; what I mean is you
+
+663
+00:23:00,000 --> 00:23:03,780
+我是指你可以构建出及其复杂或者是十分简单的例子
+can build something extremely complex or extremely simple.
+
+664
+00:23:03,780 --> 00:23:05,920
+I/O的web应用就是一个很好的
+So the I/O web app is a great example
+
+665
+00:23:05,920 --> 00:23:07,730
+复杂的离线web应用
+of a complex offline web app.
+
+666
+00:23:07,730 --> 00:23:10,727
+它能够准确的进行缓存  即使你是在
+It does very careful caching so that even if you load it
+
+667
+00:23:10,727 --> 00:23:13,060
+完全离线的情况下  你也能获得出色的体验
+when you're fully offline, you get something meaningful,
+
+668
+00:23:13,060 --> 00:23:15,700
+但是当你连接上了网络  它会为你展现一个用户界面
+but then when you're connected, it will show you UI about, hey,
+
+669
+00:23:15,700 --> 00:23:16,616
+这有新的内容
+there's fresh content.
+
+670
+00:23:16,616 --> 00:23:18,530
+点开看看吧
+Tap here to see it.
+
+671
+00:23:18,530 --> 00:23:21,090
+当然  更像一个解决方案
+Of course, a more likely scenario or easier scenario
+
+672
+00:23:21,090 --> 00:23:23,580
+一个简单的能缓存一切的解决方案
+is just to aggressively cache everything
+
+673
+00:23:23,580 --> 00:23:26,340
+你可以使用它这样就可以进行离线工作了
+you use so that your thing works offline.
+
+674
+00:23:26,340 --> 00:23:29,520
+这有一个叫做sw-precache的Gulp插件
+There's a great Gulp plug-in called sw-precache
+
+675
+00:23:29,520 --> 00:23:32,950
+它能够很容易的帮你这个集成到你的工作流里面
+that makes it incredibly easy to integrate into your workflows.
+
+676
+00:23:32,950 --> 00:23:35,460
+当然  这样的话
+And of course, the simplest possible thing you can do
+
+677
+00:23:35,460 --> 00:23:38,400
+你就能摆脱那个可怕的离线小恐龙
+is get rid of that darn offline dinosaur for your thing
+
+678
+00:23:38,400 --> 00:23:41,720
+并且和Service Worker说hello了
+and basically say, hey Service Worker,
+
+679
+00:23:41,720 --> 00:23:45,520
+当用户离线来访问我的站点时
+if the user tries to fetch my site and we're fully offline,
+
+680
+00:23:45,520 --> 00:23:47,250
+看到的不是离线小恐龙
+instead of showing the offline dinosaur,
+
+681
+00:23:47,250 --> 00:23:49,010
+而是我事先准备好的界面
+just show my own little splash screen
+
+682
+00:23:49,010 --> 00:23:52,200
+说  请连接网络后再试
+that says, please connect to the internet and try again.
+
+683
+00:23:52,200 --> 00:23:55,630
+这个几行JavaScript 代码就搞定了
+That takes only a few lines of JavaScript.
+
+684
+00:23:55,630 --> 00:23:57,900
+Service Worker 处理离线来说实在是酷极了
+So Service Worker is cool for offline,
+
+685
+00:23:57,900 --> 00:23:59,690
+但是它还有一个绝招
+but it has another trick up its sleeve.
+
+686
+00:23:59,690 --> 00:24:03,780
+一个Service Worker可以和多个标签页进行通讯
+So a Service Worker, a single one, can talk to multiple tabs
+
+687
+00:24:03,780 --> 00:24:06,540
+它也可以不和任何标签页通讯
+or it can talk to no tabs.
+
+688
+00:24:06,540 --> 00:24:09,800
+这也是第一个地方  开发者可以编写和运行脚本
+So it's the first place that we as developers have a place
+
+689
+00:24:09,800 --> 00:24:13,240
+即使是没有任何一个站点标签页在运行
+to write and run script even when no tabs for my site
+
+690
+00:24:13,240 --> 00:24:13,970
+are open.
+
+691
+00:24:13,970 --> 00:24:15,178
+这很糟
+ELISABETH MORANT: That's bad.
+
+692
+00:24:15,178 --> 00:24:17,127
+用户不希望有任何一个脚本
+People don't want any random site executing
+
+693
+00:24:17,127 --> 00:24:18,210
+在后台执行
+scripts in the background.
+
+694
+00:24:18,210 --> 00:24:19,160
+的确  但是这也是为什么Service Worker
+ALEX KOMOROSKE: Exactly, and that's
+
+695
+00:24:19,160 --> 00:24:21,190
+是事件驱动的
+why Service Workers are event driven.
+
+696
+00:24:21,190 --> 00:24:23,841
+那么当访问网络的事件开始时  都发生了什么了呢
+So what happens is a networking event happens, the browser goes
+
+697
+00:24:23,841 --> 00:24:25,340
+浏览器会到Service Worke那 说
+to the Service Worker and says, hey,
+
+698
+00:24:25,340 --> 00:24:26,830
+Hey 我监测到了一个网络事件
+I've got this network event.
+
+699
+00:24:26,830 --> 00:24:28,706
+Service worker就开始处理并完成它
+Service worker handles it and then it's done.
+
+700
+00:24:28,706 --> 00:24:30,913
+它仅仅就是呆在那里不做任何事
+It's just sitting there not doing anything because it
+
+701
+00:24:30,913 --> 00:24:31,525
+因为它也不能做
+can't.
+
+702
+00:24:31,525 --> 00:24:33,650
+其余的时间我们则把它冻结
+And so at that point, we can freeze dry that thing,
+
+703
+00:24:33,650 --> 00:24:34,880
+并放进存储里
+put it off in storage. 
+
+704
+00:24:34,880 --> 00:24:36,370
+直到浏览器发送新的事件
+ELISABETH MORANT: Right, until the browser sends a new event
+
+705
+00:24:36,370 --> 00:24:37,140
+才把它唤醒
+to wake it up.
+
+706
+00:24:37,140 --> 00:24:37,600
+对的
+ALEX KOMOROSKE: Exactly.
+
+707
+00:24:37,600 --> 00:24:39,330
+当一个新事件过来时
+So when a new event comes in, we bring it
+
+708
+00:24:39,330 --> 00:24:41,205
+我们把它快速的放入内存  非常的快
+back into memory really quickly, which takes,
+
+709
+00:24:41,205 --> 00:24:44,580
+我觉得大约只需50毫秒  将其投入工作
+I think, around 50 milliseconds or so in practice in the wild,
+
+710
+00:24:44,580 --> 00:24:47,070
+这样它就能做自己的事
+and then it can go on its way.
+
+711
+00:24:47,070 --> 00:24:49,630
+还有就是Service Worker
+So the cool thing is that this isn't just related
+
+712
+00:24:49,630 --> 00:24:52,180
+不只是和网络事件相关
+to network events.
+
+713
+00:24:52,180 --> 00:24:54,620
+你可以想象它与其它的事件配合
+You can also imagine other types of events
+
+714
+00:24:54,620 --> 00:24:57,110
+将其唤醒并工作
+that would potentially wake it up to do work.
+
+715
+00:24:57,110 --> 00:24:57,340
+我懂了
+ELISABETH MORANT: I see.
+
+716
+00:24:57,340 --> 00:24:58,975
+所以浏览器可以基于用户的实际需求
+So the browser can choose what type of event
+
+717
+00:24:58,975 --> 00:25:01,450
+去选择它想要发送的请求
+it wants to send based on what it thinks the user actually
+
+718
+00:25:01,450 --> 00:25:01,950
+wants.
+
+719
+00:25:01,950 --> 00:25:02,950
+就是这样
+ALEX KOMOROSKE: Exactly.
+
+720
+00:25:02,950 --> 00:25:04,340
+这非常的强大
+So this is really powerful.
+
+721
+00:25:04,340 --> 00:25:06,960
+它带给了web
+It enables an entirely new class of functionality
+
+722
+00:25:06,960 --> 00:25:10,590
+一个之前不可能做到的新功能
+that before wasn't even possible to bring to the web.
+
+723
+00:25:10,590 --> 00:25:12,840
+还有带来了另一个新特性
+ELISABETH MORANT: So one of the new features only made
+
+724
+00:25:12,840 --> 00:25:16,430
+Service worker 可以推送通知
+possible because of Service Worker is push notifications.
+
+725
+00:25:16,430 --> 00:25:18,465
+直到现在  只有本地应用才可以
+Until now, only native apps were able to send
+
+726
+00:25:18,465 --> 00:25:19,840
+推送通知
+push notifications, but there are
+
+727
+00:25:19,840 --> 00:25:22,850
+但是仍然会有很多情况你想推送通知
+cases where you would want push without everything else that
+
+728
+00:25:22,850 --> 00:25:24,285
+comes with being an app.
+
+729
+00:25:24,285 --> 00:25:25,910
+这很重要吗
+ALEX KOMOROSKE: So are these important?
+
+730
+00:25:25,910 --> 00:25:26,140
+ELISABETH MORANT: Yeah.
+
+731
+00:25:26,140 --> 00:25:27,900
+这非常重要
+This is extremely important.
+
+732
+00:25:27,900 --> 00:25:31,240
+通知领域是一个新的战场
+Basically, notifications are game changing for engagement.
+
+733
+00:25:31,240 --> 00:25:33,550
+当人们和手机交互的时候
+More and more, people are interacting with their phone,
+
+734
+00:25:33,550 --> 00:25:36,090
+打开新的应用并且开始体验
+opening up new apps and experiences largely
+
+735
+00:25:36,090 --> 00:25:37,970
+是因为他们事先收到了通知
+because they got a notification first,
+
+736
+00:25:37,970 --> 00:25:40,780
+而这种情况越来越不常见  那就是
+and it's much less common that people will open up their phone
+
+737
+00:25:40,780 --> 00:25:42,242
+人们打开手机查看应用列表
+and dumbly look at their app grid
+
+738
+00:25:42,242 --> 00:25:44,380
+来决定他们该用那一个应用
+and decide what they want to use.
+
+739
+00:25:44,380 --> 00:25:45,440
+这有一个例子
+Here's an example.
+
+740
+00:25:45,440 --> 00:25:47,930
+卫报有一个本地应用
+So the Guardian has a native app and they
+
+741
+00:25:47,930 --> 00:25:52,890
+并且他们发现当重大事件发生后的几个小时后
+found that in the hours after a breaking news event, up to 40%
+
+742
+00:25:52,890 --> 00:25:55,930
+从收到推送通知而过来的文章阅读量上升到40%
+of their article views came from push notifications alone.
+
+743
+00:25:55,930 --> 00:25:57,005
+ALEX KOMOROSKE: Wow.
+
+744
+00:25:57,005 --> 00:25:58,330
+非常巨大
+ELISABETH MORANT: It's huge.
+
+745
+00:25:58,330 --> 00:26:00,360
+我来展示一下通知的重要性
+And so to demonstrate how important this is,
+
+746
+00:26:00,360 --> 00:26:02,560
+我将进行一个demo
+I'm going to jump into a demo.
+
+747
+00:26:02,560 --> 00:26:07,674
+9个月前的奥斯卡季  我在家里
+So nine months ago, Oscars season, I was at home
+
+748
+00:26:07,674 --> 00:26:09,090
+但是我有一大堆的工作要做
+but I had to do a lot of work so I
+
+749
+00:26:09,090 --> 00:26:11,470
+所以就不能去看奥斯卡颁奖礼的直播
+wasn't able to watch the Academy Awards live.
+
+750
+00:26:11,470 --> 00:26:14,170
+这对我来说很不爽  
+This was a huge bummer for me, so what I ended up doing was
+
+751
+00:26:14,170 --> 00:26:17,100
+所以我停下了手头的工作
+I would jump between my computer and then I
+
+752
+00:26:17,100 --> 00:26:20,720
+一直在刷新卫报的直播博客看看谁获奖了
+kept refreshing the Guardian live blog to see who had won.
+
+753
+00:26:20,720 --> 00:26:22,350
+我不断的刷屏
+And what I would do is I'd refresh
+
+754
+00:26:22,350 --> 00:26:24,990
+我想看看Reese Witherspoo穿什么了
+and I'd see what Reese Witherspoon is wearing,
+
+755
+00:26:24,990 --> 00:26:26,640
+并且不断的点击
+and then I'd click on that and look
+
+756
+00:26:26,640 --> 00:26:28,830
+看看她过去的电影海报  然后心神不宁的
+at some of her past filmography, and then just get distracted
+
+757
+00:26:28,830 --> 00:26:30,180
+回到电脑上继续工作
+and jump back to my computer.
+
+758
+00:26:30,180 --> 00:26:31,380
+其实啥事都没做
+ALEX KOMOROSKE: Basically, getting nothing done.
+
+759
+00:26:31,380 --> 00:26:32,338
+ELISABETH MORANT: Yeah.
+
+760
+00:26:32,338 --> 00:26:34,828
+什么工作都没做
+Basically, I was not getting anything done, or at least
+
+761
+00:26:34,828 --> 00:26:37,360
+一份任务也没完成
+I wasn't getting a lot of work done.
+
+762
+00:26:37,360 --> 00:26:41,090
+但是如果卫报可以推送消息的话会怎样
+But what if the Guardian had push notifications?
+
+763
+00:26:41,090 --> 00:26:43,600
+要是我不用这样折腾来折腾去
+What if I didn't have to jump in and engage
+
+764
+00:26:43,600 --> 00:26:46,070
+卫报就可以告诉我那些
+and instead the Guardian told me when there was information
+
+765
+00:26:46,070 --> 00:26:48,080
+我想知道的信息
+that I actually wanted to know.
+
+766
+00:26:48,080 --> 00:26:53,520
+我开始打开直播博客向下滚动
+So suppose I open up the live blog and I scroll down
+
+767
+00:26:53,520 --> 00:26:56,130
+ 我看到了开启通知的按钮
+and I see the ability to follow the story.
+
+768
+00:26:56,130 --> 00:26:58,152
+卫报说明了为什么我该选择打开通知
+So the Guardian explains why I'd want
+
+769
+00:26:58,152 --> 00:26:59,690
+因为我想及时的获取
+to opt in to notifications, I want
+
+770
+00:26:59,690 --> 00:27:01,930
+这个内容的信息
+to engage with this particular piece of content,
+
+771
+00:27:01,930 --> 00:27:05,064
+所以我选择了开启浏览器通知
+so I hit Enable Browser Notifications.
+
+772
+00:27:05,064 --> 00:27:06,980
+与此同时Chrome询问我
+And at this point, Chrome sends me the prompt,
+
+773
+00:27:06,980 --> 00:27:11,020
+要不要打开通知  我选择了接受
+and yes, I want notifications, so I say Allow.
+
+774
+00:27:11,020 --> 00:27:11,710
+Great.
+
+775
+00:27:11,710 --> 00:27:14,050
+所以现在的话我就可以接收到
+So, now confident that I'm going to get notifications
+
+776
+00:27:14,050 --> 00:27:15,549
+我感兴趣的内容的通知了
+about the content I'm interested in,
+
+777
+00:27:15,549 --> 00:27:22,110
+我关闭了Chrome继续去工作
+I can just close Chrome and get back to work.
+
+778
+00:27:22,110 --> 00:27:29,420
+我在工作并且收到了一个通知
+So I'm working and I see a notification.
+
+779
+00:27:29,420 --> 00:27:30,760
+我不知道你们能不能看到它
+I don't know if you can see it.
+
+780
+00:27:30,760 --> 00:27:32,740
+我从未测试过这个
+I haven't tested this out.
+
+781
+00:27:32,740 --> 00:27:34,670
+我在手表上收到了这个通知
+So I see a notification on my watch
+
+782
+00:27:34,670 --> 00:27:37,780
+它说最佳音效剪辑奖揭晓了
+that says that sound editing won some award.
+
+783
+00:27:37,780 --> 00:27:41,170
+这是一个我不感冒的奖项所以我清除通知了
+Now, this is one of those lame awards so I just swipe it away.
+
+784
+00:27:41,170 --> 00:27:42,160
+我不感兴趣
+I don't care.
+
+785
+00:27:42,160 --> 00:27:43,150
+所以你在手表上收到了通知
+ALEX KOMOROSKE: So you got that on your watch?
+
+786
+00:27:43,150 --> 00:27:44,108
+ELISABETH MORANT: Yeah.
+
+787
+00:27:44,108 --> 00:27:46,990
+我在手表上收到了通知
+I got it on my watch because Chrome sends notifications
+
+788
+00:27:46,990 --> 00:27:49,719
+是因为Chrome会像其他Android一样发送通知
+just like any other Android app would, and in that same way,
+
+789
+00:27:49,719 --> 00:27:51,510
+我在手机上收到通知
+I get notifications on my phone just like I
+
+790
+00:27:51,510 --> 00:27:53,840
+就像其他的消息应用一样
+do from my messaging apps.
+
+791
+00:27:53,840 --> 00:27:58,090
+我对刚才的内容不感兴趣继续回去工作
+So I wasn't interested in that content, so I go back to work,
+
+792
+00:27:58,090 --> 00:28:03,375
+喝咖啡  吃甜甜圈  写重要的摘要
+drinking coffee, eating donuts, writing very important briefs.
+
+793
+00:28:03,375 --> 00:28:06,391
+
+
+794
+00:28:06,391 --> 00:28:06,890
+Oh.
+
+795
+00:28:06,890 --> 00:28:08,470
+我收到了另外一个通知
+I see another notification.
+
+796
+00:28:08,470 --> 00:28:13,190
+它说鸟人获得了最佳影片奖
+And this one, of course, &quot;Birdman&quot; won best picture.
+
+797
+00:28:13,190 --> 00:28:15,689
+我们都觉得布达佩斯大饭店
+I mean, clearly we all know that the movie that should have
+
+798
+00:28:15,689 --> 00:28:16,980
+应该拿到这个奖
+won the award was &quot;The Grand--&quot;
+
+799
+00:28:16,980 --> 00:28:19,520
+等等
+ALEX KOMOROSKE: Wait, wait.
+
+800
+00:28:19,520 --> 00:28:22,040
+布达佩斯大饭店
+ELISABETH MORANT: &quot;The Grand Budapest Hotel,&quot;
+
+801
+00:28:22,040 --> 00:28:25,690
+我想在座的各位都会同意我的看法
+which I'm sure everyone else in the room agrees with me about.
+
+802
+00:28:25,690 --> 00:28:27,430
+为了表达我的看法
+So in order to express my opinion,
+
+803
+00:28:27,430 --> 00:28:31,690
+我会查看通知打开直播的网页
+maybe I'll dive into the live blog, open up the website,
+
+804
+00:28:31,690 --> 00:28:34,830
+也许会写一些有品位的评论
+maybe leave a few very tastefully written comments
+
+805
+00:28:34,830 --> 00:28:37,490
+关于为什么这部电影该获奖
+about why this movie should have won.
+
+806
+00:28:37,490 --> 00:28:40,090
+我不耽误大家时间了
+Anyway, but I won't bore you with that now.
+
+807
+00:28:40,090 --> 00:28:42,490
+通知推送的重要之处
+So the point is push notifications
+
+808
+00:28:42,490 --> 00:28:45,283
+在于让你获取到你想要的信息
+let you know information when you want it.
+
+809
+00:28:45,283 --> 00:28:49,231
+
+
+810
+00:28:49,231 --> 00:28:49,730
+Alex?
+
+811
+00:28:49,730 --> 00:28:50,730
+怎么了
+ALEX KOMOROSKE: What?
+
+812
+00:28:50,730 --> 00:28:52,267
+非常抱歉
+ELISABETH MORANT: I'm so sorry.
+
+813
+00:28:52,267 --> 00:28:54,100
+你要知道这对我来说有多么的重要
+Can you just-- you know how to wrap this up.
+
+814
+00:28:54,100 --> 00:28:56,250
+Imagine Dragons的票已经开卖了
+I just-- Imagine Dragons tickets just went on sale.
+
+815
+00:28:56,250 --> 00:28:56,890
+你在逗我吗
+ALEX KOMOROSKE: Are you kidding me?
+
+816
+00:28:56,890 --> 00:28:57,945
+我们这可是在进行I/O talk
+We're in an I/O talk.
+
+817
+00:28:57,945 --> 00:28:59,020
+我知道  但是我非常喜欢这支乐队
+ELISABETH MORANT: I know, but I told you
+
+818
+00:28:59,020 --> 00:29:00,730
+他们的票马上就要卖光了
+they're going to sell out and I really love this band,
+
+819
+00:29:00,730 --> 00:29:02,850
+我只需要两秒钟  两秒钟
+and I just-- it'll take me, like, two seconds.
+
+820
+00:29:02,850 --> 00:29:03,820
+ALEX KOMOROSKE: OK.
+
+821
+00:29:03,820 --> 00:29:04,430
+Great.
+
+822
+00:29:04,430 --> 00:29:07,532
+我想我们该回到刚才的那页slide
+I guess why don't we go back to the slides?
+
+823
+00:29:07,532 --> 00:29:09,740
+我觉得 Elisabeth是说
+So I think the point that Elisabeth was going to make
+
+824
+00:29:09,740 --> 00:29:11,660
+通知推送的重要性
+is that push notifications are great.
+
+825
+00:29:11,660 --> 00:29:14,190
+在某种情况下  通知即是内容
+In some cases, the notification is the content.
+
+826
+00:29:14,190 --> 00:29:16,040
+一看便知
+You get all you need just by seeing it.
+
+827
+00:29:16,040 --> 00:29:18,016
+或许你也想打开里面进去看
+In some cases, you want to dive in.
+
+828
+00:29:18,016 --> 00:29:20,410
+有些时候
+And in other cases, it's information
+
+829
+00:29:20,410 --> 00:29:23,100
+某些通知对你来说十分重要
+that is so important to you that you want it to interrupt you
+
+830
+00:29:23,100 --> 00:29:26,070
+你想在任何时候任何地点都能收到它  
+at any time or place, including when you're presenting in front
+
+831
+00:29:26,070 --> 00:29:27,470
+即使是站在百人之前的I/O演讲上面
+of hundreds of people at I/O.
+
+832
+00:29:27,470 --> 00:29:28,970
+我买到票啦
+ELISABETH MORANT: I got the tickets.
+
+833
+00:29:28,970 --> 00:29:29,380
+ALEX KOMOROSKE: Great.
+
+834
+00:29:29,380 --> 00:29:30,088
+祝贺
+So happy for you.
+
+835
+00:29:30,088 --> 00:29:31,200
+希望这挺值
+Hope it was worth it.
+
+836
+00:29:31,200 --> 00:29:32,658
+无论如何
+ELISABETH MORANT: Anyway, the point
+
+837
+00:29:32,658 --> 00:29:36,150
+通知推送的关键之处在于这是一个新的主动交互方式
+is that push notifications are this new primary interaction
+
+838
+00:29:36,150 --> 00:29:36,650
+paradigm.
+
+839
+00:29:36,650 --> 00:29:38,730
+也是人们与应用融洽沟通的方式
+It's how people engage with their apps.
+
+840
+00:29:38,730 --> 00:29:40,940
+把通知推送带到web上来
+And bringing push notifications to the web
+
+841
+00:29:40,940 --> 00:29:44,050
+得以让你真正能够关注你想关注的东西
+allows you get information about what you care about
+
+842
+00:29:44,050 --> 00:29:46,850
+before you've decided to necessarily commit
+
+843
+00:29:46,850 --> 00:29:48,720
+to everything else that comes with an app.
+
+844
+00:29:48,720 --> 00:29:52,030
+举个例子  我每个月都要访问Ticketmaster一次
+So for example, I visit Ticketmaster once every couple
+
+845
+00:29:52,030 --> 00:29:54,326
+我非常希望能收到
+of months, but I really wanted notifications
+
+846
+00:29:54,326 --> 00:29:55,950
+关于这部分内容的通知
+about this particular piece of content.
+
+847
+00:29:55,950 --> 00:29:56,160
+ALEX KOMOROSKE: OK.
+
+848
+00:29:56,160 --> 00:29:57,826
+那么我们什么时候
+So the obvious question that we all have
+
+849
+00:29:57,826 --> 00:29:58,900
+可以用上这个
+is when can we use this?
+
+850
+00:29:58,900 --> 00:29:59,770
+六个月之后
+Six months from now?
+
+851
+00:29:59,770 --> 00:30:00,610
+一年之后
+A year from now?
+
+852
+00:30:00,610 --> 00:30:03,068
+就是现在  对所有的Chrome用户开放
+ELISABETH MORANT: Well, this is shipped to all Chrome users
+
+853
+00:30:03,068 --> 00:30:05,249
+任何人访问一个具有开启了启用通知的站点
+today, so anyone who visits a site with this enabled
+
+854
+00:30:05,249 --> 00:30:07,290
+都能够接收到通知推送
+will be able to get push notifications or the Add
+
+855
+00:30:07,290 --> 00:30:08,748
+或者是添加到主屏幕
+to Homescreen prompt and developers
+
+856
+00:30:08,748 --> 00:30:11,560
+开发者也可以添加这个新功能到他们的站点
+can start adding this to their site at any time.
+
+857
+00:30:11,560 --> 00:30:12,700
+And so the Guard--
+
+858
+00:30:12,700 --> 00:30:15,204
+[APPLAUSE]
+
+859
+00:30:15,204 --> 00:30:17,120
+我觉得这是一个很好的工具
+ALEX KOMOROSKE: I think it's pretty cool, too.
+
+860
+00:30:17,120 --> 00:30:18,661
+非常酷
+ELISABETH MORANT: Pretty cool, right?
+
+861
+00:30:18,661 --> 00:30:20,037
+卫报和票务大师的工程师团队
+So the Guardian and Ticketmaster,
+
+862
+00:30:20,037 --> 00:30:22,202
+制作出了你今天所看到的演示原型
+both of these engineering teams built the prototypes
+
+863
+00:30:22,202 --> 00:30:23,880
+并且他们打算
+that you saw today, and they're planning
+
+864
+00:30:23,880 --> 00:30:26,360
+在未来的几个月内在他们的站点
+on bringing push notifications to their sites
+
+865
+00:30:26,360 --> 00:30:28,960
+推出通知推送的新功能
+live in the coming months.
+
+866
+00:30:28,960 --> 00:30:30,490
+不仅仅是他们
+And they're not the only ones.
+
+867
+00:30:30,490 --> 00:30:31,950
+我们有一些合作商
+We have a number of early adopters
+
+868
+00:30:31,950 --> 00:30:34,283
+也将会在接下来的几周内推出这个功能
+who are rolling out push notifications within the coming
+
+869
+00:30:34,283 --> 00:30:34,987
+weeks.
+
+870
+00:30:34,987 --> 00:30:37,070
+真是非常酷炫的东西
+ALEX KOMOROSKE: So the cool thing about this, too,
+
+871
+00:30:37,070 --> 00:30:39,710
+这个只能在Chrome上面用吗
+is this isn't just some Chrome only feature.
+
+872
+00:30:39,710 --> 00:30:43,020
+我们也和Mozilla进行了合作
+We designed this very collaboratively with Mozilla,
+
+873
+00:30:43,020 --> 00:30:44,210
+在相关的规范上也同样适用
+working in standards bodies.
+
+874
+00:30:44,210 --> 00:30:46,700
+事实上这是一张来自Firefox的截图
+And in fact, this is a screenshot from Firefox
+
+875
+00:30:46,700 --> 00:30:49,766
+几天之前截的  Firfox的Night版本弹出相关信息
+that I took a couple days ago, Nightly Build with a flag
+
+876
+00:30:49,766 --> 00:30:51,640
+咨询用户获取通知推送的权限
+flipped that shows them asking for permission
+
+877
+00:30:51,640 --> 00:30:52,810
+for push notifications.
+
+878
+00:30:52,810 --> 00:30:54,810
+这也是一个非常好的例子
+So that will be coming there at some point, too.
+
+879
+00:30:54,810 --> 00:30:55,770
+激动人心
+It's pretty exciting.
+
+880
+00:30:55,770 --> 00:30:59,760
+Service Worker 为我们带来了新的功能
+So Service Workers allows us to bring all kinds of capabilities
+
+881
+00:30:59,760 --> 00:31:02,620
+得以让那些以前不能实现的事情实现
+to the web that before really didn't make sense
+
+882
+00:31:02,620 --> 00:31:03,772
+or couldn't make sense.
+
+883
+00:31:03,772 --> 00:31:06,230
+我们也和其他的浏览器厂商合作
+And because we're designing them with other browser vendors
+
+884
+00:31:06,230 --> 00:31:07,830
+制定出相关规范 
+and standards bodies, it's something
+
+885
+00:31:07,830 --> 00:31:09,090
+得以让你在不同的平台上使用
+that you can come to rely on.
+
+886
+00:31:09,090 --> 00:31:11,380
+它仿佛开创了移动互联网的一个新纪元
+It's kind of like the dawn of a new era for the mobile web.
+
+887
+00:31:11,380 --> 00:31:11,570
+ELISABETH MORANT: OK.
+
+888
+00:31:11,570 --> 00:31:13,861
+我们今天只关注当下  不讨论未来
+We promised we were only going to talk about today, not
+
+889
+00:31:13,861 --> 00:31:14,430
+the future.
+
+890
+00:31:14,430 --> 00:31:14,640
+ALEX KOMOROSKE: OK.
+
+891
+00:31:14,640 --> 00:31:16,056
+另外的一个好消息是
+Well, the cool thing about this is
+
+892
+00:31:16,056 --> 00:31:18,580
+你今天就可以使用它  并且这些新特性
+you can start today because these features are
+
+893
+00:31:18,580 --> 00:31:20,341
+都是渐进增强的
+great at progressive enhancement.
+
+894
+00:31:20,341 --> 00:31:22,840
+所以当你通过浏览器
+So if you go to one of these sites in a browser that doesn't
+
+895
+00:31:22,840 --> 00:31:25,485
+去一个不支持通知推送的站点
+support push notifications, well, you see the same site
+
+896
+00:31:25,485 --> 00:31:27,510
+你会发现它和之前没什么两样
+that you would have seen before, but if you
+
+897
+00:31:27,510 --> 00:31:29,950
+但是当你去一个支持通知推送的站点
+go to that site in a browser that does support push
+
+898
+00:31:29,950 --> 00:31:32,810
+也许他们会在那里添加一个按钮
+notifications, maybe they add another button that says,
+
+899
+00:31:32,810 --> 00:31:35,870
+hey 当内容发生变化的时候通知我
+hey, I want to be notified when this thing changes.
+
+900
+00:31:35,870 --> 00:31:37,890
+假如我是用户并选择的话  选择后者
+And then if I as a user opt in, I
+
+901
+00:31:37,890 --> 00:31:40,080
+因为我有更高价值的事情
+can have a really high value thing
+
+902
+00:31:40,080 --> 00:31:42,465
+对我来说更加的重要
+that's really important to me even before it's
+
+903
+00:31:42,465 --> 00:31:44,120
+在这个特性在被每一个浏览器支持之前
+shipped in every browser out there,
+
+904
+00:31:44,120 --> 00:31:45,581
+所以我觉得这非常激动人心
+so I think that's pretty exciting.
+
+905
+00:31:45,581 --> 00:31:47,330
+我们今天讨论了
+ELISABETH MORANT: So we talked about a lot
+
+906
+00:31:47,330 --> 00:31:49,890
+大量高层面的话题
+of topics at a high level today, but there
+
+907
+00:31:49,890 --> 00:31:51,660
+但是仍然有很多高质量的DevByte以及Box Talk
+are a number of DevBytes and box talks
+
+908
+00:31:51,660 --> 00:31:54,400
+你可以参加  以便做更加深入的了解
+that you can visit that will go into a lot of these topics
+
+909
+00:31:54,400 --> 00:31:56,710
+more in depth.
+
+910
+00:31:56,710 --> 00:31:59,400
+我们今天讨论了三件事
+ALEX KOMOROSKE: So today, we talked about three things.
+
+911
+00:31:59,400 --> 00:32:01,872
+web的强大力量以及它的范围
+ELISABETH MORANT: The superpower of the web, reach.
+
+912
+00:32:01,872 --> 00:32:04,080
+移动互联网上面做出的巨大性能进步
+ALEX KOMOROSKE: How performance has made huge strides
+
+913
+00:32:04,080 --> 00:32:05,730
+on mobile web.
+
+914
+00:32:05,730 --> 00:32:08,180
+以及我们创造出强大的新方式
+ELISABETH MORANT: And how we're baking powerful new ways
+
+915
+00:32:08,180 --> 00:32:11,770
+帮助用户和那些他们真正需要的内容建立起联系
+for you to build relationships with your users, many available
+
+916
+00:32:11,770 --> 00:32:13,929
+它们有的现在可用或者即将到来
+now and a lot more coming soon.
+
+917
+00:32:13,929 --> 00:32:15,470
+把这三方面孤立起来看
+ALEX KOMOROSKE: So the three of these
+
+918
+00:32:15,470 --> 00:32:16,553
+没有什么特别
+alone aren't that special.
+
+919
+00:32:16,553 --> 00:32:18,661
+但是把它们联合在一起来看
+It's the confluence of these three things
+
+920
+00:32:18,661 --> 00:32:19,660
+就变得非常重要
+that's really important.
+
+921
+00:32:19,660 --> 00:32:21,080
+你忘记了最重要的一点
+ELISABETH MORANT: Well, you're forgetting the most important
+
+922
+00:32:21,080 --> 00:32:21,480
+one.
+
+923
+00:32:21,480 --> 00:32:23,813
+正是这些
+ALEX KOMOROSKE: That's a good point because these things
+
+924
+00:32:23,813 --> 00:32:27,460
+才让创造伟大的东西成为可能
+by themselves, they just make it possible to do cool things,
+
+925
+00:32:27,460 --> 00:32:29,240
+但是当你把它
+but what happens when you combine
+
+926
+00:32:29,240 --> 00:32:32,960
+和全球化阵营的能工巧将们联系在一起的时候
+that with this global community of tinkerers and builders
+
+927
+00:32:32,960 --> 00:32:35,920
+这将创造出无比强大并且令人振奋的作品
+and makers, well, that's when something really awe inspiring
+
+928
+00:32:35,920 --> 00:32:36,820
+happens.
+
+929
+00:32:36,820 --> 00:32:39,800
+我都有些迫不及待了想看看你构建的作品了
+ELISABETH MORANT: We can't wait to see what you build.
+
+930
+00:32:39,800 --> 00:32:41,130
+谢谢
+ALEX KOMOROSKE: Thanks.
+
+931
+00:32:41,130 --> 00:32:43,530
+[APPLAUSE]
+
+932
+00:32:43,530 --> 00:32:48,549
+
+
+933
+00:32:48,549 --> 00:32:50,340
+大家有什么问题
+So I think if there are any live questions,
+
+934
+00:32:50,340 --> 00:32:51,370
+可以现场提问
+we can take them here.
+
+935
+00:32:51,370 --> 00:32:54,730
+
+
+936
+00:32:54,730 --> 00:32:56,430
+首先  非常精彩的演讲
+AUDIENCE: First of all, fantastic talk.
+
+937
+00:32:56,430 --> 00:32:57,640
+谢谢
+ALEX KOMOROSKE: Thank you.
+
+938
+00:32:57,640 --> 00:33:00,010
+问题是关于Service Worker
+AUDIENCE: The question is about the Service Workers
+
+939
+00:33:00,010 --> 00:33:01,870
+响应事件的
+which respond to events.
+
+940
+00:33:01,870 --> 00:33:05,030
+它会包含类似于Ajax请求
+Does it involve events like Ajax requests
+
+941
+00:33:05,030 --> 00:33:07,870
+或者是网络无法正常连接的事件吗
+or it's only when you don't have a network which in reachless?
+
+942
+00:33:07,870 --> 00:33:09,620
+当你检测到一个事件时会发生什么
+ALEX KOMOROSKE: So basically, what happens
+
+943
+00:33:09,620 --> 00:33:11,730
+is you get a fetch event.
+
+944
+00:33:11,730 --> 00:33:13,940
+在你的Service Worker里你会说
+So in your Service Worker you say,
+
+945
+00:33:13,940 --> 00:33:17,030
+Chrome  请在从我域名上获取任何内容时通知我
+Chrome, please notify me when any content from my domain
+
+946
+00:33:17,030 --> 00:33:19,850
+然后你就会捕捉到那个事件
+is fetched, and then you'll catch that event,
+
+947
+00:33:19,850 --> 00:33:22,890
+你会知道请求的URL是什么
+you'll pass in what the request URL was, and you
+
+948
+00:33:22,890 --> 00:33:24,112
+并且你可以为此做出回应
+can respond to it that way.
+
+949
+00:33:24,112 --> 00:33:25,570
+这个在网络连接正常
+That happens even when you're fully
+
+950
+00:33:25,570 --> 00:33:28,560
+以及糟糕的网络连接上都会发生
+connected because of course, you might be on flaky connectivity,
+
+951
+00:33:28,560 --> 00:33:30,360
+所以你要确保已经为你的站点
+and so you want to make sure you can design your experience
+
+952
+00:33:30,360 --> 00:33:31,980
+设计了不同网络环境下
+with total control over what happens
+
+953
+00:33:31,980 --> 00:33:33,830
+良好的体验方式
+over networking to your site.
+
+954
+00:33:33,830 --> 00:33:36,630
+你的意思是像HTML的内容层
+AUDIENCE: So you meant content, like HTML,
+
+955
+00:33:36,630 --> 00:33:38,065
+或者说它包含了Ajax请求的事件
+or it includes Ajax requests?
+
+956
+00:33:38,065 --> 00:33:40,190
+事实上每一个到你站点的请求
+ALEX KOMOROSKE: Basically almost every request that
+
+957
+00:33:40,190 --> 00:33:41,030
+goes to your site.
+
+958
+00:33:41,030 --> 00:33:43,560
+只有个别是特别
+There's a few exceptions for specific things.
+
+959
+00:33:43,560 --> 00:33:45,310
+如果你使用类似于
+AUDIENCE: So if you're using things
+
+960
+00:33:45,310 --> 00:33:48,650
+OAuth  自动验证的东西
+like OAuth, which automatically authenticates,
+
+961
+00:33:48,650 --> 00:33:51,520
+获取数据的模式是怎样设计的
+what's the design pattern to get data?
+
+962
+00:33:51,520 --> 00:33:55,660
+比如说如果你使用Google plus认证
+Like, for example, if you used Google+ authentication,
+
+963
+00:33:55,660 --> 00:33:57,302
+就会直接在你的页面上登录
+which directly logs onto your page--
+
+964
+00:33:57,302 --> 00:33:59,260
+这觉得是一个好问题
+ALEX KOMOROSKE: I think that's a great question
+
+965
+00:33:59,260 --> 00:34:01,134
+你可以去那边继续的深入讨论
+to go into in more depth in the office hours,
+
+966
+00:34:01,134 --> 00:34:03,485
+但是你已经掌控了一切
+but you have total control over this.
+
+967
+00:34:03,485 --> 00:34:04,360
+这非常之强大
+It's pretty powerful.
+
+968
+00:34:04,360 --> 00:34:07,240
+我想这对你来说是一个简单的问题
+AUDIENCE: I've got an easy one for you, I hope.
+
+969
+00:34:07,240 --> 00:34:08,389
+关于主屏幕
+The home screen.
+
+970
+00:34:08,389 --> 00:34:11,739
+你刚才提到你们能发现有多少用户使用添加到主屏幕的
+You mentioned that you find it interesting how many people
+
+971
+00:34:11,739 --> 00:34:13,550
+use the home screen.
+
+972
+00:34:13,550 --> 00:34:14,719
+我对此十分震惊
+I'm shocked at that.
+
+973
+00:34:14,719 --> 00:34:17,219
+我在哪里才能看到这个数据  有多少人使用了
+Where can I see the numbers for it, how many people actually
+
+974
+00:34:17,219 --> 00:34:18,670
+添加到主屏幕
+add stuff to the home screen?
+
+975
+00:34:18,670 --> 00:34:19,310
+我不清楚如果我们今天
+ALEX KOMOROSKE: So I don't know if we
+
+976
+00:34:19,310 --> 00:34:21,170
+分享了这些数据会怎样
+have those numbers to share today,
+
+977
+00:34:21,170 --> 00:34:22,880
+我想说的是
+but it's one of those things that even
+
+978
+00:34:22,880 --> 00:34:24,320
+尽管是一个被埋没的特性
+despite being a buried feature, I think
+
+979
+00:34:24,320 --> 00:34:25,460
+我想用户也能在其中发现大量价值
+people find a lot of value in.
+
+980
+00:34:25,460 --> 00:34:26,834
+这也是为什么
+That's one of the reasons that we
+
+981
+00:34:26,834 --> 00:34:30,389
+我们决定通过主动的方式
+decided to bring this feature to other websites
+
+982
+00:34:30,389 --> 00:34:32,136
+把这个特性带到网站上来的原因
+in a more proactive way when we feel
+
+983
+00:34:32,136 --> 00:34:34,719
+在我们确信用户会对此感兴趣的情况下
+pretty confident that the user will be interested in that one.
+
+984
+00:34:34,719 --> 00:34:35,960
+我在哪里可以找到这些数据
+AUDIENCE: Where can I find those numbers?
+
+985
+00:34:35,960 --> 00:34:37,500
+你们是从哪里获得的
+Where do you find them from?
+
+986
+00:34:37,500 --> 00:34:37,790
+非常抱歉
+ALEX KOMOROSKE: I'm sorry.
+
+987
+00:34:37,790 --> 00:34:39,100
+这些都是我们的内部数据
+Those are numbers that we have internally.
+
+988
+00:34:39,100 --> 00:34:40,308
+保密数据
+AUDIENCE: Oh, secret numbers.
+
+989
+00:34:40,308 --> 00:34:43,110
+是的  保密数据
+ALEX KOMOROSKE: Yeah, secret numbers.
+
+990
+00:34:43,110 --> 00:34:46,790
+使用Service Worker的优点是什么
+AUDIENCE: What's the advantage of using a Service
+
+991
+00:34:46,790 --> 00:34:49,130
+比如说在两三年前的愤怒的小鸟上
+Worker over something like what we had at Angry
+
+992
+00:34:49,130 --> 00:34:51,760
+使用 Service Worker 
+Birds two or three years ago.
+
+993
+00:34:51,760 --> 00:34:54,010
+在两三年前的Google I/O
+At Google I/O two or three years ago,
+
+994
+00:34:54,010 --> 00:34:57,086
+愤怒的小鸟还在使用着离线存储
+they were using offline storage for Angry Birds.
+
+995
+00:34:57,086 --> 00:34:58,960
+那么使用Service Worker的优点是什么
+What's the advantage of using Service Worker?
+
+996
+00:34:58,960 --> 00:35:00,335
+Service Worker可以
+ALEX KOMOROSKE: So Service Worker
+
+997
+00:35:00,335 --> 00:35:03,094
+帮你细腻的掌控网络上发生的
+allows you to have very fine grained control
+
+998
+00:35:03,094 --> 00:35:05,260
+所有情况
+over all aspects of what's happening on the network,
+
+999
+00:35:05,260 --> 00:35:10,020
+然后你可以使用一些技术类似于 Index DB
+so then you can use technologies like Index DB and Explicit
+
+1000
+00:35:10,020 --> 00:35:12,690
+以及 Explicit Cache API 
+Cache API to do stuff, whereas before, you
+
+1001
+00:35:12,690 --> 00:35:15,450
+然而以前你则被局限在高级别上的声明方法上面
+were limited to a very high level declarative approach.
+
+1002
+00:35:15,450 --> 00:35:17,842
+如果它对你适用  这非常好
+If it worked for you, it was great, but more likely
+
+1003
+00:35:17,842 --> 00:35:18,800
+但是它也可能对你无用
+it didn't work for you.
+
+1004
+00:35:18,800 --> 00:35:20,520
+在一些你想处理的特殊场合
+It couldn't do exactly what you wanted
+
+1005
+00:35:20,520 --> 00:35:22,330
+它是无法做到的
+to handle in this particular case
+
+1006
+00:35:22,330 --> 00:35:23,790
+所以说它可能对你无用
+and so it was basically useless.
+
+1007
+00:35:23,790 --> 00:35:25,680
+Service Work是这样的一种思考方式
+So Service Worker, the way to think of it
+
+1008
+00:35:25,680 --> 00:35:29,260
+你熟悉可扩展Web宣言吗
+is-- are you familiar with the Extensible Web Manifesto?
+
+1009
+00:35:29,260 --> 00:35:30,740
+这是一个概念
+So that's a notion that we should
+
+1010
+00:35:30,740 --> 00:35:32,640
+定义了一些低级的基本类型
+be defining the lower level primitives that
+
+1011
+00:35:32,640 --> 00:35:34,657
+解释web平台是如何工作的
+explain how the web platform works,
+
+1012
+00:35:34,657 --> 00:35:36,240
+摆脱高级层面上的东西
+so getting rid of the high level magic
+
+1013
+00:35:36,240 --> 00:35:39,470
+给开发者接入低级基本类型的权限
+and giving developers access to the low level primitives that
+
+1014
+00:35:39,470 --> 00:35:41,030
+让其得以工作
+make that magic work.
+
+1015
+00:35:41,030 --> 00:35:42,830
+所以说更像是在App Cache中深挖
+So Service Worker is like digging
+
+1016
+00:35:42,830 --> 00:35:46,190
+来弄明白里面都有些什么
+down deep below App Cache to figure out what was there
+
+1017
+00:35:46,190 --> 00:35:48,190
+如何工作的并把它传递给开发者
+and how it worked and expose that to developers.
+
+1018
+00:35:48,190 --> 00:35:49,380
+你明白吗
+Does that make sense?
+
+1019
+00:35:49,380 --> 00:35:51,068
+也许没有  下一个
+Probably not, but OK.
+
+1020
+00:35:51,068 --> 00:35:51,726
+Sorry.
+
+1021
+00:35:51,726 --> 00:35:53,350
+我有一个关于在离线状态下
+AUDIENCE: I have a question on the user
+
+1022
+00:35:53,350 --> 00:35:56,610
+用户体验的问题
+experience on the offline sites that you showed me.
+
+1023
+00:35:56,610 --> 00:35:59,930
+假如用户通过隧道浏览
+So let's say the user is traveling inside a tunnel
+
+1024
+00:35:59,930 --> 00:36:01,840
+然后网络中断了
+and then there is a network break.
+
+1025
+00:36:01,840 --> 00:36:05,480
+那么我们怎么判断此时这个用户是处于在线
+So how do we notify the user at this moment, you are online,
+
+1026
+00:36:05,480 --> 00:36:07,180
+还是离线呢
+and then you go offline.
+
+1027
+00:36:07,180 --> 00:36:10,594
+你刚才讲的是离线的情况
+This experience that you're having is the offline period,
+
+1028
+00:36:10,594 --> 00:36:12,260
+然后此时网络又回归正常
+and then the network can come back again
+
+1029
+00:36:12,260 --> 00:36:13,560
+你再次上线
+and you can come online again.
+
+1030
+00:36:13,560 --> 00:36:14,160
+非常好
+ALEX KOMOROSKE: That's great.
+
+1031
+00:36:14,160 --> 00:36:15,743
+Service Worker可以
+So the cool thing about Service Worker
+
+1032
+00:36:15,743 --> 00:36:18,150
+ 让你全力掌控你的应用
+is you have full control to do what's right for your app.
+
+1033
+00:36:18,150 --> 00:36:19,640
+举个例子
+So in particular-- for example, I
+
+1034
+00:36:19,640 --> 00:36:23,326
+我觉得I/O应用实现了这个  当你网络情况很差的时候
+think the I/O app does this-- if you're on flaky connectivity,
+
+1035
+00:36:23,326 --> 00:36:25,700
+它会提示  我将会展示默认的从缓存中获取到的内容
+it can say, I'm just going to default and show everything
+
+1036
+00:36:25,700 --> 00:36:29,670
+然后去获取新的资源
+directly from the cache and then fetch fresh resources.
+
+1037
+00:36:29,670 --> 00:36:32,330
+当用户在浏览的时候
+And so what might happen is the user is already looking at it.
+
+1038
+00:36:32,330 --> 00:36:33,630
+新的内容已经获取到了
+Fresh content has come back.
+
+1039
+00:36:33,630 --> 00:36:34,575
+你肯定不想
+You don't want to go [MAKES NOISE]
+
+1040
+00:36:34,575 --> 00:36:35,910
+就把内容粘贴出来因为这会让用户
+and put the content there because they'll
+
+1041
+00:36:35,910 --> 00:36:37,400
+跟不上思路
+lose their train of thought.
+
+1042
+00:36:37,400 --> 00:36:41,510
+但是在这些使用Service Worker的demo中
+But with Service Worker in some of these demos, what people do
+
+1043
+00:36:41,510 --> 00:36:43,650
+将会有一个很小的UI提示说
+is they'll have a small bit of UI that says,
+
+1044
+00:36:43,650 --> 00:36:46,100
+请上拉刷新获取新的内容
+&quot;Fresh content is available if you scroll up.&quot;
+
+1045
+00:36:46,100 --> 00:36:48,440
+这样的话  就会连贯起来
+And that way, you don't lose your way in the app.
+
+1046
+00:36:48,440 --> 00:36:50,040
+关键在于
+But the point is, of course, that you
+
+1047
+00:36:50,040 --> 00:36:52,240
+你可以掌控你应用的一切
+have control to do what's right for your app, which
+
+1048
+00:36:52,240 --> 00:36:53,300
+这非常的棒
+is pretty exciting.
+
+1049
+00:36:53,300 --> 00:36:54,400
+很棒
+AUDIENCE: That's cool.
+
+1050
+00:36:54,400 --> 00:36:56,350
+谢谢
+Thank you.
+
+1051
+00:36:56,350 --> 00:36:56,980
+AUDIENCE: Hi.
+
+1052
+00:36:56,980 --> 00:36:59,360
+我的问题是关于你演示的那个demo
+My question is in the demo that you showed.
+
+1053
+00:36:59,360 --> 00:37:01,349
+我收到了来自卫报应用的推送通知
+I get a notification from the Guardian app
+
+1054
+00:37:01,349 --> 00:37:03,640
+然后你打开卫报的应用图标
+and you go to the home screen of the Guardian app icon,
+
+1055
+00:37:03,640 --> 00:37:06,422
+点击打开  并且开始阅读
+and then you click, and then you open, and then you read.
+
+1056
+00:37:06,422 --> 00:37:08,880
+能不能直接的点开通知
+Is it possible that from the notification directly, I can--
+
+1057
+00:37:08,880 --> 00:37:09,838
+ELISABETH MORANT: Yeah.
+
+1058
+00:37:09,838 --> 00:37:11,710
+这仅仅是一个demo中的bug
+That was just a bug in the demo.
+
+1059
+00:37:11,710 --> 00:37:12,420
+那么当你点击通知时会发生什么呢
+ALEX KOMOROSKE: So what happens is
+
+1060
+00:37:12,420 --> 00:37:13,960
+当你点开通知
+when you tap on the notification,
+
+1061
+00:37:13,960 --> 00:37:15,860
+Service Worker会收到事件请求
+your Service Worker receives an event
+
+1062
+00:37:15,860 --> 00:37:18,290
+说通知已经被点击
+that says the notification was clicked.
+
+1063
+00:37:18,290 --> 00:37:20,660
+此时你可以不做任何处理
+At that point, you can say, OK, do nothing,
+
+1064
+00:37:20,660 --> 00:37:24,020
+你也可以保持原来的标签页
+or you can say, focus a tab that existed before
+
+1065
+00:37:24,020 --> 00:37:25,250
+或者是打开新标签页
+or open a new tab.
+
+1066
+00:37:25,250 --> 00:37:25,550
+ELISABETH MORANT: Yeah.
+
+1067
+00:37:25,550 --> 00:37:27,530
+我希望点击通知
+So I was supposed to click on the notification
+
+1068
+00:37:27,530 --> 00:37:30,984
+就直接跳转到我想要了解的通知中的内容上面
+and jump directly to the content that it was notifying me about.
+
+1069
+00:37:30,984 --> 00:37:31,525
+AUDIENCE: OK.
+
+1070
+00:37:31,525 --> 00:37:33,305
+谢谢
+Thank you.
+
+1071
+00:37:33,305 --> 00:37:34,200
+AUDIENCE: Hi.
+
+1072
+00:37:34,200 --> 00:37:35,829
+非常相似的问题
+Very similar question, but rather
+
+1073
+00:37:35,829 --> 00:37:37,620
+但不是关于点击通知
+than tapping on a notification, what if you
+
+1074
+00:37:37,620 --> 00:37:39,455
+如果你收到了email链接会怎样
+get an email with a link?
+
+1075
+00:37:39,455 --> 00:37:41,580
+会打开什么与之相关联的应用吗
+Is there any kind of association that would open up
+
+1076
+00:37:41,580 --> 00:37:44,827
+that installed web app?
+
+1077
+00:37:44,827 --> 00:37:47,410
+我不清楚它具体是怎样工作的
+ALEX KOMOROSKE: I don't know the particulars of exactly how it
+
+1078
+00:37:47,410 --> 00:37:48,993
+但是如果你安装了一个
+works, but if you are an installed web
+
+1079
+00:37:48,993 --> 00:37:51,980
+带有清单文件的web应用  会出现一些与目标系统
+app with a manifest, there will be some cases that
+
+1080
+00:37:51,980 --> 00:37:54,550
+比如Android   不能完美契合的情况
+don't necessarily fit exactly perfectly into the intent
+
+1081
+00:37:54,550 --> 00:37:57,290
+我们也一直在这方面努力
+system of Android, but we're working on those.
+
+1082
+00:37:57,290 --> 00:37:58,770
+我没有这方面的具体信息
+I don't have all the information for you in depth on that,
+
+1083
+00:37:58,770 --> 00:37:59,270
+所以
+though.
+
+1084
+00:37:59,270 --> 00:38:00,995
+你可以去那边深入的进行讨论
+You should take it to office hours.
+
+1085
+00:38:00,995 --> 00:38:01,620
+好的
+AUDIENCE: Sure.
+
+1086
+00:38:01,620 --> 00:38:04,970
+
+
+1087
+00:38:04,970 --> 00:38:06,651 
+最后一个问题
+ALEX KOMOROSKE: One question.
+
+1088
+00:38:06,651 --> 00:38:08,400
+通知设置的同步
+AUDIENCE: Are the notification preferences
+
+1089
+00:38:08,400 --> 00:38:11,754
+是通过用户账户还是通过设备来同步的
+synced across a user's account or is it per device?
+
+1090
+00:38:11,754 --> 00:38:13,170
+通过设备
+ELISABETH MORANT: It's per device.
+
+1091
+00:38:13,170 --> 00:38:14,795
+这样做的原因
+ALEX KOMOROSKE: And the reason for that
+
+1092
+00:38:14,795 --> 00:38:18,120
+是不同的设备有着特别的使用背景
+is the context that you opt in is very device specific.
+
+1093
+00:38:18,120 --> 00:38:20,520
+所以我个人可能对八卦绯闻感兴趣
+So I might be interested in seeing celebrity gossip
+
+1094
+00:38:20,520 --> 00:38:22,610
+因为有这个需求
+on my personal-- because I have a thing for that,
+
+1095
+00:38:22,610 --> 00:38:25,380
+很显然  要在我本人的机器上
+apparently-- on my personal machine,
+
+1096
+00:38:25,380 --> 00:38:27,900
+但是我并不介意
+but I don't care about it enough to be
+
+1097
+00:38:27,900 --> 00:38:29,750
+在我离开时通知我
+notified when I'm on the go.
+
+1098
+00:38:29,750 --> 00:38:32,960
+用户的使用背景
+And so exactly where the right user context
+
+1099
+00:38:32,960 --> 00:38:35,380
+取决于你所使用的设备  所以它不会被同步
+depends on the device you're in, and so it's not synced.
+
+1100
+00:38:35,380 --> 00:38:37,213
+通知设置是针对
+AUDIENCE: And is the notification preference
+
+1101
+00:38:37,213 --> 00:38:40,819
+域名或者是特定的网站吗
+per domain or per specific website?
+
+1102
+00:38:40,819 --> 00:38:42,610
+主要是域名
+ALEX KOMOROSKE: It's per domain, basically.
+
+1103
+00:38:42,610 --> 00:38:45,340
+问题在于  对于站点的作者来说一定要确保
+And so the idea is you want to make sure as a site author
+
+1104
+00:38:45,340 --> 00:38:48,122
+非常小心的使用它
+that you use it very respectfully.
+
+1105
+00:38:48,122 --> 00:38:49,580
+我们没有在这个通知中
+So one thing we didn't show in this
+
+1106
+00:38:49,580 --> 00:38:51,440
+演示的东西是
+is the notifications that show up
+
+1107
+00:38:51,440 --> 00:38:53,750
+这里有一个明显的站点设置按钮
+have a very obvious Site Settings button
+
+1108
+00:38:53,750 --> 00:38:56,530
+如果用户点击他它  它就会直接的
+and if a user taps on that, they're taken directly
+
+1109
+00:38:56,530 --> 00:38:58,620
+跳转到Chrome中那个域名的相关设置
+into Chrome Settings for that domain, where
+
+1110
+00:38:58,620 --> 00:39:01,910
+可以通过一系列的操作
+it's a couple more taps to revoke permissions
+
+1111
+00:39:01,910 --> 00:39:02,800
+撤销那个域名的相关权限
+for that domain.
+
+1112
+00:39:02,800 --> 00:39:04,580
+作为站点的作者
+And so as a site author, you want
+
+1113
+00:39:04,580 --> 00:39:07,419
+你必须要确保你向用户们表明了你的权限
+to make sure that you explain to users what you're going to do
+
+1114
+00:39:07,419 --> 00:39:09,460
+尊重他们的顾虑
+and that you respect their attention because it's
+
+1115
+00:39:09,460 --> 00:39:11,260
+因为对用户来说
+very, very easy for them-- of course,
+
+1116
+00:39:11,260 --> 00:39:13,940
+他们非常容易就能撤销你的权限
+they're in control-- to revoke permission very easily
+
+1117
+00:39:13,940 --> 00:39:15,437
+如果你违背它的话
+if you abuse it.
+
+1118
+00:39:15,437 --> 00:39:16,270
+谢谢
+AUDIENCE: Thank you.
+
+1119
+00:39:16,270 --> 00:39:17,260
+ALEX KOMOROSKE: Sure.
+
+1120
+00:39:17,260 --> 00:39:18,010
+非常感谢
+Thank you so much.
+
+1121
+00:39:18,010 --> 00:39:18,610
+感谢大家
+Appreciate it.
+
+1122
+00:39:18,610 --> 00:39:21,660
+[APPLAUSE]
+
+1123
+00:39:21,660 --> 00:39:21,665
+
+
