@@ -1,4 +1,4 @@
-#Tasks assigned by GDG-Nanyang subtitles group.
+#Tasks assigned by GDG subtitles group.
 
 
 ####Completed items:
@@ -8,6 +8,7 @@
  3. [Building a quality app from start to finish](https://www.youtube.com/watch?v=gfGuGdHdFJI)
  4. [Devoxx 2014 Interviews: Mobile Chrome Apps](https://www.youtube.com/watch?v=7cRHRIelwVA)
  5. [The next generation mobile web](https://www.youtube.com/watch?v=iZZdhTUP5qg)
+ 6. [Coffee with Material Design guru Roman Nurik](https://www.youtube.com/watch?v=iTBEEJ9DQck&index=26)
 
 
 ####Working in progress:

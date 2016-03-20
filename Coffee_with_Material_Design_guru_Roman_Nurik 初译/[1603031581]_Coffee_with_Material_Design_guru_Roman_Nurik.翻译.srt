@@ -1,0 +1,1050 @@
+1
+00:00:00,499 --> 00:00:02,630
+欢迎来到 Googleplex
+LAURENCE MORONEY: Welcome to the Googleplex.
+
+2
+00:00:02,630 --> 00:00:05,170
+这是一个每天都能和一些优秀员工
+This is an incredible place with lots of great stuff being
+
+3
+00:00:05,170 --> 00:00:08,060
+交流的奇妙地方
+worked on every single day.
+
+4
+00:00:08,060 --> 00:00:09,940
+在我还没来这工作之前
+Before I worked here, I always wondered
+
+5
+00:00:09,940 --> 00:00:12,260
+我总是在想，要是能来到 Googleplex 该多好
+what it'd be like to come to the Googleplex,
+
+6
+00:00:12,260 --> 00:00:14,750
+和 Googler 们面面基，喝喝咖啡
+meet up with a Googler, and have coffee with them.
+
+7
+00:00:14,750 --> 00:00:18,420
+聊聊他们在都干什么，是如何做的，为什么要做这个
+And just chat about what they do, how they do it, and why they do it.
+
+8
+00:00:18,420 --> 00:00:20,360
+今天梦想成真了
+And today we're going to do exactly that.
+
+9
+00:00:22,175 --> 00:00:24,300
+欢迎来和 Googler 喝咖啡
+LAURENCE MORONEY: Welcome to Coffee with a Googler.
+
+10
+00:00:24,300 --> 00:00:26,383
+我是 Laurence Moroney，我在纽约城
+I'm Laurence Moroney and I'm here in New York City
+
+11
+00:00:26,383 --> 00:00:27,940
+和 Roman Nurik 聊聊天
+to meet with Roman Nurik.
+
+12
+00:00:27,940 --> 00:00:31,890
+Roman Nurik 是 Google Material Design 的大牛
+And Roman Nurik is one of our material design gurus here at Google.
+
+13
+00:00:31,890 --> 00:00:34,887
+谈道 Material Design，告诉我们它是干什么的吧
+So material design, tell me what's it all about.
+
+14
+00:00:34,887 --> 00:00:35,970
+好的，Laurence
+ROMAN NURIK: Oh, Laurence.
+
+15
+00:00:35,970 --> 00:00:39,412
+什么是 Material Design
+What is material design?
+
+16
+00:00:39,412 --> 00:00:40,620
+这有点难解释
+It's kind of hard to explain.
+
+17
+00:00:40,620 --> 00:00:44,240
+实际上原来有一个视频
+There's actually a video with a bunch of the original designers
+
+18
+00:00:44,240 --> 00:00:45,920
+讲的是 Material Design 的设计师们
+that created material design and they
+
+19
+00:00:45,920 --> 00:00:49,480
+他们也同样被问到这个问题，也不知道该如何回答它
+get asked the same question and they don't know how to answer it.
+
+20
+00:00:49,480 --> 00:00:51,530
+这说起来还蛮复杂
+It is a complex kind of thing.
+
+21
+00:00:51,530 --> 00:00:53,890
+涉及到很多事情
+There's a lot of things going on.
+
+22
+00:00:53,890 --> 00:00:56,700
+首先从最基本的层面讲，它是一门设计语言
+I guess is the most basic level, it's a design language.
+
+23
+00:00:56,700 --> 00:00:59,040
+也是一个设计系统
+It's a design system.
+
+24
+00:00:59,040 --> 00:01:02,120
+涵盖视觉交互以及动作行为设计
+It covers visual interaction and motion design.
+
+25
+00:01:02,120 --> 00:01:05,630
+我觉得大多数设计系统以及设计语言
+I feel like most design systems, design languages,
+
+26
+00:01:05,630 --> 00:01:07,500
+都统归于视觉语言
+are treated as just visual languages.
+
+27
+00:01:07,500 --> 00:01:10,090
+比如你该用哪种颜色等等
+Like here are the colors you should use, and so on.
+
+28
+00:01:10,090 --> 00:01:12,600
+但 Material Design 可不止这些
+But material is much more than that.
+
+29
+00:01:12,600 --> 00:01:15,690
+它涵盖很多模型
+It really kind of covers the model,
+
+30
+00:01:15,690 --> 00:01:18,520
+潜在的物理模型以及 UI 模型
+the underlying physical model, of the UI.
+
+31
+00:01:18,520 --> 00:01:21,230
+所以它实际上是试图创建一个
+So it basically tries to establish
+
+32
+00:01:21,230 --> 00:01:25,850
+适合你应用生存的一个物理环境
+this physical environment within which your apps should live.
+
+33
+00:01:25,850 --> 00:01:31,330
+在手机、平板、桌面设备，以及任何的屏幕上
+On a phone, on a tablet, on a computer, basically any sort of screen.
+
+34
+00:01:31,330 --> 00:01:34,318
+它创建这个物理环境
+And then it basically establishes this physical environment and a set
+
+35
+00:01:34,318 --> 00:01:37,470
+并且建立了相关的规定和原则
+of basic rules and principles.
+
+36
+00:01:37,470 --> 00:01:41,260
+我习惯把这个总结为四个轴
+And I like to think of it along these kind of four basic axes,
+
+37
+00:01:41,260 --> 00:01:43,340
+或者说是四个基本原则
+or four basic principles.
+
+38
+00:01:43,340 --> 00:01:45,350
+这是个形象的比喻
+And that's tangible surfaces.
+
+39
+00:01:45,350 --> 00:01:46,980
+对于 Material 来说
+Work on the material metaphor.
+
+40
+00:01:46,980 --> 00:01:50,130
+这样我们就能具体的谈谈 Material 是什么了
+We can talk about what material is at some point.
+
+41
+00:01:50,130 --> 00:01:52,010
+也是一次大胆的平面设计尝试
+Also bold graphic design.
+
+42
+00:01:52,010 --> 00:01:56,220
+我们应该从印刷的世界里学学一些优秀设计灵感
+This idea that we should take some of the best design ideas
+
+43
+00:01:56,220 --> 00:02:00,030
+看看它们是如何帮助我们
+from the print world and see how they can help us make really
+
+44
+00:02:00,030 --> 00:02:04,380
+在电子设备上创造出优秀的应用的
+great apps on digital devices.
+
+45
+00:02:04,380 --> 00:02:05,870
+第三个则是关乎有意义的动效
+And the third is meaningful motion.
+
+46
+00:02:05,870 --> 00:02:10,190
+如何把这些东西，这些平面
+Basically how all these things, how these surfaces,
+
+47
+00:02:10,190 --> 00:02:14,830
+以及平面上的组件，图形设计元素
+and the ink on that surface, the graphic design stuff,
+
+48
+00:02:14,830 --> 00:02:18,860
+协调起来
+how that all moves in a consistent way to help
+
+49
+00:02:18,860 --> 00:02:20,187
+促进交互沟通
+communicate what's going on.
+
+50
+00:02:20,187 --> 00:02:22,770
+第四件事,也是最重要的一件事情之一
+And the fourth thing, which is to me one of the most important
+
+51
+00:02:22,770 --> 00:02:24,860
+则是适应性设计
+things, is adaptive design.
+
+52
+00:02:24,860 --> 00:02:28,120
+这也是为什么我们能让前面提到的那三项
+Which is how can we take all these first three things
+
+53
+00:02:28,120 --> 00:02:30,790
+能够正常协同工作的奥妙
+and make sure that they work consistently
+
+54
+00:02:30,790 --> 00:02:33,495
+跨越不同的设备、手机和平板
+and coherently across different devices, phones and tablets,
+
+55
+00:02:33,495 --> 00:02:34,590
+以及其他
+and everything else.
+
+56
+00:02:34,590 --> 00:02:36,506
+正好这有一个视频
+LAURENCE MORONEY: Now you have a video, right,
+
+57
+00:02:36,506 --> 00:02:39,180
+上面有一些优秀的 Material Design 运用实例
+of some really good examples of material design being used.
+
+58
+00:02:39,180 --> 00:02:40,620
+我们给大家放一遍？
+So should we roll that?
+
+59
+00:02:40,620 --> 00:02:41,850
+好的
+ROMAN NURIK: Let's roll it.
+
+60
+00:02:41,850 --> 00:03:29,774
+[MUSIC PLAYING]
+
+61
+00:03:29,774 --> 00:03:32,190
+这真是足够优秀的实例啊
+LAURENCE MORONEY: So some pretty excellent examples there,
+
+62
+00:03:32,190 --> 00:03:36,300
+但是问题是，有人能到达那个高度吗
+but it's like, "How does somebody reach that level?"
+
+63
+00:03:36,300 --> 00:03:38,530
+拿我来说，我是一个开发者
+And for someone like me, I'm a developer
+
+64
+00:03:38,530 --> 00:03:40,600
+我的设计技能几乎为零
+and my design skills are nonexistent.
+
+65
+00:03:40,600 --> 00:03:42,760
+所以我想成为那个可以运用 Material Design
+So if I want to become somebody who
+
+66
+00:03:42,760 --> 00:03:46,370
+来开发应用的人，我该如何开始？
+can build apps with those kind of design, how do I get started?
+
+67
+00:03:46,370 --> 00:03:47,710
+我也要学这个吗？
+How do I learn this stuff?
+
+68
+00:03:47,710 --> 00:03:48,960
+这是一个好问题
+ROMAN NURIK: That's a great question.
+
+69
+00:03:48,960 --> 00:03:50,876
+首先，我来设想下
+I think first of all, I just want to, I guess,
+
+70
+00:03:50,876 --> 00:03:53,740
+这些应用的背后它们都在做着出色的工作
+recognize some of those apps they're doing amazing jobs.
+
+71
+00:03:53,740 --> 00:03:56,230
+它们可能有一个比较大的团队
+And they have large teams, some of them
+
+72
+00:03:56,230 --> 00:03:57,930
+或者是小团队
+actually have very small teams.
+
+73
+00:03:57,930 --> 00:04:00,790
+有些应用甚至是个人开发者开发的
+Some of those apps are created by one person.
+
+74
+00:04:00,790 --> 00:04:03,960
+所以你是绝对可以达到那个高度
+So you can absolutely reach that level of quality
+
+75
+00:04:03,960 --> 00:04:08,540
+来开发那些出色的应用的，不管你的团队有多小
+from these amazing showcase apps regardless of your team size.
+
+76
+00:04:08,540 --> 00:04:10,410
+但是我想对开发者和设计师说的是
+But I'd say for the developers and designers
+
+77
+00:04:10,410 --> 00:04:12,076
+这一切才刚刚起步
+out there that are just getting started,
+
+78
+00:04:12,076 --> 00:04:14,650
+仍有大量的资源可以利用
+there are a lot of great resources out there.
+
+79
+00:04:14,650 --> 00:04:19,709
+在 Udacity 上也有不少课程
+There's a great Udacity course that me, Nick Butcher, also
+
+80
+00:04:19,709 --> 00:04:24,650
+由 Nick Butcher 和我以及 Udacity 的 James Williams 共同录制
+from Google team here, and James Williams from Udacity put together.
+
+81
+00:04:24,650 --> 00:04:27,914
+你可以通过访问 udacity.com/google 来获取
+And that's available at udacity.com/google.
+
+82
+00:04:27,914 --> 00:04:31,190
+同样在 design.google.com 上
+And there's also a bunch of amazing resources
+
+83
+00:04:31,190 --> 00:04:34,580
+也有更多的资源在等着你
+on design.google.com which will tell you
+
+84
+00:04:34,580 --> 00:04:39,580
+它会指导你如何在 Android 使用 Material Design
+about how to come to Android if you're doing iOS stuff, for example.
+
+85
+00:04:39,580 --> 00:04:44,010
+如果是搞 iOS 方向的话,你可以了解一下 Material Design 是什么
+Or how to get started understanding what material design is.
+
+86
+00:04:44,010 --> 00:04:47,250
+那里有 Material Design 的全部指导原则
+Obviously the entire material design guidelines are there.
+
+87
+00:04:47,250 --> 00:04:51,190
+从观看 Udacity 的课程开始
+So I'd say that's the first thing the Udacity
+
+88
+00:04:51,190 --> 00:04:54,834
+应该是新手起步的最佳选择
+course is probably the best first step in getting started.
+
+89
+00:04:54,834 --> 00:04:56,750
+那里有大量资源
+But there's a whole lot of resources out there
+
+90
+00:04:56,750 --> 00:04:58,580
+我们也那里做了其他资源的链接
+and we link to others from the Udacity course.
+
+91
+00:04:58,580 --> 00:05:00,020
+谈到 Udacity 课程
+LAURENCE MORONEY: And Udacity courses,
+
+92
+00:05:00,020 --> 00:05:01,394
+如果你还没听说过的话
+if you're not familiar with them,
+
+93
+00:05:01,394 --> 00:05:03,450
+它们采用问答式的教学方法
+they're very Socratic in how they teach.
+
+94
+00:05:03,450 --> 00:05:06,520
+通过短视频来让你挑战某件事情
+It's short videos and then challenging you to do something.
+
+95
+00:05:06,520 --> 00:05:09,020
+然后再来一个短视频教你起步做这件事
+And then a short video and then getting you to do something.
+
+96
+00:05:09,020 --> 00:05:11,230
+总之这是一个让人快速学习的好方法
+And it's a good way to someone can incrementally
+
+97
+00:05:11,230 --> 00:05:14,342
+而不是把你扔进巨大的设计文档堆里
+learn rather than be thrown into a huge design doc
+
+98
+00:05:14,342 --> 00:05:15,372
+或者类似的事
+or something like that.
+
+99
+00:05:15,372 --> 00:05:18,600
+毫无疑问,这样进展显著
+ROMAN NURIK: Yeah it's definitely-- there's a very clear progression.
+
+100
+00:05:18,600 --> 00:05:21,000
+我们特别地安排了那门课程
+We specifically designed that course
+
+101
+00:05:21,000 --> 00:05:23,250
+你可以从了解一些基础知识开始
+so that you can kind of start with some of the basics.
+
+102
+00:05:23,250 --> 00:05:26,340
+关于屏幕上的一些基础知识
+The most elementary basic things about a screen,
+
+103
+00:05:26,340 --> 00:05:29,720
+比如说什么是像素,什么是独立像素密度
+like what is a pixel, what is a density independent pixel.
+
+104
+00:05:29,720 --> 00:05:31,780
+之后水到渠成的你就能知道
+And then you ramp all the way up to how
+
+105
+00:05:31,780 --> 00:05:34,114
+我该怎样把这个运用到手机,平板,以及其它设备上
+do I make everything work on phones, tablets, and so on.
+
+106
+00:05:34,114 --> 00:05:36,613
+我就假设这些设计课程都是经过精心设计的了
+LAURENCE MORONEY: And I have to assume that design course is
+
+107
+00:05:36,613 --> 00:05:37,380
+well designed.
+
+108
+00:05:37,380 --> 00:05:39,410
+我们在 Slide 和绘画板里
+ROMAN NURIK: We have some very nice color
+
+109
+00:05:39,410 --> 00:05:44,056
+也做了一些非常棒的颜色选择
+choices in our slides or our tablet drawings, so hopefully.
+
+110
+00:05:44,056 --> 00:05:46,180
+让我们再次回到 Material Design 话题
+LAURENCE MORONEY: So back to material design again.
+
+111
+00:05:46,180 --> 00:05:48,500
+为什么是 Material
+Why material?
+
+112
+00:05:48,500 --> 00:05:51,370
+谈到 Material 就回到刚才说的第一个原则了
+ROMAN NURIK: So material goes back to that first principle.
+
+113
+00:05:51,370 --> 00:05:54,210
+也就是具有实体属性的平面
+So this idea of tangible surfaces.
+
+114
+00:05:54,210 --> 00:06:00,150
+这意味着屏幕上的一切
+This idea that everything on your screen and your device
+
+115
+00:06:00,150 --> 00:06:02,190
+都在其中的一个平面上
+exists on a surface.
+
+116
+00:06:02,190 --> 00:06:05,470
+我们喜欢把它想象成一张纸
+We like to think of them as pieces of paper.
+
+117
+00:06:05,470 --> 00:06:09,310
+你也可以看作是一片材料
+So basically you can think of basically a sheet of material
+
+118
+00:06:09,310 --> 00:06:14,180
+或者说是表现在一张纸上
+or the word material representing one of those pieces of paper.
+
+119
+00:06:14,180 --> 00:06:15,680
+我们不把叫它叫做纸是有原因的
+And the reason we don't just call it
+
+120
+00:06:15,680 --> 00:06:18,930
+因为它不仅仅是一张纸
+paper is because it actually is a lot more than just paper.
+
+121
+00:06:18,930 --> 00:06:21,340
+现实世界的纸张,一旦你把它撕碎
+In the real world paper, once you rip it up
+
+122
+00:06:21,340 --> 00:06:23,370
+你就不能将其复原
+you can't really just put it back together.
+
+123
+00:06:23,370 --> 00:06:28,550
+而且纸也不能从一个圆形变成一个正方形或者是矩形
+And paper can't go from being a circle to a square to a rectangle.
+
+124
+00:06:28,550 --> 00:06:31,900
+所以我们将其看作是材料中的数字碎片
+And so we like to think of our digital pieces of material,
+
+125
+00:06:31,900 --> 00:06:37,470
+或者是一片材料,一种智能的纸张
+or sheets of material, as kind of a smarter paper.
+
+126
+00:06:37,470 --> 00:06:40,390
+仍是一种存在约束的纸张,你可以尽情使用
+Still a constrained paper, you can just do anything.
+
+127
+00:06:40,390 --> 00:06:43,400
+但其也有缺憾
+It can't just do all sorts of crazy things,
+
+128
+00:06:43,400 --> 00:06:46,440
+它只是在特定环境下存在的一种物理介质
+but it is a physical thing that exists inside
+
+129
+00:06:46,440 --> 00:06:50,550
+在一种人造的特定环境
+of this kind of environment, this kind of like faux environment.
+
+130
+00:06:50,550 --> 00:06:54,200
+依旧有很多的想法可以在上面付诸实践
+But it is something that has a lot of thought put into it.
+
+131
+00:06:54,200 --> 00:06:57,080
+所以 Material 这个词对我来说是一片纸张
+And so the word material to me really
+
+132
+00:06:57,080 --> 00:07:02,540
+里面可以容纳一些东西
+means, the sheets of paper that everything in this world exists on.
+
+133
+00:07:02,540 --> 00:07:05,690
+对我来说真正要考虑的事情是
+But for me is the main thing to think about,
+
+134
+00:07:05,690 --> 00:07:08,620
+动作在 Material Design 非常的重要
+the reason that motion is so important in material design
+
+135
+00:07:08,620 --> 00:07:12,130
+一切的动效都应该是有意义的
+is that motion should always have meaning.
+
+136
+00:07:12,130 --> 00:07:15,910
+尽量不要做这些动作，比如翻转一个按钮
+Try not to just do it like a flip of a button,
+
+137
+00:07:15,910 --> 00:07:18,017
+或者是来一个双旋转
+or like a double rotation, or something just
+
+138
+00:07:18,017 --> 00:07:19,100
+以及其他引起注意的动作
+to kind of draw attention.
+
+139
+00:07:19,100 --> 00:07:22,305
+每一次的动作都会引起人们的注意
+Every time something moves it attracts our attention
+
+140
+00:07:22,305 --> 00:07:23,930
+所以它应该变得有意义
+and so it needs to be really thoughtful
+
+141
+00:07:23,930 --> 00:07:26,300
+需要小心翼翼的去设计
+and really carefully planned out.
+
+142
+00:07:26,300 --> 00:07:31,310
+在 Material Design 中，我们可以利用足够的动作
+And so in material, we use motion just enough motion
+
+143
+00:07:31,310 --> 00:07:34,800
+来传达物体的一些状态
+to convey the change in some object's state
+
+144
+00:07:34,800 --> 00:07:37,670
+或者引起一些注意
+or try to get a little bit of attention.
+
+145
+00:07:37,670 --> 00:07:40,090
+但是又不宜太多
+But just enough motion not too little, not too much.
+
+146
+00:07:40,090 --> 00:07:41,700
+我知道 Android Studio有一些模板
+LAURENCE MORONEY: I understand Android Studio has
+
+147
+00:07:41,700 --> 00:07:43,180
+允许开发者们在他们的 App 里
+some templates to allow developers
+
+148
+00:07:43,180 --> 00:07:46,420
+融入 Material Design 风格 
+to at least get started with building material design into apps.
+
+149
+00:07:46,420 --> 00:07:47,419
+是的
+ROMAN NURIK: Absolutely.
+
+150
+00:07:47,419 --> 00:07:50,790
+这也是我一直以来的人生观
+So one of my philosophies for a long time has been,
+
+151
+00:07:50,790 --> 00:07:55,800
+我们创造出了 Material Design，或者说创造了一个东西
+we can write about a material design, we can write about a thing.
+
+152
+00:07:55,800 --> 00:07:58,110
+我们可以针对这件东西给出很多建议
+We can make suggestions about that thing.
+
+153
+00:07:58,110 --> 00:08:00,000
+我们可以告诉人们这个东西是干什么的
+We can try to teach people about the thing.
+
+154
+00:08:00,000 --> 00:08:05,720
+但是最佳的方法是能让人们上手去做
+But one of the best ways to get the thing into people's hands,
+
+155
+00:08:05,720 --> 00:08:08,470
+拿 Material Design 来说，我们就将其集成在了相关工具里
+in this case material design, is to actually just build it
+
+156
+00:08:08,470 --> 00:08:09,290
+into the tools.
+
+157
+00:08:09,290 --> 00:08:12,350
+只要确保开发者们都能够上手
+Just make sure that as a developer that's just getting
+
+158
+00:08:12,350 --> 00:08:15,060
+拿 Android 举例，无论我在 Android Studio 上
+started, even just on Android, if I just
+
+159
+00:08:15,060 --> 00:08:18,190
+新建一个项目或者是一个 App
+go to File, New Project or new app
+
+160
+00:08:18,190 --> 00:08:20,300
+我都能够用上最新、最棒的 Material Design 
+I should be able to get the latest and greatest.
+
+161
+00:08:20,300 --> 00:08:22,860
+所以我们在 Android Studio 中
+And so in Android Studio, now we're
+
+162
+00:08:22,860 --> 00:08:27,020
+能看到很多 Material Design 模板
+actually seeing new templates for material design.
+
+163
+00:08:27,020 --> 00:08:30,230
+你也可以创建一个新项目
+So you could do file new project and then your default activity
+
+164
+00:08:30,230 --> 00:08:33,909
+默认的活动模板就是基于 Material Design 的
+templates are going to come with material design in them.
+
+165
+00:08:33,909 --> 00:08:36,380
+现在就开始把 Material 主题用起来吧
+So it's going to use the material theme.
+
+166
+00:08:36,380 --> 00:08:39,690
+这会利用一些新的 Material design 支持库
+It's going to use some of the latest support
+
+167
+00:08:39,690 --> 00:08:42,260
+比如说 Android Design 支持库
+libraries for material design, so things like the Android
+
+168
+00:08:42,260 --> 00:08:45,150
+AppCompat 之类的
+Design Support Library, things like AppCompat,
+
+169
+00:08:45,150 --> 00:08:47,970
+你会免费得到一些超棒的东西
+So you're just gonna get a lot of great stuff for free right
+
+170
+00:08:47,970 --> 00:08:48,612
+马上用起来
+off the bat.
+
+171
+00:08:48,612 --> 00:08:52,410
+比如说我，我是一个程序猿不是设计师
+LAURENCE MORONEY: So for someone like me, I'm a coder not a designer.
+
+172
+00:08:52,410 --> 00:08:55,500
+但是我可以用 Android Studio
+But I could use Android Studio, get the effectively
+
+173
+00:08:55,500 --> 00:08:58,310
+用这些模板或者是脚手架来把这个问题解决掉
+the scaffolding done for me in these templates.
+
+174
+00:08:58,310 --> 00:09:00,966
+然后也可以去 Udacity 上上课
+And then learn from something like the Udacity course.
+
+175
+00:09:00,966 --> 00:09:01,840
+正解
+ROMAN NURIK: Exactly.
+
+176
+00:09:01,840 --> 00:09:04,190
+我强烈安利你去 Udacity 上听听相关的课
+I definitely suggest, even before you do the Udacity
+
+177
+00:09:04,190 --> 00:09:07,150
+新建一个项目
+course, file new project.
+
+178
+00:09:07,150 --> 00:09:09,410
+看看相关代码
+Just look around the code.
+
+179
+00:09:09,410 --> 00:09:10,870
+看看你的收获
+See what you get.
+
+180
+00:09:10,870 --> 00:09:12,620
+我觉得这是一个很好的开端
+I think that's a great way to get started.
+
+181
+00:09:12,620 --> 00:09:15,910
+实践是检验真理的唯一标准
+I always valued as a kid growing up
+
+182
+00:09:15,910 --> 00:09:19,270
+learning programming and stuff I always valued experimentation.
+
+183
+00:09:19,270 --> 00:09:21,200
+而这正是实践
+So definitely experiment with that.
+
+184
+00:09:21,200 --> 00:09:27,192
+如果你遇到什么障碍或者是困难的话
+But as soon as if you hit an obstacle or something,
+
+185
+00:09:27,192 --> 00:09:29,941
+你可以看看教程以及相关的参考资料
+obviously take a look at the guide and the reference, and all that.
+
+186
+00:09:29,941 --> 00:09:32,070
+再次安利一下 Udacity 的课程
+But the Udacity course is a great way to say,
+
+187
+00:09:32,070 --> 00:09:34,740
+你知道吗，跟上 Google 的思考步伐
+"You know what, let me just kind of see what Google thinks
+
+188
+00:09:34,740 --> 00:09:38,237
+是了解这个系统的最佳方式
+is the right way to kind of approach understanding this system."
+
+189
+00:09:38,237 --> 00:09:39,320
+酷
+LAURENCE MORONEY: Awesome.
+
+190
+00:09:39,320 --> 00:09:40,261
+感谢 Roman
+Well thanks, Roman.
+
+191
+00:09:40,261 --> 00:09:42,760
+这是我今年学到的最有趣的
+This has been a whole lot of fun and I've learned more about
+
+192
+00:09:42,760 --> 00:09:46,470
+关于 Material Design 的知识
+material design in the last five minutes than I'd had in a year
+
+193
+00:09:46,470 --> 00:09:48,790
+再次感谢 Romen
+before so thank you so much .
+
+194
+00:09:48,790 --> 00:09:50,904
+我能讲上一整天
+ROMAN NURIK: I can always talk about this stuff.
+
+195
+00:09:50,904 --> 00:09:52,820
+他们跟我说了
+LAURENCE MORONEY: They told me that about you.
+
+196
+00:09:52,820 --> 00:09:54,990
+这是我最爱谈论的话题
+This is my favorite thing to talk about.
+
+197
+00:09:54,990 --> 00:09:55,830
+太酷了 Laurence
+ROMAN NURIK: It's been awesome, Laurence.
+
+198
+00:09:55,830 --> 00:09:56,240
+感谢
+Thanks.
+
+199
+00:09:56,240 --> 00:09:58,130
+我要去  Udacity 上瞧瞧相关课程
+LAURENCE MORONEY: I'm going to check out that Udacity course
+
+200
+00:09:58,130 --> 00:09:59,730
+也推荐大家去看一看
+and I recommend that you do so too.
+
+201
+00:09:59,730 --> 00:10:02,438
+如果你是 Android 开发者想了解一下这些模板的话
+And if you're an Android developer take a look at those templates.
+
+202
+00:10:02,438 --> 00:10:04,896
+如果你仍对其抱有疑问
+If you have any questions for me about this, or if you have
+
+203
+00:10:04,896 --> 00:10:06,840
+或者是关于 Material design 的
+any questions for Roman about material design,
+
+204
+00:10:06,840 --> 00:10:09,970
+以及任何的 Material Design 相关
+or other aspects of building for material design,
+
+205
+00:10:09,970 --> 00:10:12,755
+请在屏幕下方给我们留言
+just please drop us a line in the comments below.
+
+206
+00:10:12,755 --> 00:10:15,910
+感谢收看本期的  Coffee with a Googler
+Thank you for watching this episode of Coffee with a Googler.
+
+207
+00:10:15,910 --> 00:10:18,180
+更多精彩尽在 Coffee with a Googler
+For more great episodes of Coffee with a Googler
+
+208
+00:10:18,180 --> 00:10:21,237
+想了解更多优秀的开发者专题
+and for more great videos on the developer topics,
+
+209
+00:10:21,237 --> 00:10:23,570
+欢迎大家订阅 Youtube 上的 Google 开发者频道 
+please tune to the Google Developers channel on YouTube.
+
+210
+00:10:23,570 --> 00:10:24,160
+谢谢大家
+Thank you.
+
+211
+00:10:24,160 --> 00:10:25,858
+[MUSIC PLAYING]
+
